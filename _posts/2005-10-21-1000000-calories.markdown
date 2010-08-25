@@ -25,7 +25,7 @@ Just for fun I picked a fairly densely caloric food (white sugar) and calculated
 (Sugar 770 cal/cup) * (119.688 cups/cubic foot) * (5' wide * 5' deep * 6' tall pantry) = ~ 13,000,000 calories.
 {% endhighlight %}
 
-** 13 Million. **
+**13 Million.**
 
 (Thanks to [google](http://www.google.com/search?hl=en&lr=&q=cubic+feet+to+cups&btnG=Search) for some of the conversions.)</p>
 

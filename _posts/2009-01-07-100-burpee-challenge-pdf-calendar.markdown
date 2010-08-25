@@ -13,4 +13,4 @@ It sounded like fun so I jumped in and made up my missing Burpees. Since we star
 I found a sweet [PDF calendar generator](http://www.pdfcalendar.com/12-weeks/) which includes the ability to put the day of the year right in the calendar! 
 
 So, here it is. (I'll bring one in for Crossfit Culver's wall before the end of January.)
-Link: [100_burpee_calendar.pdf](http://serialized.net/wp-content/uploads/2009/01/100-burpee-calendar.pdf" title="100_burpee_calendar.pdf)
+Link: [100_burpee_calendar.pdf](http://serialized.net/wp-content/uploads/2009/01/100-burpee-calendar.pdf")
