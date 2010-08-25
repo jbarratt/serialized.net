@@ -10,4 +10,4 @@ wordpress_url: http://wp.serialized.net/?p=111
 
 <p>Check out, specifically, the example of sending email "with images attached".</p>
 
-<p>I&#39;m now able to quickly blast myself summary emails including exciting things like visual maps of the data, etc. I&#39;m sure the evil amongst us would appreciate this tool for <em>other</em> reasons, but we&#39;ll ignore the evil for now.</p>
+<p>I'm now able to quickly blast myself summary emails including exciting things like visual maps of the data, etc. I'm sure the evil amongst us would appreciate this tool for <em>other</em> reasons, but we'll ignore the evil for now.</p>

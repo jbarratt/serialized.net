@@ -22,7 +22,7 @@ The <a href="http://hub.serialized.net/gitweb/?p=arduino.git;a=blob_plain;f=Stan
   // Gather sample data
 
   float sampleSum = 0;
-  for(int i = 0; i &lt; SAMPLES; i++) {
+  for(int i = 0; i < SAMPLES; i++) {
     s_val[i] = analogRead(TS);
     sampleSum += s_val[i];
     delay(20); // set this to whatever you want
@@ -36,7 +36,7 @@ The <a href="http://hub.serialized.net/gitweb/?p=arduino.git;a=blob_plain;f=Stan
 
   float sqDevSum = 0.0;
 
-  for(int i = 0; i &lt; SAMPLES; i++) {
+  for(int i = 0; i < SAMPLES; i++) {
     // pow(x, 2) is x squared.
     sqDevSum += pow((meanSample - float(s_val[i])), 2);
   }
@@ -57,7 +57,7 @@ At the end of this block you have 2 useful variables defined: 'meanSample', whic
 This allows you to do things like
 
 [c]
-if(stDev &lt; TOLERANCE) {
+if(stDev < TOLERANCE) {
     // reading is stable enough
     fireMissleAt(meanSample);
 }
@@ -79,9 +79,9 @@ void printFloat(float var) {
   int float_part = 100*var - (100*int_part);
 
   Serial.print(int_part, DEC);
-  Serial.print(&quot;.&quot;);
-  if(float_part &lt; 10) {
-    Serial.print(&quot;0&quot;);
+  Serial.print(".");
+  if(float_part < 10) {
+    Serial.print("0");
   }
   Serial.print(float_part, DEC);
 }

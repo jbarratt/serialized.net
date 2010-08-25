@@ -13,8 +13,8 @@ wordpress_url: http://wp.serialized.net/?p=14
 
 
 
-<pre>su -c &quot;ssh -L 25:localhost:25 user@mail.server.com&quot;</pre>
+<pre>su -c "ssh -L 25:localhost:25 user@mail.server.com"</pre>
 
 
 
-<p>Just repoint my mail client to use &#39;localhost&#39; as a server, and viola.</p>
+<p>Just repoint my mail client to use 'localhost' as a server, and viola.</p>

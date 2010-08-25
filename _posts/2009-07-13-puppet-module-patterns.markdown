@@ -73,13 +73,13 @@ The way I started out solving these sorts of problems turns out to not scale all
 As I started a module (to solve a specific problem) I would just start listing out the puppet resources it would need.
 
 <b><tt>mywebapp/manifests/init.pp</tt></b>
-[sourcecode language="plain"]
-package { &amp;quot;lighttpd&amp;quot;: ensure =&amp;gt; installed }
-service { &amp;quot;lighttpd&amp;quot;: ensure =&amp;gt; running, enabled =&amp;gt; true }
-package { &amp;quot;lib-catalyst-rest-perl&amp;quot;: ensure =&amp;gt; installed } 
-package { &amp;quot;apache2&amp;quot;: ensure =&amp;gt; installed }
-service { &amp;quot;apache2&amp;quot;: ....
-[/sourcecode]
+{% highlight text %}
+package { "lighttpd": ensure => installed }
+service { "lighttpd": ensure => running, enabled => true }
+package { "lib-catalyst-rest-perl": ensure => installed } 
+package { "apache2": ensure => installed }
+service { "apache2": ....
+{% endhighlight %}
 
 and so on.
 
@@ -91,11 +91,11 @@ First, puppet only lets us define a resource once. So if we decide we want a new
 we'd have a problem.
 
 <b><tt>statshud/manifests/init.pp</tt></b>
-[sourcecode language="plain"]
+{% highlight text %}
 ...
-package { &amp;quot;apache2&amp;quot;: ensure =&amp;gt; installed }
+package { "apache2": ensure => installed }
 ...
-[/sourcecode]
+{% endhighlight %}
 
 Puppet will freak.
 
@@ -111,10 +111,10 @@ As a practical example, I refer you to the our lighttpd config.
 
 It has an SSL config file, in which we find this little gem:
 
-[sourcecode language="plain"]
-ssl.cipher-list = &amp;quot;DHE-RSA-AES256-SHA DHE-RSA-AES128-SHA EDH-RSA-DES-CBC3-SHA 
-    AES256-SHA AES128-SHA DES-CBC3-SHA DES-CBC3-MD5 RC4-SHA RC4-MD5&amp;quot;
-[/sourcecode]
+{% highlight text %}
+ssl.cipher-list = "DHE-RSA-AES256-SHA DHE-RSA-AES128-SHA EDH-RSA-DES-CBC3-SHA 
+    AES256-SHA AES128-SHA DES-CBC3-SHA DES-CBC3-MD5 RC4-SHA RC4-MD5"
+{% endhighlight %}
 
 Neat! This implements the current best practices for what ciphers we should accept.
 
@@ -147,7 +147,7 @@ Because of the above threats and virtues, we want to push as much functionality 
 So how this looks in practice in puppet-speak:
 
 <b><tt>mywebapp/manifests/init.pp</tt></b>
-[sourcecode language="plain"]
+{% highlight text %}
 
 // configure lighttpd module
 include lighttpd
@@ -160,10 +160,10 @@ include mysql
 
 // set up crons
 cron {
-    command =&amp;gt; &amp;quot;....&amp;quot;
+    command => "...."
 }
 
-[/sourcecode]
+{% endhighlight %}
 
 
 <h3>Configuring other Classes</h3>
@@ -184,15 +184,15 @@ I'll keep this one simple:
 
 A lot of the time there are several distinct modes you might want to use an app in. For example, there's a big difference between
 
-[sourcecode language="plain"]
+{% highlight text %}
 include mysql
-[/sourcecode]
+{% endhighlight %}
 
 and 
 
-[sourcecode language="plain"]
+{% highlight text %}
 include mysql::server
-[/sourcecode]
+{% endhighlight %}
 
 <h4>Technique #2: Create 'defines' that we use from inside classes</h4>
 
@@ -205,72 +205,72 @@ This technique is the most commonly used one. Many of the application and daemon
 
 These are best handled with defines. A good full-strength version of this is in our monit config:
 
-[sourcecode language="plain"]
+{% highlight text %}
 define conf ( $source = '', $content = '' ) {
     if $source != '' {
-        file { &amp;quot;/etc/monit.d/$name&amp;quot;:
-            notify =&amp;gt; Service[&amp;quot;monit&amp;quot;],
-            source =&amp;gt; $source,
-            mode =&amp;gt; 644,
-            owner =&amp;gt; root,
-            group =&amp;gt; root,
+        file { "/etc/monit.d/$name":
+            notify => Service["monit"],
+            source => $source,
+            mode => 644,
+            owner => root,
+            group => root,
         }
     } else {
-        file { &amp;quot;/etc/monit.d/$name&amp;quot;:
-            notify =&amp;gt; Service[&amp;quot;monit&amp;quot;],
-            content =&amp;gt; $content,
-            mode =&amp;gt; 644,
-            owner =&amp;gt; root,
-            group =&amp;gt; root,
+        file { "/etc/monit.d/$name":
+            notify => Service["monit"],
+            content => $content,
+            mode => 644,
+            owner => root,
+            group => root,
         }
     }
 }
-[/sourcecode]
+{% endhighlight %}
 
 Notable features:
-[sourcecode language="plain"] define conf ( $source = '', $content = '' ) [/sourcecode]
+{% highlight text %} define conf ( $source = '', $content = '' ) {% endhighlight %}
 
 This is useful because we can define a config file via either source or content.
 
 I can call this from another module like:
 
-[sourcecode language="plain"]
+{% highlight text %}
 include monit::common
-monit::common::conf { &amp;quot;lighttpd-monit&amp;quot;: source =&amp;gt; &amp;quot;puppet:///lighttpd/lighthttpd-monitrc&amp;quot; }
-[/sourcecode]
+monit::common::conf { "lighttpd-monit": source => "puppet:///lighttpd/lighthttpd-monitrc" }
+{% endhighlight %}
 
 or, if I wanted to template it:
 
-[sourcecode language="plain"]
+{% highlight text %}
 include monit::common
-monit::common::conf { &amp;quot;apache2&amp;quot;: content =&amp;gt; template(&amp;quot;apache2/apache2-monitrc.erb&amp;quot;) }
-[/sourcecode]
+monit::common::conf { "apache2": content => template("apache2/apache2-monitrc.erb") }
+{% endhighlight %}
 
 There's no reason for us not to actually help people out and write common configs for them. This is easy with extra defines.
 
-[sourcecode language="plain"]
+{% highlight text %}
 define simple_service ($pidname = $name) {
-    file { &amp;quot;/etc/monit.d/$name&amp;quot;:
-        notify =&amp;gt; Service[&amp;quot;monit&amp;quot;],
-        content =&amp;gt; template(&amp;quot;monit/simple_service.erb&amp;quot;),
-        mode =&amp;gt; 644,
-        owner =&amp;gt; root,
-        group =&amp;gt; root,
+    file { "/etc/monit.d/$name":
+        notify => Service["monit"],
+        content => template("monit/simple_service.erb"),
+        mode => 644,
+        owner => root,
+        group => root,
     }
 }
-[/sourcecode]
+{% endhighlight %}
 
-[sourcecode language="plain"]
+{% highlight text %}
 include monit::common
-monit::common::simple_service { &amp;quot;apache2&amp;quot;: pidname =&amp;gt; &amp;quot;apache2&amp;quot; }
-[/sourcecode]
+monit::common::simple_service { "apache2": pidname => "apache2" }
+{% endhighlight %}
 
 <h4>Technique #3: Set variables before you include the class</h4>
 
 A good example might be for the mywebapp, I only want apache2 to be listening to the <tt>lo</tt> loopback interface. This would be a dumb default behavior if someone just did
-[sourcecode language="plain"]
+{% highlight text %}
 include apache2
-[/sourcecode]
+{% endhighlight %}
 
 I would probably want it listening on all the public interfaces, by default.
 
@@ -279,26 +279,26 @@ So I can specify configuration variables:
 In 
 
 <b><tt>site/mywebapp/manifests/init.pp</tt></b>
-[sourcecode language="plain"]
+{% highlight text %}
 
 // we only want to have apache2 listening on the loopback
-$apache2_interface = &amp;quot;lo&amp;quot;
+$apache2_interface = "lo"
 
 include apache2
-[/sourcecode]
+{% endhighlight %}
 
 Then, in 
 
 <b><tt>base/apache2/manifests/init.pp</tt></b>
-[sourcecode language="plain"]
+{% highlight text %}
 // if someone set this variable before they included our class, use it
 if($apache2_interface) {
     $interface = $apache2_interface
 } else {
     // by default use '*' which means listen on all interfaces
-    $interface = &amp;quot;*&amp;quot;
+    $interface = "*"
 }
-[/sourcecode]
+{% endhighlight %}
 
 
 I like the idea of a consistent prefixing of configuration variables -- for example, all config variables for module 'foo' would be '$foo_....'
@@ -313,27 +313,27 @@ You must specify a value for <tt>$syslog_server</tt> before including this modul
 </blockquote>
 
 <b><tt>base/syslog-client/manifests/init.pp</tt></b>
-[sourcecode language="plain"]
-    file { &amp;quot;/etc/syslog.conf&amp;quot;:
-        content =&amp;gt; template(syslog-client/syslog.conf.erb),
+{% highlight text %}
+    file { "/etc/syslog.conf":
+        content => template(syslog-client/syslog.conf.erb),
     }
-[/sourcecode]
+{% endhighlight %}
 
 <b><tt>base/syslog-client/templates/syslog.conf.erb</tt></b>
-[sourcecode language="plain"]
+{% highlight text %}
 #
 # Remote Logging
 #
 
 destination d_remote {
-        tcp(&amp;quot;&amp;lt;%= syslog_server %&amp;gt;&amp;quot;, port(514));
+        tcp("<%= syslog_server %>", port(514));
 };
-[/sourcecode]
+{% endhighlight %}
 
 So if someone tries to 
-[sourcecode language="plain"]
+{% highlight text %}
 include syslog-client
-[/sourcecode]
+{% endhighlight %}
 without defining that variable, puppet will error for you.
 
 <p style="color: red">

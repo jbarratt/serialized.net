@@ -4,33 +4,33 @@ layout: post
 title: Interesting hacking around in python, OSX, and the iTunes Library
 wordpress_url: http://wp.serialized.net/?p=113
 ---
-<p>While working on a project for a friend, Amber accidentally deleted a playlist of music. "Uh oh", she said, "it looks like you can&#39;t undo that!". A bit of googling showed that to be the case.</p>
+<p>While working on a project for a friend, Amber accidentally deleted a playlist of music. "Uh oh", she said, "it looks like you can't undo that!". A bit of googling showed that to be the case.</p>
 
-<p>Thankfully, though it&#39;s a bit out of date, we&#39;ve been good(ish) about keeping backups. I thought "I bet I can get the playlist info out of the iTunes library file in the backup!" Sure enough, I mounted the drive, took a look, and there the data was. It wasn&#39;t that useful though.</p>
+<p>Thankfully, though it's a bit out of date, we've been good(ish) about keeping backups. I thought "I bet I can get the playlist info out of the iTunes library file in the backup!" Sure enough, I mounted the drive, took a look, and there the data was. It wasn't that useful though.</p>
 
 
 
 <pre>
- &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;The Special Playlist&lt;/string&gt;
-                        &lt;key&gt;Playlist ID&lt;/key&gt;&lt;integer&gt;14915&lt;/integer&gt;
-                        &lt;key&gt;Playlist Persistent ID&lt;/key&gt;&lt;string&gt;F668E7C09FF9F9AC&lt;/string&gt;
-                        &lt;key&gt;All Items&lt;/key&gt;&lt;true/&gt;
-                        &lt;key&gt;Playlist Items&lt;/key&gt;
-                        &lt;array&gt;
-                                &lt;dict&gt;
-                                        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;3533&lt;/integer&gt;
-                                &lt;/dict&gt;
-                                &lt;dict&gt;
-                                        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;3532&lt;/integer&gt;
-                                &lt;/dict&gt;
-                                &lt;dict&gt;
-                                        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;3527&lt;/integer&gt;
-                                &lt;/dict&gt;
+ <key>Name</key><string>The Special Playlist</string>
+                        <key>Playlist ID</key><integer>14915</integer>
+                        <key>Playlist Persistent ID</key><string>F668E7C09FF9F9AC</string>
+                        <key>All Items</key><true/>
+                        <key>Playlist Items</key>
+                        <array>
+                                <dict>
+                                        <key>Track ID</key><integer>3533</integer>
+                                </dict>
+                                <dict>
+                                        <key>Track ID</key><integer>3532</integer>
+                                </dict>
+                                <dict>
+                                        <key>Track ID</key><integer>3527</integer>
+                                </dict>
 </pre>
 
 
 
-<p>So normally I break out the perl here, and it looked like there was some <span class="caps">CPAN </span>modules to get it done, but the iTunes <span class="caps">XML </span>parser library looks like it wasn&#39;t packaged right and I couldn&#39;t install it via <span class="caps">CPAN, </span>blah blah blah. I&#39;ve been trying to break out the python more often, so searched for &#39;python itunes xml library parse&#39; and found this gem from 2005:</p>
+<p>So normally I break out the perl here, and it looked like there was some <span class="caps">CPAN </span>modules to get it done, but the iTunes <span class="caps">XML </span>parser library looks like it wasn't packaged right and I couldn't install it via <span class="caps">CPAN, </span>blah blah blah. I've been trying to break out the python more often, so searched for 'python itunes xml library parse' and found this gem from 2005:</p>
 
 <p><a href="http://bob.pythonmac.org/archives/2005/07/18/airport-express-hates-me/">Airport Express Hates Me</a></p>
 
@@ -41,19 +41,19 @@ wordpress_url: http://wp.serialized.net/?p=113
 <pre>
 #!/usr/bin/python
 from Foundation import *
-dbFile = &quot;itunes_from_backup.xml&quot;
+dbFile = "itunes_from_backup.xml"
 db = NSDictionary.dictionaryWithContentsOfFile_(dbFile)
 printtrack = {}
 
-for playlist in db[u&#39;Playlists&#39;].itervalues():
-        if playlist[u&#39;Name&#39;] == u&quot;The Special Playlist&quot;:
-                for track in playlist[u&#39;Playlist Items&#39;].itervalues():
-                        printtrack[track[u&#39;Track ID&#39;]] = 1
+for playlist in db[u'Playlists'].itervalues():
+        if playlist[u'Name'] == u"The Special Playlist":
+                for track in playlist[u'Playlist Items'].itervalues():
+                        printtrack[track[u'Track ID']] = 1
                 
-for track in db[u&#39;Tracks&#39;].itervalues():
+for track in db[u'Tracks'].itervalues():
         try:
-                if printtrack[track[u&#39;Track ID&#39;]]:
-                        print &quot;%s: %s, %s&quot; % (track[u&#39;Artist&#39;], track[u&#39;Album&#39;], track[u&#39;Name&#39;])
+                if printtrack[track[u'Track ID']]:
+                        print "%s: %s, %s" % (track[u'Artist'], track[u'Album'], track[u'Name'])
         except:
                 pass
 
@@ -76,4 +76,4 @@ Arcade Fire: Funeral, Neighborhood 2 - Laika</p>
 
 
 
-<p>I <em>think</em> there is a way to look up track information from track ID&#39;s directly, but I couldn&#39;t suss it, hence the double loop with the dictionary for bookkeeping. (Yes, my python looks very perlish, I&#39;m sure.) In any case, the Python Objective C bindings look pretty cool and I plan to explore those further.</p>
+<p>I <em>think</em> there is a way to look up track information from track ID's directly, but I couldn't suss it, hence the double loop with the dictionary for bookkeeping. (Yes, my python looks very perlish, I'm sure.) In any case, the Python Objective C bindings look pretty cool and I plan to explore those further.</p>

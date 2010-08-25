@@ -17,30 +17,30 @@ Once you follow their 'bootstrapping config' and set up your bashrc, it makes th
 So a full install using local::lib would look like:
 Download and unpack local::lib:
 (Warning, update the link to the latest version, this is the current release:)
-[sourcecode]
+{% highlight text %}
 mkdir tmp
  cd tmp
 wget http://search.cpan.org/CPAN/authors/id/A/AP/APEIRON/local-lib-1.004008.tar.gz
 tar -zxvf local-lib-1.004008.tar.gz
-[/sourcecode]
+{% endhighlight %}
 
 cd into the local::lib directory, and then run:
-[sourcecode]
+{% highlight text %}
 perl Makefile.PL --bootstrap
-make test &amp;&amp; make install
-echo 'eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)' &gt;&gt;~/.bash_profile
+make test && make install
+echo 'eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)' >>~/.bash_profile
 . ~/.bash_profile
-[/sourcecode]
+{% endhighlight %}
 
 And you're done! Every time you ssh in, your environment will be set up to use your whole local tree. So even if you want perl's New Fancy Hotness, all it takes is:
-[sourcecode]
+{% highlight text %}
 cpan -i Moose
-[/sourcecode]
+{% endhighlight %}
 
 One caveat if you're using local::lib and trying to run this tool from cron, is that you'll probably want to use a wrapper script to correctly set up the environment. (Sometimes you'll need to set up the environment for your web apps, too -- that can be done via .htaccess.)
 
 Here's an example wrapper script, set up to work on my MediaTemple (gs) account and work with my local::lib setup:
-[sourcecode]
+{% highlight text %}
 #!/bin/bash
 
 #set up environment
@@ -49,23 +49,23 @@ eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
 # run the script
 $HOME/perl5/bin/mycron.pl
-[/sourcecode]
+{% endhighlight %}
 
 To make things work with your webapp, you need some 'SetEnv' commands in the .htaccess. You can do this by just loading the local::lib module and checking the output:
-[sourcecode]
-%&gt; perl -I$HOME/perl5/lib/perl5 -Mlocal::lib 
-export MODULEBUILDRC=&quot;/home/12345/users/.home/perl5/.modulebuildrc&quot;
-export PERL_MM_OPT=&quot;INSTALL_BASE=/home/12345/users/.home/perl5&quot;
-export PERL5LIB=&quot;/home/68601/users/.home/perl5/lib/perl5:/home/12345/users/.home/perl5/lib/perl5/i386-linux-thread-multi:$PERL5LIB&quot;
-export PATH=&quot;/home/12345/users/.home/perl5/bin:$PATH&quot;
-[/sourcecode]
+{% highlight text %}
+%> perl -I$HOME/perl5/lib/perl5 -Mlocal::lib 
+export MODULEBUILDRC="/home/12345/users/.home/perl5/.modulebuildrc"
+export PERL_MM_OPT="INSTALL_BASE=/home/12345/users/.home/perl5"
+export PERL5LIB="/home/68601/users/.home/perl5/lib/perl5:/home/12345/users/.home/perl5/lib/perl5/i386-linux-thread-multi:$PERL5LIB"
+export PATH="/home/12345/users/.home/perl5/bin:$PATH"
+{% endhighlight %}
 
 Each one of those EXPORT statements needs to become a SetEnv statement.
-[sourcecode]
+{% highlight text %}
 # so this:
-#export MODULEBUILDRC=&quot;/home/12345/users/.home/perl5/.modulebuildrc&quot;
+#export MODULEBUILDRC="/home/12345/users/.home/perl5/.modulebuildrc"
 # becomes:
-SetEnv MODULEBUILDRC &quot;/home/12345/users/.home/perl5/.modulebuildrc&quot;
-[/sourcecode]
+SetEnv MODULEBUILDRC "/home/12345/users/.home/perl5/.modulebuildrc"
+{% endhighlight %}
 
 Repeat that for each one of the variable 'export' lines, and you should be good to go! Affordable, scalable, low management overhead shared hosting and an easy way to get modern perl. 

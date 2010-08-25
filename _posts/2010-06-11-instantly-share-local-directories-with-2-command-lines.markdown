@@ -8,18 +8,18 @@ Just came across this useful trick to let anyone browse/download directories you
 
 All you need is a Mac or Linux machine you are logged into, and ssh access to a server on the internet. It uses <a href="http://www.lylebackenroth.com/blog/2009/05/03/serve-your-current-directory-using-a-simple-webserver-python/">this trick</a> I just saw the other day.
 
-[code]
-$ python -m SimpleHTTPServer &amp;
+{% highlight text %}
+$ python -m SimpleHTTPServer &
 $ ssh -R 8080:localhost:8000 my.remote.host
-[/code]
+{% endhighlight %}
 
 Now someone can go to http://my.remote.host:8080/ and be browsing your local directory. Rad. And you see the access that's happening come up in your screen -- SimpleHTTPServer spits it out to you.
 
 When they've got what they need, just 
-[code]
+{% highlight text %}
 my.remote.host$ exit
 $ fg # Brings python back, CTRL-C to exit
-[/code]
+{% endhighlight %}
 
 Sharing over, nice and securely back to normal.
 

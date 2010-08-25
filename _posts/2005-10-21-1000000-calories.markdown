@@ -15,15 +15,15 @@ wordpress_url: http://wp.serialized.net/?p=79
 
 <p>1,000,000/(3,000*5) = 66 days worth of food!</p>
 
-<p>But then I started enumerating the items in my home, and realized it might well be possible. That 50 lb bag of rice in the garage? ~50,000 calories. And there&#39;s food in the pantry, in any soda we might have, the fridge, the freezer.... lots of calories around. Ok. So it might add up.</p>
+<p>But then I started enumerating the items in my home, and realized it might well be possible. That 50 lb bag of rice in the garage? ~50,000 calories. And there's food in the pantry, in any soda we might have, the fridge, the freezer.... lots of calories around. Ok. So it might add up.</p>
 
 <p>Just for fun I picked a fairly densely caloric food (white sugar) and calculated how many calories my pantry would contain if filled entirely with it.</p>
 
-<p>(Sugar 770 cal/cup) * (119.688 cups/cubic foot) * (5&#39; wide * 5&#39; deep * 6&#39; tall pantry) = <b>~ 13,000,000 calories.</b><br />
-(Thanks to <a href="http://www.google.com/search?hl=en&amp;lr=&amp;q=cubic+feet+to+cups&amp;btnG=Search">google</a> for some of the conversions.)</p>
+<p>(Sugar 770 cal/cup) * (119.688 cups/cubic foot) * (5' wide * 5' deep * 6' tall pantry) = <b>~ 13,000,000 calories.</b><br />
+(Thanks to <a href="http://www.google.com/search?hl=en&lr=&q=cubic+feet+to+cups&btnG=Search">google</a> for some of the conversions.)</p>
 
-<p>That&#39;s astonishing! Assuming sugar could actually keep you alive if that&#39;s all you ate, there are enough calories in a small-ish pantryfull to feed a big-eating family of 5 for 2.35 <span class="caps">YEARS</span>!</p>
+<p>That's astonishing! Assuming sugar could actually keep you alive if that's all you ate, there are enough calories in a small-ish pantryfull to feed a big-eating family of 5 for 2.35 <span class="caps">YEARS</span>!</p>
 
 <p>And now back to our regularly scheduled programming.</p>
 
-<p>(In case you are wondering, I don&#39;t have too much free time, though I can see how one would draw that conclusion after reading this. It&#39;s just that, faced with an itch like the fact that instigated this inquiry, I&#39;ve found it&#39;s most efficient for me just to scratch it and get it over with.)</p>
+<p>(In case you are wondering, I don't have too much free time, though I can see how one would draw that conclusion after reading this. It's just that, faced with an itch like the fact that instigated this inquiry, I've found it's most efficient for me just to scratch it and get it over with.)</p>

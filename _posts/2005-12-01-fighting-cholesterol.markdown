@@ -7,9 +7,9 @@ excerpt: |
 
 wordpress_url: http://wp.serialized.net/?p=82
 ---
-<p>I&#39;ve just had doctor&#39;s orders to make some changes to make my cholesterol picture a bit prettier. Apparently my total levels aren&#39;t bad, but my <span class="caps">LDL</span>/HDL ratio leaves something to be desired. To that end, I was wondering how I may look at altering my cooking to help with the other things I&#39;ll be doing. (Primarily exercise and portion control.)</p>
+<p>I've just had doctor's orders to make some changes to make my cholesterol picture a bit prettier. Apparently my total levels aren't bad, but my <span class="caps">LDL</span>/HDL ratio leaves something to be desired. To that end, I was wondering how I may look at altering my cooking to help with the other things I'll be doing. (Primarily exercise and portion control.)</p>
 
-<p>I know the information out there is very volatile -- some of it is biased, some of it is based on flawed studies or has been disproven -- but I thought I&#39;d do an aggregate of what I found and just try and come up with some broad guidelines.</p>
+<p>I know the information out there is very volatile -- some of it is biased, some of it is based on flawed studies or has been disproven -- but I thought I'd do an aggregate of what I found and just try and come up with some broad guidelines.</p>
 
 <h3>Things to avoid</h3>
 Fats solid at room temperature. (Butter, margarine, any animal renderings, cream)<br />
@@ -22,10 +22,10 @@ Beans, esp. Kidney and Red.<br />
 Omega 3: Fish, (Best: salmon, anchovy, sardine, mackerel.) (flaxseed, safflower, sunflower, canola) oil, dark green vegetables.<br />
 Use Olive/Canola oil for cooking and dressings.<br />
 Oat Bran. (2oz/day Improved <span class="caps">LDL</span>/HDL ratios dramatically in one study.)<br />
-Onion! (1/2 a raw onion a day, not sure if it&#39;s worth the tax on my marriage.)<br />
+Onion! (1/2 a raw onion a day, not sure if it's worth the tax on my marriage.)<br />
 Soy Products. (Lowered total, raised <span class="caps">HDL.</span>)<br />
 Soluble fiber. (Apples, grapes, citrus, whole grains: oats, oat bran, brown rice, and legumes and lentils)<br />
-Avacado. (You don&#39;t know how happy I was to see <i>this.</i>)<br />
+Avacado. (You don't know how happy I was to see <i>this.</i>)<br />
 Garlic<br />
 Spinach<br />
 Nuts (Walnuts, cashews, almonds)<br />
@@ -37,10 +37,10 @@ Non-food: "Being slim." Ok, I have a ways to go on <i>that</i> one.
 Tofu Curry over Brown Rice.<br />
 Spinach lightly sauteed in garlic-infused olive oil.<br />
 Nutty whole-grain muffins.<br />
-<span class="caps">SUSHI</span>!!! (Salmon/Mackerel are already on my &#39;favorites&#39; list, nice.)<br />
+<span class="caps">SUSHI</span>!!! (Salmon/Mackerel are already on my 'favorites' list, nice.)<br />
 Homemade brown rice salmon handrolls anybody?<br />
-And so forth. There&#39;s a whole lot of &#39;yum&#39; in that list, and an awful lot of extra-affordable foods as well.</p>
+And so forth. There's a whole lot of 'yum' in that list, and an awful lot of extra-affordable foods as well.</p>
 
-<p>I&#39;m going to have to work on cooking with legumes and lentils, I&#39;ve never really gotten up to speed there. Anyway, I&#39;ll add to this list as I find things, and maybe start gathering some recipes. It&#39;s nice that I have to go get tested again in 6 weeks, it gives me a nice window to be jumping in with both feet.</p>
+<p>I'm going to have to work on cooking with legumes and lentils, I've never really gotten up to speed there. Anyway, I'll add to this list as I find things, and maybe start gathering some recipes. It's nice that I have to go get tested again in 6 weeks, it gives me a nice window to be jumping in with both feet.</p>
 
-<p><b>Update</b>: I just looked down and saw my last entry. [SIGH]. No wonder I&#39;m having problems, look at all those no-no&#39;s. Processed wheat in the pasta, cream, parmesan, animal fats galore... tsk tsk. It&#39;s a good thing I&#39;m on the straight and narrow now :)</p>
+<p><b>Update</b>: I just looked down and saw my last entry. [SIGH]. No wonder I'm having problems, look at all those no-no's. Processed wheat in the pasta, cream, parmesan, animal fats galore... tsk tsk. It's a good thing I'm on the straight and narrow now :)</p>

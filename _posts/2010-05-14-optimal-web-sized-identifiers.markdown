@@ -51,22 +51,22 @@ I sketched up a little script for this article (which you can <a href="http://ax
 
 The goal is, given our constraints, and the fact that we need to use only the characters 0 .. 9, a .. z, A .. Z, (a) how many of those characters do we need, and (b) given that it probably won't be an exact fit, what will our collision probability end up being?
 
-[perl]
+{% highlight perl %}
 my ($items, $probability) = (0,0);
-GetOptions(&quot;items=i&quot; =&gt; \$items, &quot;probability=f&quot; =&gt; \$probability);
+GetOptions("items=i" => \$items, "probability=f" => \$probability);
 
-printf(&quot;Trying to store %d items with a %0.5f chance of collision\n&quot;, $items, $probability);
+printf("Trying to store %d items with a %0.5f chance of collision\n", $items, $probability);
 
 # solve the birthday paradox in terms of 'how big the range should be'
-# http://en.wikipedia.org/wiki/Birthday_paradox#Calculating_the_probability =&gt; wolfram alpha, 'solve for d'
+# http://en.wikipedia.org/wiki/Birthday_paradox#Calculating_the_probability => wolfram alpha, 'solve for d'
 my $max = -1*(($items - 1)*$items)/(2 * log(1-$probability));
 
-print &quot;To do that, we'd need to be working in the range 1:$max\n&quot;;
+print "To do that, we'd need to be working in the range 1:$max\n";
 
 # compare that back to the original formula from Wikipedia and make sure that worked
 my $calculated_prob = get_probability($max, $items);
 
-printf(&quot;probability %0.10f should match your requested probability of %0.10f, or something went wrong.\n&quot;, $calculated_prob, $probability);
+printf("probability %0.10f should match your requested probability of %0.10f, or something went wrong.\n", $calculated_prob, $probability);
 
 # so it does, cool
 # how many bits would it take to represent $max?
@@ -74,30 +74,30 @@ printf(&quot;probability %0.10f should match your requested probability of %0.10
 my $frac_bits = log($max)/log(2);
 my $real_bits = int($frac_bits)+1;
 
-printf(&quot;This can be represented by %0.2f bits (%d)\n&quot;, $frac_bits, $real_bits);
+printf("This can be represented by %0.2f bits (%d)\n", $frac_bits, $real_bits);
 
-# ok, so how about encoding those into URI's? We can use 0-9, a-z and A-Z, which gives 62 &quot;digits&quot;
-# aka base62. $max in base62 can be calculated like we did &quot;how many base2 digits were needed&quot;
+# ok, so how about encoding those into URI's? We can use 0-9, a-z and A-Z, which gives 62 "digits"
+# aka base62. $max in base62 can be calculated like we did "how many base2 digits were needed"
 
 my $base62_digits = int(log($max)/log(62))+1;
 
 
-print &quot;Using 0..9, a..z and A..Z we can represent each object with $base62_digits digits\n&quot;;
+print "Using 0..9, a..z and A..Z we can represent each object with $base62_digits digits\n";
 
-# ok, if we're using 5 digits, what's our actual &quot;space&quot; and what's the probability of a collision?
+# ok, if we're using 5 digits, what's our actual "space" and what's the probability of a collision?
 
 my $newmax = 62**$base62_digits - 1;
 
 # which is actually how many bits?
 my $newbits = int(log($newmax)/log(2));
 
-printf(&quot;Given that we'll have to use %d digits, (%d bits), the real probability of a collision is %0.10f\n&quot;, $base62_digits, $newbits, get_probability($newmax, $items));
+printf("Given that we'll have to use %d digits, (%d bits), the real probability of a collision is %0.10f\n", $base62_digits, $newbits, get_probability($newmax, $items));
 
 sub get_probability {
     my($max, $items) = @_;
     return 1 - (($max - 1)/$max)**(($items*($items-1))/2);
 }
-[/perl]
+{% endhighlight %}
 
 The most mysterious parts of this are probably the formulas. The one in the get_probability subroutine is transcribed right <a href="http://en.wikipedia.org/wiki/Birthday_paradox#Calculating_the_probability">from the Wikipedia page</a>, but the other one is the same formula, solved for a different value. In general, if you need to do this, <a href="http://wolframalpha.com">WolframAlpha</a> is a math nerd's dream come true. I just asked it to "solve (the equation) for d" and got the new formula I needed.
 <a href="http://serialized.net/wp-content/uploads/2010/05/solve_equation.jpg"><img src="http://serialized.net/wp-content/uploads/2010/05/solve_equation.jpg" alt="solve p = 1 - e^((-1*n*(n-1))_2d) for d" title="Solve Equation" width="579" height="379" class="alignnone size-full wp-image-381" /></a>
@@ -110,7 +110,7 @@ Here's the formula I ended up using:
 Here's a few sample runs of the script:
 
 First, using my personal constraints for this project:
-[code]
+{% highlight text %}
 ./hashspace_model -i 20000 -p 0.99
 Trying to store 20000 items with a 0.99000 chance of collision
 To do that, we'd need to be working in the range 1:43427276.7179157
@@ -118,13 +118,13 @@ probability 0.9900000006 should match your requested probability of 0.9900000000
 This can be represented by 25.37 bits (26)
 Using 0..9, a..z and A..Z we can represent each object with 5 digits
 Given that we'll have to use 5 digits, (29 bits), the real probability of a collision is 0.1961141788
-[/code]
+{% endhighlight %}
 
 Cool! So I said I'm ok with a 99% chance of a collision, and the algorithm figured out that in order to do that, I'd need to be using 5 digits of base62. And if I'm using 5 digits of base62, I get 3 more bits than I strictly "need", which means I end up with only about a 1/5 chance of EVER getting a collision.
 
 Let's say I wanted to be more strict, and go "one in a million".
 
-[code]
+{% highlight text %}
 ./hashspace_model -i 20000 -p 0.000001
 Trying to store 20000 items with a 0.000001 chance of collision
 To do that, we'd need to be working in the range 1:199989899999232
@@ -132,7 +132,7 @@ probability 0.0000009992 should match your requested probability of 0.0000010000
 This can be represented by 47.51 bits (48)
 Using 0..9, a..z and A..Z we can represent each object with 8 digits
 Given that we'll have to use 8 digits, (47 bits), the real probability of a collision is 0.0000009103
-[/code]
+{% endhighlight %}
 
 In this case base62 comes pretty close to exactly the dimensions that we want, so we more or less get 1/1,000,000 on the nose with 8 digits.
 
@@ -146,20 +146,20 @@ I chose md5 because.... it seems to work fine. I'm sure there's a better option,
 
 First, you need to know how many bits you want. Thankfully, I know I want 29 bits (thanks, helper script!). I can extract 29 bits of information from it by making a "mask" of 29 1's, which can be done easily like so:
 
-[perl]
+{% highlight perl %}
 my $mask = 2**29 - 1;
-[/perl]
+{% endhighlight %}
 
 So, now I just need a raw integer slice of an md5, and do a "logical and" of that:
 
-[perl]
+{% highlight perl %}
 use Digest::MD5 qw(md5);
 # unpack makes this back into an integer for us
 # L == interpret the data as a 32 bit unsigned long. 
 # See 'perldoc -f pack' for a ton of other options
-my $value = unpack(&quot;L&quot;, md5(&quot;the string we want&quot;));
-$value = $value &amp; $mask;
-[/perl]
+my $value = unpack("L", md5("the string we want"));
+$value = $value & $mask;
+{% endhighlight %}
 
 Groovy. Now we know what number we want to represent, we need to actually represent that in this weird "base62" format.
 
@@ -180,21 +180,21 @@ Simple enough to understand in base10, but the exact same technique works when g
 
 Here's the source for it:
 
-[perl]
-# even though they are letters we are using them here in the role of &quot;digits&quot;
+{% highlight perl %}
+# even though they are letters we are using them here in the role of "digits"
 my @digits = (0 .. 9, 'a' .. 'z', 'A' .. 'Z');
-my %digits = map { $digits[$_] =&gt; $_ } 0 .. $#digits;
+my %digits = map { $digits[$_] => $_ } 0 .. $#digits;
 
 sub to_base {
     my($base, $value) = @_;
-    die &quot;base $base out of range 1-62&quot; unless ($base &gt; 0 &amp;&amp; $base &lt;= 62);
+    die "base $base out of range 1-62" unless ($base > 0 && $base <= 62);
     return $digits[0] if $value == 0;
-    my $rep = &quot;&quot;;
+    my $rep = "";
 
-    while($value &gt; 0) {
-        # prepend the &quot;digit&quot; we get when dividing by the base        
+    while($value > 0) {
+        # prepend the "digit" we get when dividing by the base        
         $rep = $digits[$value % $base ] . $rep;
-        # then &quot;shift right&quot; the working value
+        # then "shift right" the working value
         $value = int( $value / $base );
     }
     return $rep;
@@ -202,7 +202,7 @@ sub to_base {
 
 sub from_base {
     my($base, $rep) = @_;
-    die &quot;base $base out of range 1-62&quot; unless ($base &gt; 0 &amp;&amp; $base &lt;= 62);
+    die "base $base out of range 1-62" unless ($base > 0 && $base <= 62);
     my $value = 0;
     # this pattern grabs a character at a time, left to right
     for ( $rep =~ /./g ) {
@@ -211,7 +211,7 @@ sub from_base {
     }
     return $value;
 }
-[/perl]
+{% endhighlight %}
 
 So there you have it. Provably optimal URI-compatible identifiers with 3 easy steps:
 <ol>

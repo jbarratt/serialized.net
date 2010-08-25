@@ -11,4 +11,4 @@ wordpress_url: http://wp.serialized.net/?p=48
 
 <p><img src="http://serialized.net/img/sleepy-gwen-misha.jpg" width="450" height="356" /></p>
 
-<p>They are getting much better -- they certainly seem to be more comfortable around us and with our presence. They love to snuggle, purring for ever while you pet them -- but  all the while, if you give them the chance to leave, they&#39;ll jet away from you like you are on fire. Baby steps :)</p>
+<p>They are getting much better -- they certainly seem to be more comfortable around us and with our presence. They love to snuggle, purring for ever while you pet them -- but  all the while, if you give them the chance to leave, they'll jet away from you like you are on fire. Baby steps :)</p>

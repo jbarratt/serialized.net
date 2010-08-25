@@ -15,7 +15,7 @@ NAME
        strfry - randomize a string
 
 SYNOPSIS
-       #include &lt;string.h&gt;
+       #include <string.h>
 
        char *strfry(char *string);
 

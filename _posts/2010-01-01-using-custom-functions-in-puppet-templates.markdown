@@ -21,33 +21,33 @@ Anyway. So we want to access this info inside a template.
 
 Assume you have a function called 'get_extdata'.
 You normally call from your '.pp' manifests with something like
-[ruby]
+{% highlight ruby %}
 $data = get_extdata('mymodule', 'path:to:data')
-[/ruby]
+{% endhighlight %}
 
 You can make a call like that from your template by doing this wonderful fragment of magic-wand-waving to get this function accessible:
 
 In <b>mytemplate.erb</b>:
-[code]
-&lt;% Puppet::Parser::Functions.autoloader.loadall %&gt;
+{% highlight text %}
+<% Puppet::Parser::Functions.autoloader.loadall %>
 Now you can use the 'scope' variable to get at your function.
 This is the equivalent of the call get_extdata('mymodule',  'path:to:data'):
-&lt;%= scope.function_get_extdata('mymodule',  'path:to:data') %&gt;
-[/code]
+<%= scope.function_get_extdata('mymodule',  'path:to:data') %>
+{% endhighlight %}
 
 This works like a charm, and means you don't have to create a bunch of variables that you don't really need before you load the template.
 
 So if you were creating an .htpasswd style file with puppet, you could do
 
 In your <b>init.pp</b>
-[ruby]
+{% highlight ruby %}
 $users = ['steve', 'paul', 'stu']
-[/ruby]
+{% endhighlight %}
 
 <b>htpasswd.erb</b>:
-[code]
-&lt;% Puppet::Parser::Functions.autoloader.loadall %&gt;
-&lt;% users.each do |user| -%&gt; 
-&lt;%= user %&gt;:&lt;%= scope.function_get_extdata('authmodule',  user) %&gt;
-&lt;% end -%&gt;
-[/code]
+{% highlight text %}
+<% Puppet::Parser::Functions.autoloader.loadall %>
+<% users.each do |user| -%> 
+<%= user %>:<%= scope.function_get_extdata('authmodule',  user) %>
+<% end -%>
+{% endhighlight %}

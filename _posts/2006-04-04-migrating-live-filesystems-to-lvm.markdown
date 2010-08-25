@@ -7,19 +7,19 @@ excerpt: |
 
 wordpress_url: http://wp.serialized.net/?p=94
 ---
-<p>These days, we build all of our new (linux) hosts with <span class="caps">LVM.</span> This is great since it allows us to quickly bring in new storage in a given file system, be it local or network attached. It also allows a nice graceful way to &#39;hop&#39; a given volume from one storage device to another -- you simply add the new device, then use &#39;pvmove&#39; to move the blocks (while the file system is &#39;live&#39;) from one device to the other, then you remove the old device, and you&#39;re done. All with nary a blip as far as the noble users of the system are concerned.</p>
+<p>These days, we build all of our new (linux) hosts with <span class="caps">LVM.</span> This is great since it allows us to quickly bring in new storage in a given file system, be it local or network attached. It also allows a nice graceful way to 'hop' a given volume from one storage device to another -- you simply add the new device, then use 'pvmove' to move the blocks (while the file system is 'live') from one device to the other, then you remove the old device, and you're done. All with nary a blip as far as the noble users of the system are concerned.</p>
 
-<p>The tricky thing is when you need to do the same thing -- and the host you&#39;re working on is a regular old block device formatted with ext3. What to do? It&#39;s important not to have downtime. This is a big filesystem with lots and lots of data, and even more nastily, lots and lots of hard links. It takes something like rsync 3 hours just to start up, let alone start copying data.</p>
+<p>The tricky thing is when you need to do the same thing -- and the host you're working on is a regular old block device formatted with ext3. What to do? It's important not to have downtime. This is a big filesystem with lots and lots of data, and even more nastily, lots and lots of hard links. It takes something like rsync 3 hours just to start up, let alone start copying data.</p>
 
-<p>The trick came as a flash of insight to one of my esteemed colleagues. Linux has a wonderful software raid facility. In mirror (&#39;raid 1&#39;) mode, it synchronizes 2 block devices. It doesn&#39;t care what filesystem (if any) they are running. It doesn&#39;t care if they&#39;re real devices or other &#39;synthetic&#39; block devices like <span class="caps">LVM.</span> And when they&#39;re in sync, you have 2 block devices that are both identical and &#39;normal&#39;. If you reboot and mount either of the members of the raid, they have full, &#39;normal&#39; filesystems on them.</p>
+<p>The trick came as a flash of insight to one of my esteemed colleagues. Linux has a wonderful software raid facility. In mirror ('raid 1') mode, it synchronizes 2 block devices. It doesn't care what filesystem (if any) they are running. It doesn't care if they're real devices or other 'synthetic' block devices like <span class="caps">LVM.</span> And when they're in sync, you have 2 block devices that are both identical and 'normal'. If you reboot and mount either of the members of the raid, they have full, 'normal' filesystems on them.</p>
 
-<p>So the technique becomes so simple it&#39;s almost self-evident.<br />
+<p>So the technique becomes so simple it's almost self-evident.<br />
 0) <span class="caps">BACKUP BACKUP BACKUP</span><br />
-1) Create your new (LVM&#39;d, if that&#39;s what you wanted) storage<br />
+1) Create your new (LVM'd, if that's what you wanted) storage<br />
 2) Create, with mdadm, a raid 1 where the primary disk is your existing filesystem.<br />
 3) Remount your mount point using your new md device<br />
 4) Watch /proc/mdstat as your drives magically synchronize, staying accessible and live all the while.<br />
 5) Unmount the /dev/md* device, remount your shiny new filesystem, and go away, happy as a clam.</p>
 
-<p>It really illustrates the power of abstracted block devices. We went to a talk given by an engineer from Google who was talking about the future of commodity storage at Google -- they&#39;re looking at building clustered storage which, at the back end, consists of block devices bolted together with<br />
-<a href="http://sourceware.org/cluster/ddraid/">ddraid</a> and some similar but seemingly yet unpublished tools. It&#39;s a cool time to be getting to play with computers for a living.</p>
+<p>It really illustrates the power of abstracted block devices. We went to a talk given by an engineer from Google who was talking about the future of commodity storage at Google -- they're looking at building clustered storage which, at the back end, consists of block devices bolted together with<br />
+<a href="http://sourceware.org/cluster/ddraid/">ddraid</a> and some similar but seemingly yet unpublished tools. It's a cool time to be getting to play with computers for a living.</p>

@@ -4,7 +4,7 @@ layout: post
 title: Eastern Vacation Journal, Monday July 23rd
 wordpress_url: http://wp.serialized.net/?p=105
 ---
-<p>After we tamed the wild beast of the sea (hardly wild, actually) we managed to walk with our sea legs to Camden&#39;s local book store The Owl and Turtle. I was giddy like a school girl, I almost ran through traffic to pick up the last Harry Potter book. After it was in my grasp, I had to fight the urge not to read it as we walked back to our car. Josh had to protect me from on coming cars as my imagination was a blaze. Thinking of the final adventures of Harry, Ron and Hermonine fighting the Dark Lord (i&#39;m a nerd, I know) I was fighting my urge to flip to the back of the book. Bad Amber.</p>
+<p>After we tamed the wild beast of the sea (hardly wild, actually) we managed to walk with our sea legs to Camden's local book store The Owl and Turtle. I was giddy like a school girl, I almost ran through traffic to pick up the last Harry Potter book. After it was in my grasp, I had to fight the urge not to read it as we walked back to our car. Josh had to protect me from on coming cars as my imagination was a blaze. Thinking of the final adventures of Harry, Ron and Hermonine fighting the Dark Lord (i'm a nerd, I know) I was fighting my urge to flip to the back of the book. Bad Amber.</p>
 
 <p><img src="http://serialized.net/images/28.jpg" alt="" /></p>
 

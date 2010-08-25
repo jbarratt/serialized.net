@@ -15,19 +15,19 @@ Ok, not the normal kind of thing you do with Puppet, but it can be done. We just
 Thankfully Puppet lets us define custom facts, so here we go...
 in the module's plugins/facter directory, I created 'epoch_time.rb'.
 
-[sourcecode language="ruby"]
-Facter.add(&quot;epoch_time&quot;) do
+{% highlight ruby %}
+Facter.add("epoch_time") do
         setcode do
                 Time.now.to_i
         end
 end
-[/sourcecode]
+{% endhighlight %}
 
 Then I could use that in templates/heartbeat/cib.xml I said
 
-[sourcecode language="xml"]
- &lt;cib admin_epoch=&quot;&lt;%= epoch_time %&gt;&quot;&gt;
-[/sourcecode]
+{% highlight xml %}
+ <cib admin_epoch="<%= epoch_time %>">
+{% endhighlight %}
 
 Well, that works fine, except for one little issue.
 
@@ -67,19 +67,19 @@ So here was my solution, and as inelegant as it is, it pretty much works.
 </ol>
 
 So the puppet code to make this happen:
-[sourcecode language="ruby"]
-        exec { &quot;add-epoch-cib-xml&quot;:
-                command =&gt; &quot;sed 's/admin_epoch=\&quot;0\&quot;/admin_epoch=\&quot;${epoch_time}\&quot;/' /etc/ha.d/cib.xml-puppet &gt; /etc/ha.d/cib.xml &amp;&amp; cibadmin -R -x /etc/ha.d/cib.xml&quot;,
-                path =&gt; [&quot;/bin&quot;, &quot;/usr/sbin/&quot;],
-                subscribe =&gt; File[&quot;/etc/ha.d/cib.xml-puppet&quot;],
-                refreshonly =&gt; true,
+{% highlight ruby %}
+        exec { "add-epoch-cib-xml":
+                command => "sed 's/admin_epoch=\"0\"/admin_epoch=\"${epoch_time}\"/' /etc/ha.d/cib.xml-puppet > /etc/ha.d/cib.xml && cibadmin -R -x /etc/ha.d/cib.xml",
+                path => ["/bin", "/usr/sbin/"],
+                subscribe => File["/etc/ha.d/cib.xml-puppet"],
+                refreshonly => true,
         }
-        file { &quot;/etc/ha.d/cib.xml-puppet&quot; :
-                type =&gt; 'file',
-                ensure =&gt; 'present',
-                content =&gt; template(&quot;ha_nfsroot/heartbeat/cib.xml&quot;);
+        file { "/etc/ha.d/cib.xml-puppet" :
+                type => 'file',
+                ensure => 'present',
+                content => template("ha_nfsroot/heartbeat/cib.xml");
         }
-[/sourcecode]
+{% endhighlight %}
 
 So I still get to use my very first custom fact (it gets interpolated into the 'sed' command) but I also don't run that terrifying update every time.
 

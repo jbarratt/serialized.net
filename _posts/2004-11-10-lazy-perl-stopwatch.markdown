@@ -18,7 +18,7 @@ wordpress_url: http://wp.serialized.net/?p=27
 use Time::HiRes qw(gettimeofday tv_interval); #get better than 1 second resolution
 
 $t0 = [gettimeofday]; # starting time
-while(&lt;STDIN&gt;)
+while(<STDIN>)
 {
    $t1 = [gettimeofday];
    print tv_interval($t0,$t1); # print elapsed time between enter key hits.
@@ -28,7 +28,7 @@ while(&lt;STDIN&gt;)
 
 
 
-<p>So to use it, run it in a shell, hit [Enter] to start timing, [Enter] again to stop, and you&#39;ll see the elapsed time. Ends up looking something like...</p>
+<p>So to use it, run it in a shell, hit [Enter] to start timing, [Enter] again to stop, and you'll see the elapsed time. Ends up looking something like...</p>
 
 
 <pre>

@@ -23,10 +23,10 @@ Fill in your applescript, replacing only the center "comment" block -- leave the
 
 The core code again, (tweak to fit your accounts and archive mailbox names)
 [plain light="true"]
-tell application &quot;Mail&quot;
+tell application "Mail"
 	set theSelectedMessages to selection
-	set myAccount to &quot;zimbra&quot;
-	set myMailbox to &quot;Archive&quot;
+	set myAccount to "zimbra"
+	set myMailbox to "Archive"
 	repeat with theMessage in theSelectedMessages
 		move theMessage to mailbox myMailbox of account myAccount
 	end repeat
