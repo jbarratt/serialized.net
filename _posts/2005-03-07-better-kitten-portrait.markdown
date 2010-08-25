@@ -7,8 +7,8 @@ excerpt: |
 
 wordpress_url: http://wp.serialized.net/?p=48
 ---
-<p>I broke out the mini-tripod to try and get a better photo of our new kittens, Gwen and Misha. Here they are in all their sleepy cuteness:</p>
+I broke out the mini-tripod to try and get a better photo of our new kittens, Gwen and Misha. Here they are in all their sleepy cuteness:
 
-<p><img src="http://serialized.net/img/sleepy-gwen-misha.jpg" width="450" height="356" /></p>
+<img src="http://serialized.net/img/sleepy-gwen-misha.jpg" width="450" height="356" />
 
-<p>They are getting much better -- they certainly seem to be more comfortable around us and with our presence. They love to snuggle, purring for ever while you pet them -- but  all the while, if you give them the chance to leave, they'll jet away from you like you are on fire. Baby steps :)</p>
+They are getting much better -- they certainly seem to be more comfortable around us and with our presence. They love to snuggle, purring for ever while you pet them -- but  all the while, if you give them the chance to leave, they'll jet away from you like you are on fire. Baby steps :)

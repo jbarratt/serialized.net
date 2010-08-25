@@ -7,18 +7,18 @@ excerpt: |
 
 wordpress_url: http://wp.serialized.net/?p=78
 ---
-<p>Last night was the first time since Amber and I've moved that we actually cooked! I like the way the new kitchen feels, there's much more space in the area near the stove so I can prep and cook much more simultaneously.</p>
+Last night was the first time since Amber and I've moved that we actually cooked! I like the way the new kitchen feels, there's much more space in the area near the stove so I can prep and cook much more simultaneously.
 
-<p>The meal:<br />
+<p>The meal:
 Orange-rosemary glazed grilled pork tenderloin on a bed of mushroom risotto, served with a side salad of mixed greens lightly dressed with olive oil and 10 year old balsamic vinegar.</p>
 
-<p>The only real dissapointment was the wine -- we'd been saving an '01 shiraz from Yering Station in Australia's Yarra Valley, which didn't appear to have travelled too well -- it was corked :/ Not terribly, it was certainly drinkable, but it was a bit sad.</p>
+The only real dissapointment was the wine -- we'd been saving an '01 shiraz from Yering Station in Australia's Yarra Valley, which didn't appear to have travelled too well -- it was corked :/ Not terribly, it was certainly drinkable, but it was a bit sad.
 
-<p>The tenderloin was amazing, it was from Trader Joe's, and I suspect it might have been brined -- it was so tender and succulent. (Yes, I know, <b>tender</b>loin, but still.) I made the glaze by reducing the juice of one freshly squeezed orange with some brown sugar and dried rosemary, and just a hint of red pepper. Tossed it on the grill until 135 and then let it coast over a bit, and yum. The orange/rosemary flavors really came out nicely.</p>
+The tenderloin was amazing, it was from Trader Joe's, and I suspect it might have been brined -- it was so tender and succulent. (Yes, I know, **tender**loin, but still.) I made the glaze by reducing the juice of one freshly squeezed orange with some brown sugar and dried rosemary, and just a hint of red pepper. Tossed it on the grill until 135 and then let it coast over a bit, and yum. The orange/rosemary flavors really came out nicely.
 
-<p>The risotto was my first attempt doing one "by feel" instead of following a recipe, and I was very happy with it. It turns out to be a good food to do intuitively. Just to see if it would work, I chopped a <span class="caps">TON </span>of crimini mushrooms and sweated them with fine red onion it some olive oil.  Because I work right next door to Surfas Restaurant Supply now, I actually had some <a href="https://www.surfasonline.com/products/16897.cfm">Carnaroli</a> to try, and it was fantastic. I just kept adding steaming chicken stock (and then water, after I felt like it was getting a little <i>too</i> flavorful) over low heat with plenty of stirring and frequent tasting. It was neat to feel it go past crunchy to just too chewy to perfection -- soft and creamy with just the /idea/ of al-dente.</p>
+The risotto was my first attempt doing one "by feel" instead of following a recipe, and I was very happy with it. It turns out to be a good food to do intuitively. Just to see if it would work, I chopped a TON of crimini mushrooms and sweated them with fine red onion it some olive oil.  Because I work right next door to Surfas Restaurant Supply now, I actually had some <a href="https://www.surfasonline.com/products/16897.cfm">Carnaroli</a> to try, and it was fantastic. I just kept adding steaming chicken stock (and then water, after I felt like it was getting a little <i>too</i> flavorful) over low heat with plenty of stirring and frequent tasting. It was neat to feel it go past crunchy to just too chewy to perfection -- soft and creamy with just the /idea/ of al-dente.
 
-<p>Amber enjoyed her meal as well -- her only constructive criticism was that I'd been a bit heavy-handed with the <a href="https://www.surfasonline.com/products/9710.cfm">Alaea Salt</a> when I was finishing the tenderloin, which I would agree with if I didn't like it so irrationally much. :)</p>
+Amber enjoyed her meal as well -- her only constructive criticism was that I'd been a bit heavy-handed with the <a href="https://www.surfasonline.com/products/9710.cfm">Alaea Salt</a> when I was finishing the tenderloin, which I would agree with if I didn't like it so irrationally much. :)
 
-All in all, it was a nice welcome home. I've decided my criteria for actually making a place I live in "Home" are:<br />
+All in all, it was a nice welcome home. I've decided my criteria for actually making a place I live in "Home" are:
 <ol><li>That it contain Amber <i>(awwwww)</i></li><li>Internet Access</li><li>That I've cooked in it.</li></ol> Mission accomplished.

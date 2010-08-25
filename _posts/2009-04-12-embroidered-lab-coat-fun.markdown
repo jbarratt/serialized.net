@@ -9,4 +9,4 @@ My colleague, Mr. Rice, has a first name starting with 'D'. This means his chat 
 To celebrate his third year with us I got a embroidered coat made. 
 
 
-<p><a href="http://serialized.net/wp-content/uploads/2009/04/p-607-455-cfb3a32f-e035-4c06-8ff1-eef14d7ab8b0.jpeg"><img src="http://serialized.net/wp-content/uploads/2009/04/p-607-455-cfb3a32f-e035-4c06-8ff1-eef14d7ab8b0.jpeg" alt="" width="224" height="300" class="alignnone size-full wp-image-364" /></a></p>
+<a href="http://serialized.net/wp-content/uploads/2009/04/p-607-455-cfb3a32f-e035-4c06-8ff1-eef14d7ab8b0.jpeg"><img src="http://serialized.net/wp-content/uploads/2009/04/p-607-455-cfb3a32f-e035-4c06-8ff1-eef14d7ab8b0.jpeg" alt="" width="224" height="300" class="alignnone size-full wp-image-364" /></a>

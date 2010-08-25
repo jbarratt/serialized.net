@@ -4,15 +4,15 @@ layout: post
 title: Transparently rating iTunes tracks with Quicksilver
 wordpress_url: http://wp.serialized.net/?p=120
 ---
-<p>I was recently asked about what music I was liking now-a-days by a friend bemoaning the lack of musical cross-pollination since leaving the hallowed halls of our <a href="http://ucla.edu">Alma Mater</a>. </p>
+I was recently asked about what music I was liking now-a-days by a friend bemoaning the lack of musical cross-pollination since leaving the hallowed halls of our <a href="http://ucla.edu">Alma Mater</a>. 
 
-<p>"Well, easy, sir!" I chortled, pulling up a quick search for my 'starred' music in iTunes. Hm. Out of 5573 tracks, I'd bothered to star about 10. </p>
+"Well, easy, sir!" I chortled, pulling up a quick search for my 'starred' music in iTunes. Hm. Out of 5573 tracks, I'd bothered to star about 10. 
 
-<p>I ended up sending him to my <a href="http://www.last.fm/user/jbarratt/">last.fm profile</a> but I've realized that there's not a lot of relationship between 'music I think is awesome' and 'music I listen to frequently.' Because my normal mode is 'shuffle', and I have (see above) 5573 tracks, what shows up in last.fm is more or less randomly weighted by how many tracks I have from a given artist, and is no metric of quality.</p>
+I ended up sending him to my <a href="http://www.last.fm/user/jbarratt/">last.fm profile</a> but I've realized that there's not a lot of relationship between 'music I think is awesome' and 'music I listen to frequently.' Because my normal mode is 'shuffle', and I have (see above) 5573 tracks, what shows up in last.fm is more or less randomly weighted by how many tracks I have from a given artist, and is no metric of quality.
 
-<p>So, I decided to rate more music. The problem is, I listen to music in the background and don't want to bother myself pulling up itunes, finding the track playing now, deciding how many stars to give something, clicking that slot, and going back to what I was doing. Not going to happen. In fact, searching a bit for this problem, I found that <a href="http://www.lowest-common-denominator.com/2007/10/itunes_quicksilver_if_you_like.php">this blog article</a> perfectly captured both my annoyance at the star system <span class="caps">AND </span>provided the perfect solution. </p>
+So, I decided to rate more music. The problem is, I listen to music in the background and don't want to bother myself pulling up itunes, finding the track playing now, deciding how many stars to give something, clicking that slot, and going back to what I was doing. Not going to happen. In fact, searching a bit for this problem, I found that <a href="http://www.lowest-common-denominator.com/2007/10/itunes_quicksilver_if_you_like.php">this blog article</a> perfectly captured both my annoyance at the star system AND provided the perfect solution. 
 
-<p>So now if I like a track, I just pull up quicksilver with some magic that only my fingers remember (cmd-space iirc) and type what's already turned into just 'in...' and boom, I bump the stars up by one.</p>
+So now if I like a track, I just pull up quicksilver with some magic that only my fingers remember (cmd-space iirc) and type what's already turned into just 'in...' and boom, I bump the stars up by one.
 
-<p>Here it is, in action:<br />
+<p>Here it is, in action:
 <img src="http://drop.serialized.net/Results.jpg" alt="" /></p>

@@ -7,4 +7,4 @@ excerpt: |
 
 wordpress_url: http://wp.serialized.net/?p=54
 ---
-<p><a href="http://serialized.net/img/haircut_day.swf">Before and After</a></p>
+<a href="http://serialized.net/img/haircut_day.swf">Before and After</a>

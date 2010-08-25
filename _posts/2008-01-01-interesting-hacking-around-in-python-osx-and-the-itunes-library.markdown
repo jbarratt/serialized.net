@@ -4,9 +4,9 @@ layout: post
 title: Interesting hacking around in python, OSX, and the iTunes Library
 wordpress_url: http://wp.serialized.net/?p=113
 ---
-<p>While working on a project for a friend, Amber accidentally deleted a playlist of music. "Uh oh", she said, "it looks like you can't undo that!". A bit of googling showed that to be the case.</p>
+While working on a project for a friend, Amber accidentally deleted a playlist of music. "Uh oh", she said, "it looks like you can't undo that!". A bit of googling showed that to be the case.
 
-<p>Thankfully, though it's a bit out of date, we've been good(ish) about keeping backups. I thought "I bet I can get the playlist info out of the iTunes library file in the backup!" Sure enough, I mounted the drive, took a look, and there the data was. It wasn't that useful though.</p>
+Thankfully, though it's a bit out of date, we've been good(ish) about keeping backups. I thought "I bet I can get the playlist info out of the iTunes library file in the backup!" Sure enough, I mounted the drive, took a look, and there the data was. It wasn't that useful though.
 
 
 {% highlight xml %}
@@ -28,11 +28,11 @@ wordpress_url: http://wp.serialized.net/?p=113
 
 {% endhighlight %}
 
-<p>So normally I break out the perl here, and it looked like there was some <span class="caps">CPAN </span>modules to get it done, but the iTunes <span class="caps">XML </span>parser library looks like it wasn't packaged right and I couldn't install it via <span class="caps">CPAN, </span>blah blah blah. I've been trying to break out the python more often, so searched for 'python itunes xml library parse' and found this gem from 2005:</p>
+So normally I break out the perl here, and it looked like there was some CPAN modules to get it done, but the iTunes XML parser library looks like it wasn't packaged right and I couldn't install it via CPAN, blah blah blah. I've been trying to break out the python more often, so searched for 'python itunes xml library parse' and found this gem from 2005:
 
-<p><a href="http://bob.pythonmac.org/archives/2005/07/18/airport-express-hates-me/">Airport Express Hates Me</a></p>
+<a href="http://bob.pythonmac.org/archives/2005/07/18/airport-express-hates-me/">Airport Express Hates Me</a>
 
-<p>In which the author uses a neat trick (the Python/Objective C bindings) to parse the iTunes library. After a bit of a bumpy start, I ended up with the following code:</p>
+In which the author uses a neat trick (the Python/Objective C bindings) to parse the iTunes library. After a bit of a bumpy start, I ended up with the following code:
 
 
 {% highlight python %}
@@ -57,19 +57,19 @@ wordpress_url: http://wp.serialized.net/?p=113
 {% endhighlight %}
 
 
-<p>Which yeilds a nice list like:<br />
-Andrew Bird: Armchair Apocrypha, Scythian Empires<br />
-Andrew Bird: Armchair Apocrypha, Self-Torture<br />
-Andrew Bird: Armchair Apocrypha, Simple X<br />
-Andrew Bird: Armchair Apocrypha, Spare-Ohs<br />
-Andrew Bird: Armchair Apocrypha, The Supine<br />
-Andrew Bird: Armchair Apocrypha, Yawny at the Apocalypse<br />
-Arcade Fire: Funeral, Crown Of Love<br />
-Arcade Fire: Funeral, Haiti<br />
-Arcade Fire: Funeral, In The Backseat<br />
-Arcade Fire: Funeral, Neighborhood 1 - Tunnels<br />
+<p>Which yeilds a nice list like:
+Andrew Bird: Armchair Apocrypha, Scythian Empires
+Andrew Bird: Armchair Apocrypha, Self-Torture
+Andrew Bird: Armchair Apocrypha, Simple X
+Andrew Bird: Armchair Apocrypha, Spare-Ohs
+Andrew Bird: Armchair Apocrypha, The Supine
+Andrew Bird: Armchair Apocrypha, Yawny at the Apocalypse
+Arcade Fire: Funeral, Crown Of Love
+Arcade Fire: Funeral, Haiti
+Arcade Fire: Funeral, In The Backseat
+Arcade Fire: Funeral, Neighborhood 1 - Tunnels
 Arcade Fire: Funeral, Neighborhood 2 - Laika</p>
 
 
 
-<p>I <em>think</em> there is a way to look up track information from track ID's directly, but I couldn't suss it, hence the double loop with the dictionary for bookkeeping. (Yes, my python looks very perlish, I'm sure.) In any case, the Python Objective C bindings look pretty cool and I plan to explore those further.</p>
+I <em>think</em> there is a way to look up track information from track ID's directly, but I couldn't suss it, hence the double loop with the dictionary for bookkeeping. (Yes, my python looks very perlish, I'm sure.) In any case, the Python Objective C bindings look pretty cool and I plan to explore those further.

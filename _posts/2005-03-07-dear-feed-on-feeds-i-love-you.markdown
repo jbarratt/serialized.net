@@ -7,18 +7,18 @@ excerpt: |
 
 wordpress_url: http://wp.serialized.net/?p=47
 ---
-If you<br />
+If you
 <ol>
-<li>Have a web server with MySQL and <span class="caps">PHP</span></li>
-<li>Read sites that have <span class="caps">RSS </span>feeds on a semi-regular basis</li>
+<li>Have a web server with MySQL and PHP</li>
+<li>Read sites that have RSS feeds on a semi-regular basis</li>
 <li>Ever use different computers, or can't find a desktop aggregator you like...</li>
 </ol>
-do yourself a favor and install <a href="http://feedonfeeds.com/">Feed On Feeds.</a><br />
+do yourself a favor and install <a href="http://feedonfeeds.com/">Feed On Feeds.</a>
 <p>
-The only notes I have:<br/><br />
-Do use the auto-subscribe bookmarklet.<br/><br />
-Don't forget to set up a cron job to update the feeds.<br/><br />
-Don't forget to htpasswd protect the directory -- every link you click will have your FoF install as the Referrer <span class="caps">URL.</span><br />
+The only notes I have:
+Do use the auto-subscribe bookmarklet.
+Don't forget to set up a cron job to update the feeds.
+Don't forget to htpasswd protect the directory -- every link you click will have your FoF install as the Referrer URL.
 </p>
 
-<p>I think the thing I like best about having an aggregator is that I can happily subscribe to infrequently updating sites <i>cough cough like this one</i> and I just get to see all the updates when they hit my browser. Subscribing to a weblog no longer means having to troll it (in)frequently for updates that might not be coming.</p>
+I think the thing I like best about having an aggregator is that I can happily subscribe to infrequently updating sites <i>cough cough like this one</i> and I just get to see all the updates when they hit my browser. Subscribing to a weblog no longer means having to troll it (in)frequently for updates that might not be coming.

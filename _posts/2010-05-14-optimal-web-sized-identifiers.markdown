@@ -32,16 +32,16 @@ So what are the constraints?
 <li>How tolerant can we be of collisions? (When 2 "objects" might map to the same shortened identifier?)</li>
 </ul>
 
-<h3>URI constraints</h3>
+### URI constraints
 The first 2 are simple and global. There's no real standard on URI length, but <a href="http://www.boutell.com/newfaq/misc/urllength.html ">smart people have done the legwork for us</a> so we'll steal their conclusions, and say "keep URI's shorter than 2,000 characters."
 
 As far as the characters that can be used, we can consult <a href="http://tools.ietf.org/html/rfc3986">RFC 3986</a> in the "Unreserved Characters" section and find we're allowed 0-9, a-z, A-Z, and "- _ . ~" (dash, underscore, dot, tilde.) I'm going to avoid using those because I'd like to keep them for separating my identifiers. So, if we just go with the "normal characters", there's 62 of them.
 
-<h3>Collision Constraints</h3>
+### Collision Constraints
 
 If you assume a hashing function generates numbers pretty randomly spread throughout the number space available to it (which I will for this) there's actually some pretty good math we can use to figure out how likely a collision will be. If you're interested in where this comes from, check out the <a href="http://en.wikipedia.org/wiki/Birthday_paradox">Birthday Paradox</a>, which is nicely written up at Wikipedia. Using the formulas there you can calculate the probability of having 2 keys that collide, as a function of how many things you're trying to insert, and the size of the overall hash space.
 
-<h3>Putting it all together</h3>
+### Putting it all together
 
 First, figure out how many items you want to be able to store. (for me, 20,000 is a high estimate).
 Second, figure out how comfortable you are with having some keys collide. 50/50 odds? (0.5) 1/1000 chance? (0.001)
@@ -140,7 +140,7 @@ If you grab the script to play with, you may need to tweak the printf's and make
 
 Ok, so that tells us how bit our bitspace needs to be, but not how to get a hash, or how to do base62.
 
-<h3>Hashing Function</h3>
+### Hashing Function
 
 I chose md5 because.... it seems to work fine. I'm sure there's a better option, but this is working for now. However, md5 has a lot more bits available than I need. How to just steal a few of them?
 

@@ -18,12 +18,12 @@ So here it is, modified to work with Yammer's (different) API:
 <li> Create the login name and password:
 	<ol>
 	<li>Start the Application Keychain Access (use quicksilver!)</li>
-	<li>Create a new entry:<br />
-		<b>Item name:</b> http://yammer.com<br />
-		<b>Account name:</b> yourname@yourdomain.com<br />
-		<b>Password:</b> If I have to tell you what goes here, stop reading now
+	<li>Create a new entry:
+		**Item name:** http://yammer.com
+		**Account name:** yourname@yourdomain.com
+		**Password:** If I have to tell you what goes here, stop reading now
 	</li>
 	</ol></li>
-<li> Now start Quicksilver, type the period (<b>.</b>) to get a text entry box, type your text, <b>Tab</b>, and type <b>Yammer</b> (or as much of it as you need to.) The first time you'll probably be asked for confirmation to let the tool access the password. Say 'always allow' and enjoy.</li>
+<li> Now start Quicksilver, type the period (**.**) to get a text entry box, type your text, **Tab**, and type **Yammer** (or as much of it as you need to.) The first time you'll probably be asked for confirmation to let the tool access the password. Say 'always allow' and enjoy.</li>
 </ol>
 

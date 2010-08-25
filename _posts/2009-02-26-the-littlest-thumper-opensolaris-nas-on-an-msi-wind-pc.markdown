@@ -51,7 +51,7 @@ Here's the parts and prices:
 <tr><td><a href="http://www.amazon.com/gp/product/B00066IJPQ">1.5 TB SATA Drive</a></td><td>2</td><td>$126.98 ea</td></tr>
 </table>
 
-Total Price: <b>$456.98</b>. (No tax or shipping from Amazon, since I am a Prime Kind Of Guy.)
+Total Price: **$456.98**. (No tax or shipping from Amazon, since I am a Prime Kind Of Guy.)
 Compare that to a <a href="http://www.amazon.com/Data-Robotics-DR04DD10-FireWire-Automated/dp/B001CZ9ZEE/">Drobo</a> for $424.49. 
 For an extra $32 I have a full, 3TB raw storage system instead of just an empty enclosure to start sticking drives into. And the benefits of having a server online, as well -- a drobo's not that fun
 unless you plug it into something.

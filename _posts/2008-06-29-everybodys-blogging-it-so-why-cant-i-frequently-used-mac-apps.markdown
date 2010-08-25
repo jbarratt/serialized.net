@@ -4,9 +4,9 @@ layout: post
 title: "Everybody's blogging it so why can't I: Frequently used Mac Apps"
 wordpress_url: http://wp.serialized.net/?p=125
 ---
-<p>With no information other than the programs, here are the ones I find myself actually using.</p>
+With no information other than the programs, here are the ones I find myself actually using.
 
-<p>No particular order -- semi alphabetical. Enjoy!</p>
+No particular order -- semi alphabetical. Enjoy!
 
 <ul>
 <li><a href="http://www.blacktree.com/">Quicksilver</a></li>
@@ -43,6 +43,6 @@ wordpress_url: http://wp.serialized.net/?p=125
 <li><a href="http://amarsagoo.info/tofu/">Tofu</a></li>
 <li><a href="http://www.parallels.com/en/products/desktop/">Parallels</a></li>
 <li><a href="http://www.virtualbox.org/">VirtualBox</a></li>
-<li><a href="http://www.videolan.org/vlc/"><span class="caps">VLC</span></a></li>
+<li><a href="http://www.videolan.org/vlc/">VLC</a></li>
 <li><a href="http://perian.org/">Perian</a></li>
 </ul>

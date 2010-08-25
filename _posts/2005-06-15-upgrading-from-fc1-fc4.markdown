@@ -4,9 +4,9 @@ layout: post
 title: Upgrading from FC1->FC4
 wordpress_url: http://wp.serialized.net/?p=69
 ---
-I've just upgraded my trusty laptop from Fedora Core 1 (FC1) to Fedora Core 4 (FC4), and thought I'd use this to just note down a few of the problems I had and the solutions. The upgrade itself was pretty painless -- or would have been if I'd not been lazy and skipped checking my media. <span class="caps">CHECK THE MEDIA.</span>
+I've just upgraded my trusty laptop from Fedora Core 1 (FC1) to Fedora Core 4 (FC4), and thought I'd use this to just note down a few of the problems I had and the solutions. The upgrade itself was pretty painless -- or would have been if I'd not been lazy and skipped checking my media. CHECK THE MEDIA.
 
-First, yum wasn't installed. All this required was a trip to a fedora <span class="caps">FTP </span>server and a download of yum and some support staff:
+First, yum wasn't installed. All this required was a trip to a fedora FTP server and a download of yum and some support staff:
 
 * python-elementtree
 * python-urlgrabber

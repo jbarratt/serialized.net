@@ -83,7 +83,7 @@ This breaks down in several ways.
 First, puppet only lets us define a resource once. So if we decide we want a new tool that needs the package `lib-catalyst-rest-perl` installed, or needs to use apache to host some stats HUD,
 we'd have a problem.
 
-<b>`statshud/manifests/init.pp`</b>
+**`statshud/manifests/init.pp`**
 {% highlight text %}
 ...
 package { "apache2": ensure => installed }
@@ -139,7 +139,7 @@ Because of the above threats and virtues, we want to push as much functionality 
 
 So how this looks in practice in puppet-speak:
 
-<b>`mywebapp/manifests/init.pp`</b>
+**`mywebapp/manifests/init.pp`**
 {% highlight text %}
 
 // configure lighttpd module
@@ -271,7 +271,7 @@ So I can specify configuration variables:
 
 In 
 
-<b>`site/mywebapp/manifests/init.pp`</b>
+**`site/mywebapp/manifests/init.pp`**
 {% highlight text %}
 
 // we only want to have apache2 listening on the loopback
@@ -282,7 +282,7 @@ include apache2
 
 Then, in 
 
-<b>`base/apache2/manifests/init.pp`</b>
+**`base/apache2/manifests/init.pp`**
 {% highlight text %}
 // if someone set this variable before they included our class, use it
 if($apache2_interface) {
@@ -303,14 +303,14 @@ We get this pretty much for free, actually. If you specify in your documentation
 
 > You must specify a value for `$syslog_server` before including this module
 
-<b>`base/syslog-client/manifests/init.pp`</b>
+**`base/syslog-client/manifests/init.pp`**
 {% highlight text %}
     file { "/etc/syslog.conf":
         content => template(syslog-client/syslog.conf.erb),
     }
 {% endhighlight %}
 
-<b>`base/syslog-client/templates/syslog.conf.erb`</b>
+**`base/syslog-client/templates/syslog.conf.erb`**
 {% highlight text %}
 #
 # Remote Logging

@@ -28,4 +28,4 @@ Here's the thing, those services aren't always very fast. For example, on a rece
 
 I guess I need to either switch to using an in-browser widget model, or cron a fetch of that data locally on some reasonable interval. That might be a nice service for WordPress to have internally for widget authors: 'cron/cache mode.' Provide a URL to curl periodically that updates the caches on all your active widgets, as well as a global configuration about how fresh you want your data to be.
 
-I don't care if any of those results are more than an hour up to date, I'd much prefer to have my page load time cut by <b>3.24 seconds</b> than have it be up-to-the second accurate.
+I don't care if any of those results are more than an hour up to date, I'd much prefer to have my page load time cut by **3.24 seconds** than have it be up-to-the second accurate.

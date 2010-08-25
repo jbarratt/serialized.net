@@ -10,7 +10,7 @@ Recently, I passed around this <a href="http://picasaweb.google.com/lh/photo/ud1
 
 The Sweet Maria's gent claimed as an aside in that video (which really raises the bar on coffee geekery, truly impressive) that one should always weigh one's water, as the volume changes when it is heated.
 
-I get that the volume changes, but it seemed to me that it can't change <b>that</b> much. I realized this weekend that I had a way to find out exactly how: <a href="http://www.wolframalpha.com/">WolframAlpha</a>. I just had to ask it <a href="http://www.wolframalpha.com/input/?i=volume+of+1kg+of+water+at+90+degrees+celsius">Volume of 1kg of water at 90 degrees Celsius</a> and, lo and behold, it knows!
+I get that the volume changes, but it seemed to me that it can't change **that** much. I realized this weekend that I had a way to find out exactly how: <a href="http://www.wolframalpha.com/">WolframAlpha</a>. I just had to ask it <a href="http://www.wolframalpha.com/input/?i=volume+of+1kg+of+water+at+90+degrees+celsius">Volume of 1kg of water at 90 degrees Celsius</a> and, lo and behold, it knows!
 
 Curious, I punched in a few more numbers, and made the following chart: 
 

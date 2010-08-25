@@ -4,7 +4,7 @@ layout: post
 title: Eastern Vacation Journal, Sunday, July 22
 wordpress_url: http://wp.serialized.net/?p=103
 ---
-<p>Ok, I'm back at the keys -- and glad for all of Amber's entries. I figured I'd do a wrap-up of our days aboard the Mercantile, as her last post was pretty much our first impressions.<br />
+<p>Ok, I'm back at the keys -- and glad for all of Amber's entries. I figured I'd do a wrap-up of our days aboard the Mercantile, as her last post was pretty much our first impressions.
 <img src="http://serialized.net/images/23.jpg" alt="Another one of the windjammers" /></p>
 
 <p><img src="http://serialized.net/images/22.jpg" alt="" class="left" style="float:left" />
@@ -13,30 +13,30 @@ First, the crew was fantastic. They really know how to make you feel at home and
 <p><img src="http://serialized.net/images/18.jpg" alt="" />
 <img src="http://serialized.net/images/24.jpg" alt="" /></p>
 
-<p>The weather started out looking like it was going to be a negative, and ended up being really great. Our first two days were pretty much becalmed, foggy, and rainy, but by day 3, the sun was out, and the wind <span class="caps">FINALLY </span>started to blow. On the calmer days we had a little yawl boat to push us around, so we could actually go somewhere -- but I could imagine the frustration of being <span class="caps">REALLY </span>on a ship like that, with someplace to be, and nothing but the fog and rain to look at. The contrast actually ended up being nice -- the super windy/sunny days were actually a little tiring, and by the end of it I was shocked to find myself hoping for a touch of fog!</p>
+The weather started out looking like it was going to be a negative, and ended up being really great. Our first two days were pretty much becalmed, foggy, and rainy, but by day 3, the sun was out, and the wind FINALLY started to blow. On the calmer days we had a little yawl boat to push us around, so we could actually go somewhere -- but I could imagine the frustration of being REALLY on a ship like that, with someplace to be, and nothing but the fog and rain to look at. The contrast actually ended up being nice -- the super windy/sunny days were actually a little tiring, and by the end of it I was shocked to find myself hoping for a touch of fog!
 
-<p>So, the trip. I would <span class="caps">HIGHLY </span>recommend it to a lot of people, but with some caveats.</p>
+So, the trip. I would HIGHLY recommend it to a lot of people, but with some caveats.
 
-<p>The pros:<br />
+<p>The pros:
 <img src="http://serialized.net/images/20.jpg" alt="" class="right" style="float:right" />
 The food is incredible. The day started with the wood stove firing up around 5:30AM, and hot coffee and hand-made baked goods out at about 6. They were out until 8, when the "real" breakfast was unleashed -- it varied from healthier days (oatmeal etc) to a full-on breakfast with pancakes and sausage, etc. Lunch was served around noon up on deck -- again, everything handmade, a good variety, and really, really, incredible tasting uniformly. Dinner, more of the same.</p>
 
-<p><img src="http://serialized.net/images/19.jpg" alt="" /></p>
+<img src="http://serialized.net/images/19.jpg" alt="" />
 
-<p>The scenery is incredible. You poke up and around the Maine coast, a lot of relatively untouched (or just touched by the rich or isolated) islands, incredible forests coming right to the water, Ospreys and porpoises, incredible sunsets and (if you make it out of bed) sunrises, huge dynamic clouds, lovely fog-shrouding some of the time.... it's great.<br />
+<p>The scenery is incredible. You poke up and around the Maine coast, a lot of relatively untouched (or just touched by the rich or isolated) islands, incredible forests coming right to the water, Ospreys and porpoises, incredible sunsets and (if you make it out of bed) sunrises, huge dynamic clouds, lovely fog-shrouding some of the time.... it's great.
 <img src="http://serialized.net/images/21.jpg" alt="" /></p>
 
-<p>It's really, really relaxing. It's the kind of relaxing that I don't think I've even gotten at a resort on the beach -- I had nothing to do <span class="caps">BUT </span>relax. Take an extra nap, get through some books that have been on my to-read list for a while, do some swimming, get some sun, take some pictures -- you get the idea.</p>
+It's really, really relaxing. It's the kind of relaxing that I don't think I've even gotten at a resort on the beach -- I had nothing to do BUT relax. Take an extra nap, get through some books that have been on my to-read list for a while, do some swimming, get some sun, take some pictures -- you get the idea.
 
-<p>The crews are great. See above. Maybe we had a fluke and got lucky, but all the other boats we saw had similar vibes going on.</p>
+The crews are great. See above. Maybe we had a fluke and got lucky, but all the other boats we saw had similar vibes going on.
 
-<p>Cons:</p>
+Cons:
 
-<p>Pretty much no privacy. Our cabin was tiny (maybe 8'x8') and it didn't have walls, per se, except that they blocked light. Basically, they were curtains made of wood. When the people in the next cabin are whispering, you hear it. Not just that they are whispering, but what they are whispering. It was a romantic getaway in every sense but the physical, if you know what I mean (and I think you do.)</p>
+Pretty much no privacy. Our cabin was tiny (maybe 8'x8') and it didn't have walls, per se, except that they blocked light. Basically, they were curtains made of wood. When the people in the next cabin are whispering, you hear it. Not just that they are whispering, but what they are whispering. It was a romantic getaway in every sense but the physical, if you know what I mean (and I think you do.)
 
-<p>It's pretty rustic. You have to be ok with pumping the toilet by hand, and squinting to read in the cabin by the eensy little light.</p>
+It's pretty rustic. You have to be ok with pumping the toilet by hand, and squinting to read in the cabin by the eensy little light.
 
-<p>In our minds, the pros way outweighed the cons -- as rustic as it was, it beats camping, and at least things were clean. And on a 16 day vacation, we could handle 4 days of reduced privacy. </p>
+In our minds, the pros way outweighed the cons -- as rustic as it was, it beats camping, and at least things were clean. And on a 16 day vacation, we could handle 4 days of reduced privacy. 
 
-<p>I'd totally go again. I would probably ad to my list of things to bring for next time:<br />
+<p>I'd totally go again. I would probably ad to my list of things to bring for next time:
 One of those soft folding chairs you can take camping. Not a lot of seating on board, and it would have been nice to lean back on something. Some extra reading material. A book light for evenings in the cabin. Other than that -- bliss.</p>

@@ -20,80 +20,80 @@ I've retained the original sourcing on all of the WOD's that had them.
 <table>
 <tr>
 <td>
-3 rounds for time of: <br />
-50 Push­ups <br />
-50 Sit­ups <br />
-50 Squats<br />
-<br />
-Four rounds for time of: <br />
-25 Lunges <br />
-50 Squats <br />
-<br />
-Five rounds for time of: <br />
-100 squats <br />
-20 Lunges <br />
-35 push­ups <br />
-<br />
-15 rounds for max reps: <br />
-Pull­ups, 30 seconds on / 30 seconds off <br />
-<br />
-For total time: <br />
-Run 10 minutes max effort <br />
-200 squats <br />
-Run 10 minutes max effort <br />
-(Source: Shane Skowron) <br />
-<br />
-4 rounds: <br />
-50 walking lunges <br />
-50 squats <br />
-Run 400m <br />
-(Source: Shane Skowron) <br />
-<br />
-5 rounds: <br />
-10 burpees <br />
-20 box/bench jumps <br />
-30 pushups <br />
-40 squats <br />
-50 lunges <br />
-(Source: navyseals.com forums)<br />
+3 rounds for time of: 
+50 Push­ups 
+50 Sit­ups 
+50 Squats
+
+Four rounds for time of: 
+25 Lunges 
+50 Squats 
+
+Five rounds for time of: 
+100 squats 
+20 Lunges 
+35 push­ups 
+
+15 rounds for max reps: 
+Pull­ups, 30 seconds on / 30 seconds off 
+
+For total time: 
+Run 10 minutes max effort 
+200 squats 
+Run 10 minutes max effort 
+(Source: Shane Skowron) 
+
+4 rounds: 
+50 walking lunges 
+50 squats 
+Run 400m 
+(Source: Shane Skowron) 
+
+5 rounds: 
+10 burpees 
+20 box/bench jumps 
+30 pushups 
+40 squats 
+50 lunges 
+(Source: navyseals.com forums)
 </td>
 <td>
-Run 5k for time, but every 5:00 do 50 pushups and 50 squats. <br />
-<br />
-1200m uphill sprint  <br />
-Rest 1:00 <br />
-1200m downhill jog <br />
-Rest 1:00 <br />
-Repeat <br />
-<br />
-1:00 sprint / 1:00 rest <br />
-1:00 sprint / 0:50 rest <br />
-1:00 sprint / 0:40 rest <br />
-1:00 sprint / 0:30 rest <br />
-1:00 sprint / 0:20 rest <br />
-1:00 sprint / 0:10 rest <br />
-1:00 sprint / 0:20 rest <br />
-1:00 sprint / 0:30 rest <br />
-1:00 sprint / 0:40 rest <br />
-1:00 sprint / 0:50 rest <br />
-1:00 sprint / 1:00 rest <br />
-(Source:crossfitendurance.com) <br />
-<br />
-10x100m with 2:00 rests <br />
-<br />
-8x200m with 2:00 rests <br />
-<br />
-4x400m with 5:00 rests <br />
-<br />
-8 rounds of: <br />
-80 seconds sprint / 40 seconds recovery <br />
-(Source: crossfitendurance.com) <br />
-<br />
-3 rounds: <br />
-100m sprint / Rest same amount of time you finished the sprint <br />
-200m sprint / Rest same amount of time you finished the sprint <br />
-300m sprint / Rest same amount of time you finished the sprint <br />
-(Source: crossfitendurance.com) <br />
+Run 5k for time, but every 5:00 do 50 pushups and 50 squats. 
+
+1200m uphill sprint  
+Rest 1:00 
+1200m downhill jog 
+Rest 1:00 
+Repeat 
+
+1:00 sprint / 1:00 rest 
+1:00 sprint / 0:50 rest 
+1:00 sprint / 0:40 rest 
+1:00 sprint / 0:30 rest 
+1:00 sprint / 0:20 rest 
+1:00 sprint / 0:10 rest 
+1:00 sprint / 0:20 rest 
+1:00 sprint / 0:30 rest 
+1:00 sprint / 0:40 rest 
+1:00 sprint / 0:50 rest 
+1:00 sprint / 1:00 rest 
+(Source:crossfitendurance.com) 
+
+10x100m with 2:00 rests 
+
+8x200m with 2:00 rests 
+
+4x400m with 5:00 rests 
+
+8 rounds of: 
+80 seconds sprint / 40 seconds recovery 
+(Source: crossfitendurance.com) 
+
+3 rounds: 
+100m sprint / Rest same amount of time you finished the sprint 
+200m sprint / Rest same amount of time you finished the sprint 
+300m sprint / Rest same amount of time you finished the sprint 
+(Source: crossfitendurance.com) 
 </td>
 </tr>
 </table>
