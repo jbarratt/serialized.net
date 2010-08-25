@@ -32,7 +32,7 @@ The core code again, (tweak to fit your accounts and archive mailbox names)
             move theMessage to mailbox myMailbox of account myAccount
         end repeat
     end tell
-[% endhighlight %}
+{% endhighlight %}
 
 It should look something like this:
 ![Automator: Archive Applescript](/images/automator_archive.jpg "Automator: Archive Applescript")

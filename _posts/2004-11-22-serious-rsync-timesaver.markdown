@@ -2,9 +2,6 @@
 wordpress_id: 30
 layout: post
 title: Serious rsync timesaver
-excerpt: |
-  
-
 wordpress_url: http://wp.serialized.net/?p=30
 ---
 I needed a copy of fedora core 3 for a machine I'm building, so I broke out the handy bittorrent link and zinged it to my colocated server. That was nice -- I got about 800k/sec sustained during the download. What was also nice is that the MD5 sums matched -- good files to start with.
@@ -13,7 +10,9 @@ Then I downloaded them to our local fileserver (in case we need them again, plus
 
 So, instead of downloading them again:
 
-rsync -c --existing --stats -e ssh server:download/heidelberg-binary-i386/*.iso .
+{% highlight text %}
+    rsync -c --existing --stats -e ssh server:download/heidelberg-binary-i386/*.iso .
+{% endhighlight %}
 
 Let rsync figure out exactly what portions of the file are screwed up, and then let it correct them for you! The trick turned out to be the '-c' flag, which forces it to do a checksum on the files. (Otherwise, since all the other metadata matches, it won't bother diffing.)
 
