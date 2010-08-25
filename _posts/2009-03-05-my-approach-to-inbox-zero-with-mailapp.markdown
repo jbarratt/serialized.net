@@ -28,7 +28,7 @@ then placed it into the `~/Library/Application Support/Quicksilver/Scripts` dire
 
 I refreshed the catalog, then headed to the triggers view.
 
-<div style="text-align:center;"><img src="http://serialized.net/wp-content/uploads/2009/03/triggers.jpg" alt="Quicksilver Triggers" border="0" width="456" height="395" /></div>
+![Quicksilver Triggers](/images/triggers.jpg "")
 
 So, after processing a bunch of mail, I can select them all with ?-A, or just pick the ones I want normally (clicking, Shift-clicking, or ?-clicking).
 

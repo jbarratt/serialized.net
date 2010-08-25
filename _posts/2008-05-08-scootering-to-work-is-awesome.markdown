@@ -6,7 +6,7 @@ wordpress_url: http://wp.serialized.net/?p=123
 ---
 As most of you who actually read this site know, I've been <del>driving</del> riding to work on a scooter.
 
-<img src="http://drop.serialized.net/IMG_0143_2.jpg" alt="" />
+![img](/images/IMG_0143_2.jpg "")
 
 I just added the shiny topcase, which is cool -- I can store my helmet in there and it carries my laptop bag on the way to work so I don't have to backpack-style it.
 

@@ -14,7 +14,7 @@ I get that the volume changes, but it seemed to me that it can't change **that**
 
 Curious, I punched in a few more numbers, and made the following chart: 
 
-<div style="text-align:center;"><img src="http://serialized.net/wp-content/uploads/2009/10/Water-Volume-vs-Temp.png" alt="Water Volume vs Temp.png" border="0" width="600" height="458" /></div>
+![Water Volume vs Temp.png](/images/Water-Volume-vs-Temp.png "")
 
 So the water expands a pretty impressive 3.5% on it's way from "very cold" to "coffee temp". Assuming you start with water which is not totally chilled, however, the expansion starts to become less of an issue.
 

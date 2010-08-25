@@ -16,4 +16,4 @@ You can install it at [Mozilla Addons](https://addons.mozilla.org/en-US/firefox/
 
 Here is a simple example of it in action:
 
-<img src="http://serialized.net/wp-content/uploads/2009/02/tree-style-tab-sample.jpg" alt="Tree Style Tab Screenshot" border="0" width="234" height="213" />
+![Tree Style Tab Screenshot](/images/tree-style-tab-sample.jpg "")

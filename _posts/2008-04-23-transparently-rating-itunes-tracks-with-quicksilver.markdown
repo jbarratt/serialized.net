@@ -15,4 +15,4 @@ So, I decided to rate more music. The problem is, I listen to music in the backg
 So now if I like a track, I just pull up quicksilver with some magic that only my fingers remember (cmd-space iirc) and type what's already turned into just 'in...' and boom, I bump the stars up by one.
 
 <p>Here it is, in action:
-<img src="http://drop.serialized.net/Results.jpg" alt="" /></p>
+![img](/images/Results.jpg "")</p>

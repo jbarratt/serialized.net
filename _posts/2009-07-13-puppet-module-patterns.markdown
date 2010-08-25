@@ -135,7 +135,7 @@ Because of the above threats and virtues, we want to push as much functionality 
 
 ### Basic Design
 
-<img src="http://serialized.net/wp-content/uploads/2009/07/base_site_modules.png" alt="Puppet Module Designs" title="Puppet Module Designs" width="284" height="194" class="alignnone size-full wp-image-279" />
+![Puppet Module Designs](/images/base_site_modules.png "Puppet Module Designs")
 
 So how this looks in practice in puppet-speak:
 

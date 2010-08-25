@@ -100,12 +100,12 @@ sub get_probability {
 {% endhighlight %}
 
 The most mysterious parts of this are probably the formulas. The one in the get_probability subroutine is transcribed right [from the Wikipedia page](http://en.wikipedia.org/wiki/Birthday_paradox#Calculating_the_probability), but the other one is the same formula, solved for a different value. In general, if you need to do this, [WolframAlpha](http://wolframalpha.com) is a math nerd's dream come true. I just asked it to "solve (the equation) for d" and got the new formula I needed.
-[<img src="http://serialized.net/wp-content/uploads/2010/05/solve_equation.jpg" alt="solve p = 1 - e^((-1*n*(n-1))_2d) for d" title="Solve Equation" width="579" height="379" class="alignnone size-full wp-image-381" />](http://serialized.net/wp-content/uploads/2010/05/solve_equation.jpg)
+[![solve p = 1 - e^((-1*n*(n-1))_2d) for d](/images/solve_equation.jpg "Solve Equation")](http://serialized.net/wp-content/uploads/2010/05/solve_equation.jpg)
 
 The solution actually comes from "show your steps" -- I can find an intermediate form that's easier to represent in a non-math-centric programming language. (I'm sure you can do imaginary numbers in perl, but it was kind of outside the scope of my plans for this evening.)
 
 Here's the formula I ended up using:
-[<img src="http://serialized.net/wp-content/uploads/2010/05/solution.jpg" alt="Solved for D" title="solution" width="107" height="41" class="alignnone size-full wp-image-379" />](http://serialized.net/wp-content/uploads/2010/05/solution.jpg)
+[![Solved for D](/images/solution.jpg "solution")](http://serialized.net/wp-content/uploads/2010/05/solution.jpg)
 
 Here's a few sample runs of the script:
 
