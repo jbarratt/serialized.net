@@ -221,48 +221,50 @@ define conf ( $source = '', $content = '' ) {
 {% endhighlight %}
 
 Notable features:
-{% highlight text %} define conf ( $source = '', $content = '' ) {% endhighlight %}
+{% highlight text %} 
+    define conf ( $source = '', $content = '' ) 
+{% endhighlight %}
 
 This is useful because we can define a config file via either source or content.
 
 I can call this from another module like:
 
 {% highlight text %}
-include monit::common
-monit::common::conf { "lighttpd-monit": source => "puppet:///lighttpd/lighthttpd-monitrc" }
+    include monit::common
+    monit::common::conf { "lighttpd-monit": source => "puppet:///lighttpd/lighthttpd-monitrc" }
 {% endhighlight %}
 
 or, if I wanted to template it:
 
 {% highlight text %}
-include monit::common
-monit::common::conf { "apache2": content => template("apache2/apache2-monitrc.erb") }
+    include monit::common
+    monit::common::conf { "apache2": content => template("apache2/apache2-monitrc.erb") }
 {% endhighlight %}
 
 There's no reason for us not to actually help people out and write common configs for them. This is easy with extra defines.
 
 {% highlight text %}
-define simple_service ($pidname = $name) {
-    file { "/etc/monit.d/$name":
-        notify => Service["monit"],
-        content => template("monit/simple_service.erb"),
-        mode => 644,
-        owner => root,
-        group => root,
+    define simple_service ($pidname = $name) {
+        file { "/etc/monit.d/$name":
+            notify => Service["monit"],
+            content => template("monit/simple_service.erb"),
+            mode => 644,
+            owner => root,
+            group => root,
+        }
     }
-}
 {% endhighlight %}
 
 {% highlight text %}
-include monit::common
-monit::common::simple_service { "apache2": pidname => "apache2" }
+    include monit::common
+    monit::common::simple_service { "apache2": pidname => "apache2" }
 {% endhighlight %}
 
 #### Technique #3: Set variables before you include the class
 
 A good example might be for the mywebapp, I only want apache2 to be listening to the `lo` loopback interface. This would be a dumb default behavior if someone just did
 {% highlight text %}
-include apache2
+    include apache2
 {% endhighlight %}
 
 I would probably want it listening on all the public interfaces, by default.
@@ -274,23 +276,23 @@ In
 **`site/mywebapp/manifests/init.pp`**
 {% highlight text %}
 
-// we only want to have apache2 listening on the loopback
-$apache2_interface = "lo"
+    // we only want to have apache2 listening on the loopback
+    $apache2_interface = "lo"
 
-include apache2
+    include apache2
 {% endhighlight %}
 
 Then, in 
 
 **`base/apache2/manifests/init.pp`**
 {% highlight text %}
-// if someone set this variable before they included our class, use it
-if($apache2_interface) {
-    $interface = $apache2_interface
-} else {
-    // by default use '*' which means listen on all interfaces
-    $interface = "*"
-}
+    // if someone set this variable before they included our class, use it
+    if($apache2_interface) {
+        $interface = $apache2_interface
+    } else {
+        // by default use '*' which means listen on all interfaces
+        $interface = "*"
+    }
 {% endhighlight %}
 
 

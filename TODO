@@ -1,8 +1,5 @@
-- download favicon.ico
-- download images/, img/, software/, wp-content/uploads/
 - merge image trees and make that work
 - fix software to be a sane index (tarballs?)
-- fix all [code] blocks to be {% highlight %} blocks
 - crawl for 404's
 - build google sitemap
 - come up with sane layout of some kind

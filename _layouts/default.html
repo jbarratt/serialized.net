@@ -4,7 +4,8 @@
     <title>{{page.title}} &raquo; serialized.net, notes by Joshua Barratt</title>
     <meta name="description" content="Joshua Barratt's weblog on technology, cooking, and whatever else inspires him" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/grids.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/content.css"/>
     <link rel="stylesheet" type="text/css" href="/style/syntax.css" />
 
     <link rel="alternate" type="application/atom+xml" href="/feed" title="serialized.net Posts RSS feed" />
@@ -12,17 +13,25 @@
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
 </head>
 <body>
-    
-    <div id="mainnav" class="nav">
-        <ul>
-            <li class="active first"><a href="/contact">Contact</a></li>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/archives">Archives</a></li>
-        </ul>
-    </div>
-
-    <div id="content">
-        {{ content }}
+    <div class="page">
+        <div class="head">
+            <ul>
+                <li class="active first"><a href="/contact">Contact</a></li>
+                <li><a href="/">Blog</a></li>
+                <li><a href="/archives">Archives</a></li>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="rightcol">
+                Right Hand Nave Goes Here
+            </div>
+            <div class="main">
+                {{ content }}
+            </div>
+        </div>
+        <div class="foot">
+            Footer. Copyright, etc.
+        </div>
     </div>
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
