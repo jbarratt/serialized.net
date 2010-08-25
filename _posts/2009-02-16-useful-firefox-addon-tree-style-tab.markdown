@@ -16,4 +16,4 @@ You can install it at [Mozilla Addons](https://addons.mozilla.org/en-US/firefox/
 
 Here is a simple example of it in action:
 
-![Tree Style Tab Screenshot](/images/tree-style-tab-sample.jpg "")
+![Tree Style Tab Screenshot](/images/tree-style-tab-sample.jpg)

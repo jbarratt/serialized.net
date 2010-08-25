@@ -9,13 +9,13 @@ I've recently been practicing some songs on my guitar, trying to get them just r
 Cool, so how to slow it down? On a Mac, it's pretty easy. I'm assuming you've got the song in iTunes. (This works if you bought the track from the iTunes store or from any other source that iTunes will play.)
 
 **Step one**, find the song, right-click (or control-click) it, and click "Show in Finder".
-![img](/images/show_in_finder.jpg "")
+![img](/images/show_in_finder.jpg)
 
 **Step two**, right-click (or control-click) the file and open in Quicktime Player.
-![img](/images/open_with_quicktime.jpg "")
+![img](/images/open_with_quicktime.jpg)
 
 **Step 3**, open up the AV Controls Menu:
-![img](/images/show_av_properties.jpg "")
+![img](/images/show_av_properties.jpg)
 
 **Step 4**, tweak away and learn the song!
 
