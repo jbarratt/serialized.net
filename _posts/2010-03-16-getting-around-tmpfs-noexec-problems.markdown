@@ -14,7 +14,7 @@ $ mount | grep noexec
 devpts on /dev/pts type devpts (rw,nosuid,noexec)
 {% endhighlight %}
 
-However, sometimes that's a problem, for example if you run the fantastic <a href="http://www.asic-linux.com.mx/~izto/checkinstall/">checkinstall</a> tool to package software. You might see an error message like this:
+However, sometimes that's a problem, for example if you run the fantastic [checkinstall](http://www.asic-linux.com.mx/~izto/checkinstall/) tool to package software. You might see an error message like this:
 
 {% highlight text %}
 /usr/bin/installwatch: /var/tmp/tmp.SuogJyYftZ/installscript.sh: /bin/sh: bad interpreter: Permission denied

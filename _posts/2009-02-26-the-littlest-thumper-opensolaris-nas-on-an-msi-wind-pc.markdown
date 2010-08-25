@@ -31,7 +31,7 @@ those technologies. (Still haven't figured out a good in-home use for LVS, Varni
 
 That's where the title came from: we use 'Thumpers' a lot at work (actually, Thors now, but the same idea.) Sun's X4540 and X4500 are 48 SATA Disks in 4 Rack units and they run Solaris and use ZFS to do the magic. This is going to be a teensy little version of the same idea.
 
-So, what's the solution. MSI is a well-known maker of 'netbooks', those tiny, battery sipping, low priced laptops. It turns out they made a desktop based on the same Intel Processor, the <a href="http://en.wikipedia.org/wiki/Silverthorne_(CPU)">Atom.</a>  It's the "MSI Wind PC Barebones" and it has a lot of appealing attributes.
+So, what's the solution. MSI is a well-known maker of 'netbooks', those tiny, battery sipping, low priced laptops. It turns out they made a desktop based on the same Intel Processor, the [Atom.](http://en.wikipedia.org/wiki/Silverthorne_(CPU))  It's the "MSI Wind PC Barebones" and it has a lot of appealing attributes.
 <ol>
 <li>Price: It's $155 (but you need to add RAM and disks.)</li>
 <li>Power usage: I haven't hooked up a Kill-a-watt yet but this should be quite efficient.</li>
@@ -45,20 +45,20 @@ more often than system drives.</li>
 Here's the parts and prices:
 <table>
 <tr><th>Part</th><th>Quantity</th><th>Price</th></tr>
-<tr><td><a href="http://www.amazon.com/gp/product/B001E71IE0">MSI Wind PC</a></td><td>1</td><td>$155.99</td></tr>
-<tr><td><a href="http://www.amazon.com/gp/product/B000F7QRTG">2 GB RAM</a></td><td>1</td><td>$24.95</td></tr>
-<tr><td><a href="http://www.amazon.com/gp/product/B000W05O5O">8 GB CF Card</a></td><td>1</td><td>$22.08</td></tr>
-<tr><td><a href="http://www.amazon.com/gp/product/B00066IJPQ">1.5 TB SATA Drive</a></td><td>2</td><td>$126.98 ea</td></tr>
+<tr><td>[MSI Wind PC](http://www.amazon.com/gp/product/B001E71IE0)</td><td>1</td><td>$155.99</td></tr>
+<tr><td>[2 GB RAM](http://www.amazon.com/gp/product/B000F7QRTG)</td><td>1</td><td>$24.95</td></tr>
+<tr><td>[8 GB CF Card](http://www.amazon.com/gp/product/B000W05O5O)</td><td>1</td><td>$22.08</td></tr>
+<tr><td>[1.5 TB SATA Drive](http://www.amazon.com/gp/product/B00066IJPQ)</td><td>2</td><td>$126.98 ea</td></tr>
 </table>
 
 Total Price: **$456.98**. (No tax or shipping from Amazon, since I am a Prime Kind Of Guy.)
-Compare that to a <a href="http://www.amazon.com/Data-Robotics-DR04DD10-FireWire-Automated/dp/B001CZ9ZEE/">Drobo</a> for $424.49. 
+Compare that to a [Drobo](http://www.amazon.com/Data-Robotics-DR04DD10-FireWire-Automated/dp/B001CZ9ZEE/) for $424.49. 
 For an extra $32 I have a full, 3TB raw storage system instead of just an empty enclosure to start sticking drives into. And the benefits of having a server online, as well -- a drobo's not that fun
 unless you plug it into something.
 
-So how do I expand if I need to? Simple! Start adding in USB drives as needed! There is a great <a href="http://blogs.sun.com/constantin/entry/opensolaris_home_server_zfs_and">guide to doing just this</a> on one of the Sun blogs, which includes some nice pointers about how to set this up.
+So how do I expand if I need to? Simple! Start adding in USB drives as needed! There is a great [guide to doing just this](http://blogs.sun.com/constantin/entry/opensolaris_home_server_zfs_and) on one of the Sun blogs, which includes some nice pointers about how to set this up.
 
-The install was CAKE, the hardest part was finding a monitor and keyboard as I am only laptopped at home. Well, the hardest part was making an install USB device, but <a href="http://serialized.net/2009/02/getting-an-opensolaris-bootable-usb-drive/">you already known how to do that.</a>
+The install was CAKE, the hardest part was finding a monitor and keyboard as I am only laptopped at home. Well, the hardest part was making an install USB device, but [you already known how to do that.](http://serialized.net/2009/02/getting-an-opensolaris-bootable-usb-drive/)
 
 Also, to install the CF card into the Wind, I had to remove the motherboard -- that's the only way you can slide it in. Minor annoyance but worth noting.
 

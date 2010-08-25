@@ -6,9 +6,9 @@ wordpress_url: http://serialized.net/?p=238
 ---
 My setup is pretty straightforward, Mail.app speaking IMAP to our company Zimbra server.
 
-I wanted to do <a href="http://www.43folders.com/izero">Inbox Zero</a> because I was sick of losing track of things in the backlog, trying to be clever with flags and "mark as unread", etc.
+I wanted to do [Inbox Zero](http://www.43folders.com/izero) because I was sick of losing track of things in the backlog, trying to be clever with flags and "mark as unread", etc.
 
-My workflow now is to process my inbox down to zero, pulling the information I need to take actions on out with <a href="http://www.earth2adam.com/omnifocus-gtd-actions-from-mail-redux/">this omnifocus technique.</a>
+My workflow now is to process my inbox down to zero, pulling the information I need to take actions on out with [this omnifocus technique.](http://www.earth2adam.com/omnifocus-gtd-actions-from-mail-redux/)
 
 However, when I've processed a message, I don't want to trash it. I needed a way to archive them for later searching. So, I applescripted it.
 

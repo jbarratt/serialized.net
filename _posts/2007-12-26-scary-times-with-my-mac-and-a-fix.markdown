@@ -16,10 +16,10 @@ Here's the thing -- on next boot, I'm looking at the OS X Setup Assistant. Yeah.
 
 Fix:
 
-Thankfully, the fix was easy, after I got my heart rate back down from 210 BPM. I searched in the KB a bit and found: <a href="http://docs.info.apple.com/article.html?artnum=306998">Setup Assistant Appears after Every Restart</a>
+Thankfully, the fix was easy, after I got my heart rate back down from 210 BPM. I searched in the KB a bit and found: [Setup Assistant Appears after Every Restart](http://docs.info.apple.com/article.html?artnum=306998)
 
 And that worked. Start it in safe mode, (hold shift right after power-on 'Bong!') when it gets to the login screen don't login, but hit back arrow, then restart, and viola -- upgrades continued like they should have, and on next reboot I was normal.
 
 All's well that ends well, but this DID make me want to get my backups back in shape one way or another; no more waiting around for SuperDuper to get Leopard-ready. (Even though his latest update suggests I could be good to go within a week... it's rsync time, at least.)
 
-Edit: Turns out the rsync was is easy. <a href="http://jwz.livejournal.com/801607.html">Just listen to jwz.</a>
+Edit: Turns out the rsync was is easy. [Just listen to jwz.](http://jwz.livejournal.com/801607.html)

@@ -7,7 +7,7 @@ excerpt: |
 
 wordpress_url: http://wp.serialized.net/?p=51
 ---
-I originally found out about the book <a href="http://www.amazon.com/exec/obidos/tg/detail/-/4770029497">The Breakaway Japanese Kitchen</a> when I read the recipe for <a href="http://www.shiokadelicious.com/shiokadelicious/2004/09/imbb_8_part_ii_.html">Boozy Potatoes</a> at the food blog <a href="http://www.shiokadelicious.com">shiokadelicious</a>. I made the recipe and loved it. I already loved the idea of bringing asian flavors into more traditionally western meals, and this was a delicious step on the same road. (Soy, Lemongrass, Ginger, Lime Zest or Kaffir Lime Leaves, chilies, Sake... what would my life be like without those flavors?) The book itself looked interesting so I put it on my Amazon wish list.
+I originally found out about the book [The Breakaway Japanese Kitchen](http://www.amazon.com/exec/obidos/tg/detail/-/4770029497) when I read the recipe for [Boozy Potatoes](http://www.shiokadelicious.com/shiokadelicious/2004/09/imbb_8_part_ii_.html) at the food blog [shiokadelicious](http://www.shiokadelicious.com). I made the recipe and loved it. I already loved the idea of bringing asian flavors into more traditionally western meals, and this was a delicious step on the same road. (Soy, Lemongrass, Ginger, Lime Zest or Kaffir Lime Leaves, chilies, Sake... what would my life be like without those flavors?) The book itself looked interesting so I put it on my Amazon wish list.
 
 My birthday's coming up this weekend, so my parents-in-law went happily nuts on my wish list, gifting me some long awaited and long anticipated titles. "Breakaway" is my current favorite by far.
 
@@ -19,8 +19,8 @@ The 'cole slaw' was a perfect match. It also was layered and balanced -- a blend
 
 All of the recipes have some common traits:<ol><li>Healthy! Lots of fresh ingredients, fats used sparingly, but not in a "oh look we're avoiding fat" kind of way.</li><li>That deep layering of flavor</li><li>Some uncommon ingredients, but at least consistently uncommon. He introduces some relatively unknown ingredients -- but there are only about 5 or 6, and he draws heavily on those throughout the book. You don't have to buy out the asian market just to start cooking.</li></ol>
 
-<p>One of my favorite finds in all of this is that Eric has a <a href="http://www.ericskitchen.com/">website</a> as well, which is full of great content.
+<p>One of my favorite finds in all of this is that Eric has a [website](http://www.ericskitchen.com/) as well, which is full of great content.
 Be sure and check out the essays, including <a href="http://www.ericskitchen.com/selected_essays03.html">Why I Like Chopsticks,
-Even for Ice Cream</a> and the <a href="http://www.ericskitchen.com/recent_dinners01.html">Recent Dinners</a> section -- a killer value add, hinting at some new recipes while giving suggestions on how to group recipes from the book into a meal.</p>
+Even for Ice Cream</a> and the [Recent Dinners](http://www.ericskitchen.com/recent_dinners01.html) section -- a killer value add, hinting at some new recipes while giving suggestions on how to group recipes from the book into a meal.</p>
 
-The only thing I'm really curious about now is figuring out a decent source of <a href="http://www-ang.kfunigraz.ac.at/~katzer/engl/generic_frame.html?Peri_fru.html">shiso</a>. (It's in almost every recipe!) Hopefully I'll be able to track something down closer than making a trip to <a href="http://www.99ranch.com/">99 Ranch</a> in Van Nuys.
+The only thing I'm really curious about now is figuring out a decent source of [shiso](http://www-ang.kfunigraz.ac.at/~katzer/engl/generic_frame.html?Peri_fru.html). (It's in almost every recipe!) Hopefully I'll be able to track something down closer than making a trip to [99 Ranch](http://www.99ranch.com/) in Van Nuys.

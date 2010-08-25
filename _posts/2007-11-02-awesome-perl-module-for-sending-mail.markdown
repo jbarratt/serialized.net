@@ -6,7 +6,7 @@ wordpress_url: http://wp.serialized.net/?p=111
 ---
 I found a perl module today which made me disproportionately happy; thus, I decided to share.
 
-<a href="http://search.cpan.org/~rjbs/MIME-Lite-3.020/lib/MIME/Lite.pm">MIME::Lite</a>
+[MIME::Lite](http://search.cpan.org/~rjbs/MIME-Lite-3.020/lib/MIME/Lite.pm)
 
 Check out, specifically, the example of sending email "with images attached".
 

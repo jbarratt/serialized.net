@@ -4,13 +4,13 @@ layout: post
 title: How to catch up on a 100-something-challenge
 wordpress_url: http://serialized.net/?p=208
 ---
-I have seen a lot of 100 something-or-other challenges online recently -- I'm currently, as I mentioned, doing the 100 burpee challenge from <a href="http://www.crossfitsantacruz.com/crossfit_santa_cruz/burpee-challenge-details.html">Crossfit Santa Cruz.</a>
+I have seen a lot of 100 something-or-other challenges online recently -- I'm currently, as I mentioned, doing the 100 burpee challenge from [Crossfit Santa Cruz.](http://www.crossfitsantacruz.com/crossfit_santa_cruz/burpee-challenge-details.html)
 
-Here's the problem: I started the challenge on Jan 1st, and I became a <a href="http://carterbarratt.com">new dad</a> on Jan 10th. I managed to do <a href="http://twitter.com/jbarratt/status/1112197431">some of them</a>, but I find myself behind.
+Here's the problem: I started the challenge on Jan 1st, and I became a [new dad](http://carterbarratt.com) on Jan 10th. I managed to do [some of them](http://twitter.com/jbarratt/status/1112197431), but I find myself behind.
 
 The rule is, generally, that you need to do all the ones you missed. So if you missed, as I did, the 12th, 13th, 14th, 15th, 16th, 17th, and 18th (yikes) that means I need to do (12+13+14+15+16+17+18) = 105. It's cool, I'm good for it.
 
-But it's kind of annoying to punch all those numbers into a calculator to find the number, and there's a good chance I'd typo something. Thankfully there is a math trick (with a good explanation over at <a href="http://www.wikihow.com/Sum-the-Integers-from-1-to-N">WikiHow</a> for how to do it and how it works) for finding the sum of all the numbers from 1 to some number 'N'. Short version, the sum is 
+But it's kind of annoying to punch all those numbers into a calculator to find the number, and there's a good chance I'd typo something. Thankfully there is a math trick (with a good explanation over at [WikiHow](http://www.wikihow.com/Sum-the-Integers-from-1-to-N) for how to do it and how it works) for finding the sum of all the numbers from 1 to some number 'N'. Short version, the sum is 
 
 {% highlight text %}
 (N*(N+1))/2

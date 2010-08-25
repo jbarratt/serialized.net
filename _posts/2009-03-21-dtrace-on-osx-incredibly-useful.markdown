@@ -11,7 +11,7 @@ In any case, it's easy to install on a Mac if you've got MacPorts set up:
 
 However, the install takes a LOOOONG time. So long, I was wondering if something had gotten hung. I could see (and hear from the fans doing their best) that the CPU was busy. Running top just showed that a process named ghc (the Haskell compiler itself) was working in some way. But DTrace shows exactly what's going on.
 
-This trivial example (from Brendan Gregg's <a href="http://www.brendangregg.com/DTrace/dtrace_oneliners.txt">DTrace Oneliners</a>) shows the files getting opened by matching the 'open' system call, when it's entered, and printing out the name of the app that called it (execname) and the first argument to that function -- in other words, the file.
+This trivial example (from Brendan Gregg's [DTrace Oneliners](http://www.brendangregg.com/DTrace/dtrace_oneliners.txt)) shows the files getting opened by matching the 'open' system call, when it's entered, and printing out the name of the app that called it (execname) and the first argument to that function -- in other words, the file.
 
 <code>sudo dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }'</code>
 

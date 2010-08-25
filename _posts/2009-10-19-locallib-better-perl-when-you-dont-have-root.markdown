@@ -6,11 +6,11 @@ wordpress_url: http://serialized.net/?p=313
 ---
 These days as we move increasingly to 'the clouds', it's becoming common to get a server where you've got local root. However, those (from a provider and a user perspective) aren't always the best way to go. Those are more expensive to provide (dedicated IP's, more dedicated resources on the server) and thus more expensive to buy. Also, in some use cases they might not scale so well if you're buying a lower end one -- if you buy 256MB of RAM, it's pretty easy to push that into the red. On the administration side, the bar is raised for what you need to be able to do to solve simple problems. Adding an email account, or setting up the web server -- all of these are solvable, and control panels can help, but what if you just want to serve some content? Why deal with it?
 
-So, we still have shared hosting, in it's various forms. I like the <a href="http://mediatemple.net">(mt) Grid Server</a>, but I will admit to being biased (a lot.)
+So, we still have shared hosting, in it's various forms. I like the [(mt) Grid Server](http://mediatemple.net), but I will admit to being biased (a lot.)
 
 So with shared hosting, you don't have root. And managing software you need (to get useful web applications up and running) can be a pain -- a lot of the documentation is biased towards the idea that you have a full server, be it virtual or physical.
 
-If you don't have root on your server, and you're using perl (for any of the amazing Modern Perl tools and stacks out there,) I recommend checking out the awesome <a href="http://search.cpan.org/perldoc?local::lib">local::lib</a>.
+If you don't have root on your server, and you're using perl (for any of the amazing Modern Perl tools and stacks out there,) I recommend checking out the awesome [local::lib](http://search.cpan.org/perldoc?local::lib).
 
 Once you follow their 'bootstrapping config' and set up your bashrc, it makes things feel like you're on your own server. Just 'cpan -i WordPress::Post' or './Build install', and it just works!
 

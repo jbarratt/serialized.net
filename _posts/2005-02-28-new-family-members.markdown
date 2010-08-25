@@ -11,8 +11,8 @@ Amber and I adopted 2 kittens this weekend. They've both had a rough start in li
 
 ### Gwen
 <img src="http://serialized.net/gwen-small.jpg" width=300/>
-She's a <a href="http://animal.discovery.com/guides/cats/selector/profile.jsp?id=4080">Tonkinese</a> mix, as best they can tell. She's the fiesty one -- she likes to unleash a cute rumbly little growl when you are intruding on her space. We also found that she crawls into our bed, waaay under the covers, for snuggly little naps -- so if you come and visit, do the 'pat test' before you sit on the bed.
+She's a [Tonkinese](http://animal.discovery.com/guides/cats/selector/profile.jsp?id=4080) mix, as best they can tell. She's the fiesty one -- she likes to unleash a cute rumbly little growl when you are intruding on her space. We also found that she crawls into our bed, waaay under the covers, for snuggly little naps -- so if you come and visit, do the 'pat test' before you sit on the bed.
 
 ### Misha
 <img src="http://serialized.net/misha-small.jpg" width=300/>
-Misha's a <a href="http://animal.discovery.com/guides/cats/selector/profile.jsp?id=3020">Korat</a> mix (again, as far as we can tell.) She's the braver one, happy to sit out in the middle of the floor and actually look at us, instead of always sneaking around the baseboards.
+Misha's a [Korat](http://animal.discovery.com/guides/cats/selector/profile.jsp?id=3020) mix (again, as far as we can tell.) She's the braver one, happy to sit out in the middle of the floor and actually look at us, instead of always sneaking around the baseboards.

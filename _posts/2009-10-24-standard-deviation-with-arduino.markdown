@@ -10,13 +10,13 @@ The issue was that the sensor was fine, except when it was rapidly transitioning
 
 <img src="http://serialized.net/wp-content/uploads/2009/10/119421176_e1c82c8298-300x199.jpg" alt="Delicious Arduino" title="Delicious Arduino" width="300" height="199" class="alignright size-medium wp-image-326" />
 
-We talked about various ways of detecting this case, but the most straightforward one seemed to be <a href="http://en.wikipedia.org/wiki/Standard_Deviation">Standard Deviation</a>, which Wikipedia explains much more clearly than I could.
+We talked about various ways of detecting this case, but the most straightforward one seemed to be [Standard Deviation](http://en.wikipedia.org/wiki/Standard_Deviation), which Wikipedia explains much more clearly than I could.
 
 I googled around for sample code or a library and didn't find any. So even if my Google-fu is weak and there are great resources out there, now there's another one.
 
 The basic idea is that we take 10 samples quickly (20 ms apart), figure out the Standard Deviation, and if that's close enough to zero, we can call this a "stable temperature."
 
-The <a href="http://hub.serialized.net/gitweb/?p=arduino.git;a=blob_plain;f=Standard_Deviation/Standard_Deviation.pde;hb=HEAD">full code</a> is available from <a href="http://hub.serialized.net/gitweb/">my git repository</a>, but here's the core of it:
+The [full code](http://hub.serialized.net/gitweb/?p=arduino.git;a=blob_plain;f=Standard_Deviation/Standard_Deviation.pde;hb=HEAD) is available from [my git repository](http://hub.serialized.net/gitweb/), but here's the core of it:
 
 {% highlight c %}
   // Gather sample data

@@ -29,7 +29,7 @@ After leaving Ithaca, we headed to Philadelphia. I got a deal at the Sofitel, th
 <p><img src="http://serialized.net/images/29.jpg" alt="" />
 A monster cheesesteak.</p>
 
-The real bright spot was the <a href="http://en.wikipedia.org/wiki/Reading_Terminal_Market">Reading Terminal Market</a> -- full of incredible food and people who care about it. I got an 'authentic' cheesesteak from one of the stalls recommended on Chowhound by a local, and Amber got a really good selection of antipasto from a Salumeria. My sandwich was pretty large, and by far the best of it's kind I've ever had. (As you'd expect/hope, it being the home of it's genre, of course.)  The best word for it (and what set it apart from others I've tried) was 'balanced'. There was a far smaller amount of meat and cheese than I expected, but it was a perfect amount when set against the fresh-that-morning italian roll. 
+The real bright spot was the [Reading Terminal Market](http://en.wikipedia.org/wiki/Reading_Terminal_Market) -- full of incredible food and people who care about it. I got an 'authentic' cheesesteak from one of the stalls recommended on Chowhound by a local, and Amber got a really good selection of antipasto from a Salumeria. My sandwich was pretty large, and by far the best of it's kind I've ever had. (As you'd expect/hope, it being the home of it's genre, of course.)  The best word for it (and what set it apart from others I've tried) was 'balanced'. There was a far smaller amount of meat and cheese than I expected, but it was a perfect amount when set against the fresh-that-morning italian roll. 
 
 In other news, I'm going to be fasting for 20 days once I get home. This trip has not been a step forward on my path towards fitness, that's for sure.
 

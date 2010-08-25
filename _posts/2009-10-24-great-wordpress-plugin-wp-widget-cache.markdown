@@ -4,7 +4,7 @@ layout: post
 title: "Great WordPress Plugin: WP Widget Cache"
 wordpress_url: http://serialized.net/?p=333
 ---
-Using <a href="http://wordpress.org/extend/plugins/wp-widget-cache/">WP Widget Cache</a>, I improved my site load time by about 600% by just starting to cache the widgets.
+Using [WP Widget Cache](http://wordpress.org/extend/plugins/wp-widget-cache/), I improved my site load time by about 600% by just starting to cache the widgets.
 
 Here are some screenshots from my strace-based 'magic profiler' (which I still promise to talk more about later.)
 It lets you attach to a process which is about to render your website, and then trace all the interactions it has with the underlying system while it renders it.

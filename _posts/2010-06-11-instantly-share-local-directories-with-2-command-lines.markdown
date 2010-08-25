@@ -6,7 +6,7 @@ wordpress_url: http://serialized.net/?p=385
 ---
 Just came across this useful trick to let anyone browse/download directories you want to share in seconds.
 
-All you need is a Mac or Linux machine you are logged into, and ssh access to a server on the internet. It uses <a href="http://www.lylebackenroth.com/blog/2009/05/03/serve-your-current-directory-using-a-simple-webserver-python/">this trick</a> I just saw the other day.
+All you need is a Mac or Linux machine you are logged into, and ssh access to a server on the internet. It uses [this trick](http://www.lylebackenroth.com/blog/2009/05/03/serve-your-current-directory-using-a-simple-webserver-python/) I just saw the other day.
 
 {% highlight text %}
 $ python -m SimpleHTTPServer &

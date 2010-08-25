@@ -4,12 +4,12 @@ layout: post
 title: When you don't even have a pullup bar...
 wordpress_url: http://serialized.net/?p=240
 ---
-I haven't talked about it much on this site, other than on my <a href="http://twitter.com/jbarratt">twitter feed</a>, but I'm really enjoying a fitness program I've been doing called <a href="http://crossfit.com">CrossFit.</a> (I go to <a href="http://culvercitycrossfit.com">Culver City Crossfit</a> and it is awesome.)
+I haven't talked about it much on this site, other than on my [twitter feed](http://twitter.com/jbarratt), but I'm really enjoying a fitness program I've been doing called [CrossFit.](http://crossfit.com) (I go to [Culver City Crossfit](http://culvercitycrossfit.com) and it is awesome.)
 
 In any case, there have been days (like this Friday) where for some reason I can't make it. No problem, CrossFit can be done anywhere. However, a lot of the workouts, at the very least, require a pullup bar. I really want to get one for my house and office, but haven't done that yet. Also, I wanted to find workouts I could do on the road as well where the equipment I've got on me is extremely limited. (Kettlebells and Packing Light don't really go that well together.)
 
 I googled for "CrossFit Bodyweight" and found this great document:
-<a href="http://www.crossfitevolution.com/bodyweight-wods/">Bodyweight WOD's.</a> (A 'WOD' is the Workout Of The Day, the workout a given CrossFit affiliate has their athletes do that day.)
+[Bodyweight WOD's.](http://www.crossfitevolution.com/bodyweight-wods/) (A 'WOD' is the Workout Of The Day, the workout a given CrossFit affiliate has their athletes do that day.)
 
 Lots of them still require the ability to do pullups (again, no bar) or include moves that I'm still working on, like handstand pushups or 1-legged squats.
 

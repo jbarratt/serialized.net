@@ -29,6 +29,6 @@ Here's the `.bashrc` entry I used:
 {% endhighlight %}
 
 
-The 'guts' came from an entry in the <a href="http://www.unix.org.ua/orelly/perl/cookbook/ch08_07.htm">Perl Cookbook</a>, worth checking out due to their description of how it actually works. It's a neat idea. Basically, you look at each line one by one. Each time you do you have a 1/(line number) chance of choosing that line as the one you'll output. So if you just have one line, you've got a 1/1 chance of choosing that line. If you have 2, you start out with a taking the first line, and then having a 1/2 chance of picking the second -- giving you 50/50 odds you'll have either the first or the second. It extends nicely.
+The 'guts' came from an entry in the [Perl Cookbook](http://www.unix.org.ua/orelly/perl/cookbook/ch08_07.htm), worth checking out due to their description of how it actually works. It's a neat idea. Basically, you look at each line one by one. Each time you do you have a 1/(line number) chance of choosing that line as the one you'll output. So if you just have one line, you've got a 1/1 chance of choosing that line. If you have 2, you start out with a taking the first line, and then having a 1/2 chance of picking the second -- giving you 50/50 odds you'll have either the first or the second. It extends nicely.
 
-Anyway, thanks to this, I'm currently listening to a cd I forgot I bought years ago which I'm really digging, fit my mood perfectly. <a href="http://www.amazon.com/exec/obidos/ASIN/B000003BKZ">The Blue Moods of Spain</a>
+Anyway, thanks to this, I'm currently listening to a cd I forgot I bought years ago which I'm really digging, fit my mood perfectly. [The Blue Moods of Spain](http://www.amazon.com/exec/obidos/ASIN/B000003BKZ)

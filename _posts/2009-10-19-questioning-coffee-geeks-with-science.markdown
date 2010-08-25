@@ -6,11 +6,11 @@ wordpress_url: http://serialized.net/?p=307
 ---
 There are a few people I work with who are very passionate about coffee, which is something I enjoy very much as well, and have been known to geek out on.
 
-Recently, I passed around this <a href="http://picasaweb.google.com/lh/photo/ud1WWrBF2BOHnAl8FvvSyQ?feat=embedwebsite">video from Sweet Maria's</a>, which is one of the bean providers the most enthusiastic of said co-workers shops with.
+Recently, I passed around this [video from Sweet Maria's](http://picasaweb.google.com/lh/photo/ud1WWrBF2BOHnAl8FvvSyQ?feat=embedwebsite), which is one of the bean providers the most enthusiastic of said co-workers shops with.
 
 The Sweet Maria's gent claimed as an aside in that video (which really raises the bar on coffee geekery, truly impressive) that one should always weigh one's water, as the volume changes when it is heated.
 
-I get that the volume changes, but it seemed to me that it can't change **that** much. I realized this weekend that I had a way to find out exactly how: <a href="http://www.wolframalpha.com/">WolframAlpha</a>. I just had to ask it <a href="http://www.wolframalpha.com/input/?i=volume+of+1kg+of+water+at+90+degrees+celsius">Volume of 1kg of water at 90 degrees Celsius</a> and, lo and behold, it knows!
+I get that the volume changes, but it seemed to me that it can't change **that** much. I realized this weekend that I had a way to find out exactly how: [WolframAlpha](http://www.wolframalpha.com/). I just had to ask it [Volume of 1kg of water at 90 degrees Celsius](http://www.wolframalpha.com/input/?i=volume+of+1kg+of+water+at+90+degrees+celsius) and, lo and behold, it knows!
 
 Curious, I punched in a few more numbers, and made the following chart: 
 
@@ -24,4 +24,4 @@ But if you're making any kind of serious volume, 3.5% might actually start to ha
 
 I'd say we have to call this geek "Plausible." But I'm still not weighing my water.
 
-Aside: if anyone knows how to use WolframAlpha to actually make a chart like this, let me know. It seems like it should be doable, I just couldn't finesse my query in such a way to make it happen. <a href="http://www.omnigroup.com/applications/omnigraphsketcher/">OmniGraphSketcher to the rescue.</a>
+Aside: if anyone knows how to use WolframAlpha to actually make a chart like this, let me know. It seems like it should be doable, I just couldn't finesse my query in such a way to make it happen. [OmniGraphSketcher to the rescue.](http://www.omnigroup.com/applications/omnigraphsketcher/)

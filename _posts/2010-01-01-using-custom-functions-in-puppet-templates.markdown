@@ -6,7 +6,7 @@ wordpress_url: http://serialized.net/?p=353
 ---
 This eventually required a support ticket to figure out, so I'm documenting it here in case it's useful to others.
 
-The problem: You have a puppet function you find useful. At this point custom functions are <a href="http://reductivelabs.com/trac/puppet/wiki/PluginsInModules">really easy to create and distribute via modules</a> so there's really no reason not to be using them. However, you want to use the result of a function in your templates.
+The problem: You have a puppet function you find useful. At this point custom functions are [really easy to create and distribute via modules](http://reductivelabs.com/trac/puppet/wiki/PluginsInModules) so there's really no reason not to be using them. However, you want to use the result of a function in your templates.
 
 A real-world example of this is sharing authentication information. (For example, crypted password hashes. Plain text, as always, would be evil no matter where it was living.)
 You really have 3 choices:

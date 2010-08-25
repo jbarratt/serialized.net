@@ -9,4 +9,4 @@ wordpress_url: http://wp.serialized.net/?p=29
 ---
 Seriously. This is the ultimate thanksgiving dessert. (Yes, I am tempted.)
 
-<a href="http://familyfun.go.com/recipes/special/cake/cake_turkey/">Turkey Cake</a>
+[Turkey Cake](http://familyfun.go.com/recipes/special/cake/cake_turkey/)

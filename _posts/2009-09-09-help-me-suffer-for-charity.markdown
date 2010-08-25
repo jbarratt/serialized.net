@@ -4,7 +4,7 @@ layout: post
 title: Help me suffer for charity!
 wordpress_url: http://serialized.net/?p=284
 ---
-I'm raising money for the <a href="http://woundedwarriorproject.org/">Wounded Warrior Project</a> and <a href="http://afacblog.org/">Athletes For A Cure</a> (Prostate Cancer Research) by participating in something called <a href="http://www.fgb4.org/">Fight Gone Bad</a>.
+I'm raising money for the [Wounded Warrior Project](http://woundedwarriorproject.org/) and [Athletes For A Cure](http://afacblog.org/) (Prostate Cancer Research) by participating in something called [Fight Gone Bad](http://www.fgb4.org/).
 
 The short version is this:
 <ol>
@@ -16,7 +16,7 @@ The short version is this:
 
 "But Josh, how do I do this?" You ask.
 Good question! Just go to my easy-to-remember donation page:
-<a href="http://j.mp/WatchJoshSweat">http://j.mp/WatchJoshSweat</a>
+[http://j.mp/WatchJoshSweat](http://j.mp/WatchJoshSweat)
 In 30 seconds you can enter the amount you'd like to donate and a credit card number. Very easy!
 
 ** Update:

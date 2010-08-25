@@ -4,7 +4,7 @@ layout: post
 title: "FlickrPress now available: Turns Flickr RSS to Wordpress Posts"
 wordpress_url: http://serialized.net/?p=304
 ---
-My wife and I like to post a lot of photos of our son to <a href="http://carterbarratt.com">his blog</a>.
+My wife and I like to post a lot of photos of our son to [his blog](http://carterbarratt.com).
 
 <div style="text-align:center;"><img src="http://serialized.net/wp-content/uploads/2009/10/carterbarratt_dontlikethiseither.jpg" alt="Carter's Site" border="0" width="422" height="368" /></div>
 
@@ -19,8 +19,8 @@ Having the photos "live" on Flickr means some handy things.
 <li>The exact same stuff (title, description) that I'd want on a photo blog is available when I upload to Flickr.</li>
 </ol>
 
-So, FlickrPress was born. It's a fairly simple perl script, intended to be run as a cron job, which uses <a href="http://search.cpan.org/perldoc?WordPress::Post">WordPress::Post</a> to create new blog posts for every flickr photo it finds with a certain tag, from certain users.
+So, FlickrPress was born. It's a fairly simple perl script, intended to be run as a cron job, which uses [WordPress::Post](http://search.cpan.org/perldoc?WordPress::Post) to create new blog posts for every flickr photo it finds with a certain tag, from certain users.
 
 <div style="text-align:center;"><img src="http://serialized.net/wp-content/uploads/2009/10/FlickrPress-flow.png" alt="FlickrPress Workflow" border="0" width="579" height="317" /></div>
 
-Check out the <a href="http://serialized.net/FlickrPress">FlickrPress page</a> for downloads and installation instructions.
+Check out the [FlickrPress page](http://serialized.net/FlickrPress) for downloads and installation instructions.

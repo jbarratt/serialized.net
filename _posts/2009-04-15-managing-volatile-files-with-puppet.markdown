@@ -4,7 +4,7 @@ layout: post
 title: Managing volatile files with puppet
 wordpress_url: http://serialized.net/?p=259
 ---
-I'm managing <a href="linux-ha.org">Linux HA</a> (heartbeat2) from <a href="http://reductivelabs.com">Puppet</a> and I had a problem.
+I'm managing [Linux HA](linux-ha.org) (heartbeat2) from [Puppet](http://reductivelabs.com) and I had a problem.
 There is a file called `cib.xml` used by heartbeat which I needed to manage. For a variety of boring reasons, when you make changes to this file, you must have a number in it which is the highest the
 app has ever seen.
 

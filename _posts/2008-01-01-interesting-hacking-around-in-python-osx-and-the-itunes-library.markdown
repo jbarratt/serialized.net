@@ -30,7 +30,7 @@ Thankfully, though it's a bit out of date, we've been good(ish) about keeping ba
 
 So normally I break out the perl here, and it looked like there was some CPAN modules to get it done, but the iTunes XML parser library looks like it wasn't packaged right and I couldn't install it via CPAN, blah blah blah. I've been trying to break out the python more often, so searched for 'python itunes xml library parse' and found this gem from 2005:
 
-<a href="http://bob.pythonmac.org/archives/2005/07/18/airport-express-hates-me/">Airport Express Hates Me</a>
+[Airport Express Hates Me](http://bob.pythonmac.org/archives/2005/07/18/airport-express-hates-me/)
 
 In which the author uses a neat trick (the Python/Objective C bindings) to parse the iTunes library. After a bit of a bumpy start, I ended up with the following code:
 

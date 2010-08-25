@@ -33,13 +33,13 @@ So what are the constraints?
 </ul>
 
 ### URI constraints
-The first 2 are simple and global. There's no real standard on URI length, but <a href="http://www.boutell.com/newfaq/misc/urllength.html ">smart people have done the legwork for us</a> so we'll steal their conclusions, and say "keep URI's shorter than 2,000 characters."
+The first 2 are simple and global. There's no real standard on URI length, but [smart people have done the legwork for us](http://www.boutell.com/newfaq/misc/urllength.html ) so we'll steal their conclusions, and say "keep URI's shorter than 2,000 characters."
 
-As far as the characters that can be used, we can consult <a href="http://tools.ietf.org/html/rfc3986">RFC 3986</a> in the "Unreserved Characters" section and find we're allowed 0-9, a-z, A-Z, and "- _ . ~" (dash, underscore, dot, tilde.) I'm going to avoid using those because I'd like to keep them for separating my identifiers. So, if we just go with the "normal characters", there's 62 of them.
+As far as the characters that can be used, we can consult [RFC 3986](http://tools.ietf.org/html/rfc3986) in the "Unreserved Characters" section and find we're allowed 0-9, a-z, A-Z, and "- _ . ~" (dash, underscore, dot, tilde.) I'm going to avoid using those because I'd like to keep them for separating my identifiers. So, if we just go with the "normal characters", there's 62 of them.
 
 ### Collision Constraints
 
-If you assume a hashing function generates numbers pretty randomly spread throughout the number space available to it (which I will for this) there's actually some pretty good math we can use to figure out how likely a collision will be. If you're interested in where this comes from, check out the <a href="http://en.wikipedia.org/wiki/Birthday_paradox">Birthday Paradox</a>, which is nicely written up at Wikipedia. Using the formulas there you can calculate the probability of having 2 keys that collide, as a function of how many things you're trying to insert, and the size of the overall hash space.
+If you assume a hashing function generates numbers pretty randomly spread throughout the number space available to it (which I will for this) there's actually some pretty good math we can use to figure out how likely a collision will be. If you're interested in where this comes from, check out the [Birthday Paradox](http://en.wikipedia.org/wiki/Birthday_paradox), which is nicely written up at Wikipedia. Using the formulas there you can calculate the probability of having 2 keys that collide, as a function of how many things you're trying to insert, and the size of the overall hash space.
 
 ### Putting it all together
 
@@ -47,7 +47,7 @@ First, figure out how many items you want to be able to store. (for me, 20,000 i
 Second, figure out how comfortable you are with having some keys collide. 50/50 odds? (0.5) 1/1000 chance? (0.001)
 I'm actually pretty ok having a very small number of collisions -- I'm going to use 0.99, a 99% chance that SOMETHING will collide. (That's still going to be a small number, less than a 100% chance that anything at all will collide, let alone more than one.)
 
-I sketched up a little script for this article (which you can <a href="http://axis.serialized.net/gitweb/?p=utilities.git;a=blob;f=hashspace_model;hb=HEAD">grab from my git repo</a>. It's pretty self-documenting, so I'll let it speak for itself.
+I sketched up a little script for this article (which you can [grab from my git repo](http://axis.serialized.net/gitweb/?p=utilities.git;a=blob;f=hashspace_model;hb=HEAD). It's pretty self-documenting, so I'll let it speak for itself.
 
 The goal is, given our constraints, and the fact that we need to use only the characters 0 .. 9, a .. z, A .. Z, (a) how many of those characters do we need, and (b) given that it probably won't be an exact fit, what will our collision probability end up being?
 
@@ -99,13 +99,13 @@ sub get_probability {
 }
 {% endhighlight %}
 
-The most mysterious parts of this are probably the formulas. The one in the get_probability subroutine is transcribed right <a href="http://en.wikipedia.org/wiki/Birthday_paradox#Calculating_the_probability">from the Wikipedia page</a>, but the other one is the same formula, solved for a different value. In general, if you need to do this, <a href="http://wolframalpha.com">WolframAlpha</a> is a math nerd's dream come true. I just asked it to "solve (the equation) for d" and got the new formula I needed.
-<a href="http://serialized.net/wp-content/uploads/2010/05/solve_equation.jpg"><img src="http://serialized.net/wp-content/uploads/2010/05/solve_equation.jpg" alt="solve p = 1 - e^((-1*n*(n-1))_2d) for d" title="Solve Equation" width="579" height="379" class="alignnone size-full wp-image-381" /></a>
+The most mysterious parts of this are probably the formulas. The one in the get_probability subroutine is transcribed right [from the Wikipedia page](http://en.wikipedia.org/wiki/Birthday_paradox#Calculating_the_probability), but the other one is the same formula, solved for a different value. In general, if you need to do this, [WolframAlpha](http://wolframalpha.com) is a math nerd's dream come true. I just asked it to "solve (the equation) for d" and got the new formula I needed.
+[<img src="http://serialized.net/wp-content/uploads/2010/05/solve_equation.jpg" alt="solve p = 1 - e^((-1*n*(n-1))_2d) for d" title="Solve Equation" width="579" height="379" class="alignnone size-full wp-image-381" />](http://serialized.net/wp-content/uploads/2010/05/solve_equation.jpg)
 
 The solution actually comes from "show your steps" -- I can find an intermediate form that's easier to represent in a non-math-centric programming language. (I'm sure you can do imaginary numbers in perl, but it was kind of outside the scope of my plans for this evening.)
 
 Here's the formula I ended up using:
-<a href="http://serialized.net/wp-content/uploads/2010/05/solution.jpg"><img src="http://serialized.net/wp-content/uploads/2010/05/solution.jpg" alt="Solved for D" title="solution" width="107" height="41" class="alignnone size-full wp-image-379" /></a>
+[<img src="http://serialized.net/wp-content/uploads/2010/05/solution.jpg" alt="Solved for D" title="solution" width="107" height="41" class="alignnone size-full wp-image-379" />](http://serialized.net/wp-content/uploads/2010/05/solution.jpg)
 
 Here's a few sample runs of the script:
 

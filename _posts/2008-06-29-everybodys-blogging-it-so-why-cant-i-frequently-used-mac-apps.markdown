@@ -9,40 +9,40 @@ With no information other than the programs, here are the ones I find myself act
 No particular order -- semi alphabetical. Enjoy!
 
 <ul>
-<li><a href="http://www.blacktree.com/">Quicksilver</a></li>
-<li><a href="http://www.ksuther.com/chax/">Chax for iChat</a></li>
-<li><a href="http://burn-osx.sourceforge.net/">Burn</a></li>
-<li><a href="http://colloquy.info/">Colloquy</a></li>
-<li><a href="http://cord.sourceforge.net/">CoRD</a></li>
-<li><a href="http://cyberduck.ch/">CyberDuck</a></li>
-<li><a href="http://www.derlien.com/">DiskInventoryX</a></li>
-<li><a href="http://dockdropx.com/">DockDrop</a></li>
-<li><a href="http://web.mac.com/philipp.brendel/Software/FrameByFrame.html">FrameByFrame</a></li>
-<li><a href="http://redivi.com/~bob/frozenbubble.html">Frozen-Bubble</a></li>
-<li><a href="http://lifehacker.com/software/featured-mac-download/memorize-anything-with-genius-315064.php">Genius</a></li>
-<li><a href="http://www.sente.ch/software/goban/">Goban</a></li>
-<li><a href="http://handbrake.fr/">Handbrake</a></li>
-<li><a href="http://macfusion.makalumedia.com/">MacFusion</a></li>
-<li><a href="http://www.beatnikpad.com/archives/2008/06/18/firefox3">Minefield</a></li>
-<li><a href="http://www.getmiro.com/">Miro</a></li>
-<li><a href="http://www.omnigroup.com/applications/omnifocus/">OmniFocus</a></li>
-<li><a href="http://www.omnigroup.com/applications/omnigraffle/">OmniGraffle</a></li>
-<li><a href="http://www.omnigroup.com/applications/omnioutliner/">OmniOutliner</a></li>
-<li><a href="http://openarena.ws/">OpenArena</a></li>
-<li><a href="http://phun.cs.umu.se/wiki">Phun</a></li>
-<li><a href="http://www.pixelmator.com/">Pixelmator</a></li>
-<li><a href="http://secretexit.com/games/pogosticker">PogoSticker</a></li>
-<li><a href="http://www.pzizz.com/">Pzizz</a></li>
-<li><a href="http://simonhaertel.de/">Quinn</a></li>
-<li><a href="http://varasoftware.com/products/screenflow/">ScreenFlow</a></li>
-<li><a href="http://sketchup.google.com/">SketchUp</a></li>
-<li><a href="http://skitch.com/">Skitch</a></li>
-<li><a href="http://www.skype.com/welcomeback/">Skype</a></li>
-<li><a href="http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html">SuperDuper!</a></li>
-<li><a href="http://www.synthesiagame.com/">Synthesia</a></li>
-<li><a href="http://amarsagoo.info/tofu/">Tofu</a></li>
-<li><a href="http://www.parallels.com/en/products/desktop/">Parallels</a></li>
-<li><a href="http://www.virtualbox.org/">VirtualBox</a></li>
-<li><a href="http://www.videolan.org/vlc/">VLC</a></li>
-<li><a href="http://perian.org/">Perian</a></li>
+<li>[Quicksilver](http://www.blacktree.com/)</li>
+<li>[Chax for iChat](http://www.ksuther.com/chax/)</li>
+<li>[Burn](http://burn-osx.sourceforge.net/)</li>
+<li>[Colloquy](http://colloquy.info/)</li>
+<li>[CoRD](http://cord.sourceforge.net/)</li>
+<li>[CyberDuck](http://cyberduck.ch/)</li>
+<li>[DiskInventoryX](http://www.derlien.com/)</li>
+<li>[DockDrop](http://dockdropx.com/)</li>
+<li>[FrameByFrame](http://web.mac.com/philipp.brendel/Software/FrameByFrame.html)</li>
+<li>[Frozen-Bubble](http://redivi.com/~bob/frozenbubble.html)</li>
+<li>[Genius](http://lifehacker.com/software/featured-mac-download/memorize-anything-with-genius-315064.php)</li>
+<li>[Goban](http://www.sente.ch/software/goban/)</li>
+<li>[Handbrake](http://handbrake.fr/)</li>
+<li>[MacFusion](http://macfusion.makalumedia.com/)</li>
+<li>[Minefield](http://www.beatnikpad.com/archives/2008/06/18/firefox3)</li>
+<li>[Miro](http://www.getmiro.com/)</li>
+<li>[OmniFocus](http://www.omnigroup.com/applications/omnifocus/)</li>
+<li>[OmniGraffle](http://www.omnigroup.com/applications/omnigraffle/)</li>
+<li>[OmniOutliner](http://www.omnigroup.com/applications/omnioutliner/)</li>
+<li>[OpenArena](http://openarena.ws/)</li>
+<li>[Phun](http://phun.cs.umu.se/wiki)</li>
+<li>[Pixelmator](http://www.pixelmator.com/)</li>
+<li>[PogoSticker](http://secretexit.com/games/pogosticker)</li>
+<li>[Pzizz](http://www.pzizz.com/)</li>
+<li>[Quinn](http://simonhaertel.de/)</li>
+<li>[ScreenFlow](http://varasoftware.com/products/screenflow/)</li>
+<li>[SketchUp](http://sketchup.google.com/)</li>
+<li>[Skitch](http://skitch.com/)</li>
+<li>[Skype](http://www.skype.com/welcomeback/)</li>
+<li>[SuperDuper!](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html)</li>
+<li>[Synthesia](http://www.synthesiagame.com/)</li>
+<li>[Tofu](http://amarsagoo.info/tofu/)</li>
+<li>[Parallels](http://www.parallels.com/en/products/desktop/)</li>
+<li>[VirtualBox](http://www.virtualbox.org/)</li>
+<li>[VLC](http://www.videolan.org/vlc/)</li>
+<li>[Perian](http://perian.org/)</li>
 </ul>

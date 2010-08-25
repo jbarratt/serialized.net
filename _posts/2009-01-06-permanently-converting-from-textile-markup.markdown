@@ -8,7 +8,7 @@ So, I have resurrected the blog!
 
 There were some victims -- at one of the transitions along the way, many of my posts got truncated to just 'summary' length and the 'real data' is gone. (Moment of silence.) Moving on to brighter and better things.
 
-Wordpress was able to connect to my textile database and inhale all my posts. (Thanks!) Unfortunately, it was all in Textile markup. <a href="http://faq.wordpress.com/2006/04/20/markdown-textile/">And they didn't seem to plan on supporting that.</a> 
+Wordpress was able to connect to my textile database and inhale all my posts. (Thanks!) Unfortunately, it was all in Textile markup. [And they didn't seem to plan on supporting that.](http://faq.wordpress.com/2006/04/20/markdown-textile/) 
 
 What to do? 
 
@@ -26,7 +26,7 @@ I made a quick YAML config to store database options in, config.yml:
 
 I didn't hard code it in the doc so I could generically do this kind of thing later if I wanted.
 
-And then, the cowboy perl to inhale the markup and go from Textile to HTML, using the handy <a href="http://search.cpan.org/~kjetilk/Formatter-HTML-Textile-0.7/lib/Formatter/HTML/Textile.pm">Formatter::HTML::Textile</a>:
+And then, the cowboy perl to inhale the markup and go from Textile to HTML, using the handy [Formatter::HTML::Textile](http://search.cpan.org/~kjetilk/Formatter-HTML-Textile-0.7/lib/Formatter/HTML/Textile.pm):
 
 {% highlight perl %}
     #!/usr/bin/perl

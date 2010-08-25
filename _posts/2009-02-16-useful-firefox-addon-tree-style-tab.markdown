@@ -12,7 +12,7 @@ It does 2 amazing things:
 <li>Shows which page the tab 'came from' in a nice tree view. This is so nice for dealing with a tab overload efficiently -- I often find that I am researching several aspects of something at the same time. Even the fact that my tabs can be gathered up under their respective google searches is useful.</li>
 </ol>
 
-You can install it at <a href="https://addons.mozilla.org/en-US/firefox/addon/5890">Mozilla Addons</a>. Check there for more screenshots and a full list of the features. 
+You can install it at [Mozilla Addons](https://addons.mozilla.org/en-US/firefox/addon/5890). Check there for more screenshots and a full list of the features. 
 
 Here is a simple example of it in action:
 

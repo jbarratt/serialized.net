@@ -4,13 +4,13 @@ layout: post
 title: Using Yammer with Quicksilver
 wordpress_url: http://serialized.net/?p=223
 ---
-We use (and really like) <a href="http://yammer.com">Yammer</a> at <a href="http://mediatemple.net">work</a>.
+We use (and really like) [Yammer](http://yammer.com) at [work](http://mediatemple.net).
 
-I couldn't find a Quicksilver plugin for it, and I noticed that <a href="http://www.yammer.com/company/api">Yammer's API</a> was pretty similar to <a href="http://apiwiki.twitter.com/">Twitter's API</a>, so I checked to see if there was Quicksilver->Twitter integration. There was one (which I installed anyway, since I <a href="http://twitter.com/jbarratt">use twitter myself</a>) over at <a href="http://blog.codahale.com/2007/01/15/tweet-twitter-quicksilver/">codahale.com</a>.
+I couldn't find a Quicksilver plugin for it, and I noticed that [Yammer's API](http://www.yammer.com/company/api) was pretty similar to [Twitter's API](http://apiwiki.twitter.com/), so I checked to see if there was Quicksilver->Twitter integration. There was one (which I installed anyway, since I [use twitter myself](http://twitter.com/jbarratt)) over at [codahale.com](http://blog.codahale.com/2007/01/15/tweet-twitter-quicksilver/).
 
 So here it is, modified to work with Yammer's (different) API:
 
-<a href="http://serialized.net/software/Yammer.scpt">Yammer.scpt</a>
+[Yammer.scpt](http://serialized.net/software/Yammer.scpt)
 
 <ol>
 <li>Grab the file and put it in your ~/Library/Application Support/Quicksilver/Actions/ folder.</li>

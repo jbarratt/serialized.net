@@ -13,7 +13,7 @@ If you
 <li>Read sites that have RSS feeds on a semi-regular basis</li>
 <li>Ever use different computers, or can't find a desktop aggregator you like...</li>
 </ol>
-do yourself a favor and install <a href="http://feedonfeeds.com/">Feed On Feeds.</a>
+do yourself a favor and install [Feed On Feeds.](http://feedonfeeds.com/)
 <p>
 The only notes I have:
 Do use the auto-subscribe bookmarklet.

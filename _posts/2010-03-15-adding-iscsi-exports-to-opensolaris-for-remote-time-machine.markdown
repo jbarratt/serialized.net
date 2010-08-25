@@ -13,11 +13,11 @@ There are 3 ways to Time Machine over the network (that I know of)
 
 I'm not sure I'd want to use the iSCSI option with a laptop, so I use a hybrid of the second and third options.
 
-I'm running Snow Leopard Server on a Mac Mini with limited disk space. I've got a large server running OpenSolaris about which I <a href="http://serialized.net/2009/02/the-littlest-thumper-opensolaris-nas-on-an-msi-wind-pc/">blogged previously.</a>
+I'm running Snow Leopard Server on a Mac Mini with limited disk space. I've got a large server running OpenSolaris about which I [blogged previously.](http://serialized.net/2009/02/the-littlest-thumper-opensolaris-nas-on-an-msi-wind-pc/)
 
 Here are the brief steps you need to take to get it working.
 
-On the Snow Leopard Server, install the <a href="http://www.studionetworksolutions.com/products/product_detail.php?t=more&pi=11">ISCSI initiator from GlobalSan.</a>
+On the Snow Leopard Server, install the [ISCSI initiator from GlobalSan.](http://www.studionetworksolutions.com/products/product_detail.php?t=more&pi=11)
 
 On your OpenSolaris server, make sure you've installed the support packages needed.
 {% highlight text %}
@@ -37,6 +37,6 @@ iscsitadm list target
 {% endhighlight %}
 shows the target names to paste into the initiator.
 
-You can follow the instruction at this <a href="http://blogs.sun.com/constantin/entry/zfs_and_mac_os_x">blog on sun.com</a> which has screenshots of the rest of the process.
+You can follow the instruction at this [blog on sun.com](http://blogs.sun.com/constantin/entry/zfs_and_mac_os_x) which has screenshots of the rest of the process.
 
 At this point the drives are just like regular disks, from the perspective of your Mac (desktop or server) -- and can be formatted and used for Time Machine. Very convenient and the data that you're backing up will be in the safe, safe hands of ZFS in the event of a disk failure.

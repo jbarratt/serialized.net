@@ -22,4 +22,4 @@ The trick came as a flash of insight to one of my esteemed colleagues. Linux has
 5) Unmount the /dev/md* device, remount your shiny new filesystem, and go away, happy as a clam.</p>
 
 <p>It really illustrates the power of abstracted block devices. We went to a talk given by an engineer from Google who was talking about the future of commodity storage at Google -- they're looking at building clustered storage which, at the back end, consists of block devices bolted together with
-<a href="http://sourceware.org/cluster/ddraid/">ddraid</a> and some similar but seemingly yet unpublished tools. It's a cool time to be getting to play with computers for a living.</p>
+[ddraid](http://sourceware.org/cluster/ddraid/) and some similar but seemingly yet unpublished tools. It's a cool time to be getting to play with computers for a living.</p>

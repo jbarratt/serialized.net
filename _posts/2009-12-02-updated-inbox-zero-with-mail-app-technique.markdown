@@ -4,9 +4,9 @@ layout: post
 title: Updated "Inbox Zero with Mail.app" technique
 wordpress_url: http://serialized.net/?p=344
 ---
-Back in March, I wrote about my <a href="http://serialized.net/2009/03/my-approach-to-inbox-zero-with-mailapp/">technique for implementing Inbox Zero with Mail.app</a>.
+Back in March, I wrote about my [technique for implementing Inbox Zero with Mail.app](http://serialized.net/2009/03/my-approach-to-inbox-zero-with-mailapp/).
 
-Since then, the world has changed. I've upgraded to Snow Leopard, and Quicksilver has essentially stopped working out for me. (I've been trying to keep it up to date, and sometimes it kind of works, but my confidence levels are really low.) On the other hand, I'm loving me some <a href="http://code.google.com/p/qsb-mac/">Google Quick Search Box</a> (a new project from the <a href="http://www.cultofmac.com/quicksilver-is-sort-of-dead-long-live-google-quick-search-box/6986">original creator of Quicksilver</a>). The only feature that I still wanted Quicksilver for was triggers. And until today, I was still running it for trigger support to implement my Inbox Zero trick.
+Since then, the world has changed. I've upgraded to Snow Leopard, and Quicksilver has essentially stopped working out for me. (I've been trying to keep it up to date, and sometimes it kind of works, but my confidence levels are really low.) On the other hand, I'm loving me some [Google Quick Search Box](http://code.google.com/p/qsb-mac/) (a new project from the [original creator of Quicksilver](http://www.cultofmac.com/quicksilver-is-sort-of-dead-long-live-google-quick-search-box/6986)). The only feature that I still wanted Quicksilver for was triggers. And until today, I was still running it for trigger support to implement my Inbox Zero trick.
 
 And then triggers broke when I upgraded it. And I'm out.
 

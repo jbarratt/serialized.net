@@ -4,7 +4,7 @@ layout: post
 title: Capturing short-lived programs on Linux
 wordpress_url: http://serialized.net/?p=389
 ---
-One of the things I love most about DTrace is your <a href="http://www.brendangregg.com/DTrace/shortlived.d">ability to do things like this.</a> Because you can ask the kernel to let you start tracking when something cool happens (like forking a new program), you can instrument it.
+One of the things I love most about DTrace is your [ability to do things like this.](http://www.brendangregg.com/DTrace/shortlived.d) Because you can ask the kernel to let you start tracking when something cool happens (like forking a new program), you can instrument it.
 
 {% highlight text %}
 // Measure parent fork time
@@ -13,13 +13,13 @@ syscall::*fork*:entry { /* save start of fork */
 }
 {% endhighlight %}
 
-Sadly, those tools aren't available on a standard issue Linux machine. (You can do it with <a href="http://sourceware.org/systemtap/wiki/systemtapstarters">SystemTap</a>, but it's not on every server I end up looking at.) Today I was trying to track down some processes that were making very odd DNS lookups. I isolated the user ID making these calls via iptables logging:
+Sadly, those tools aren't available on a standard issue Linux machine. (You can do it with [SystemTap](http://sourceware.org/systemtap/wiki/systemtapstarters), but it's not on every server I end up looking at.) Today I was trying to track down some processes that were making very odd DNS lookups. I isolated the user ID making these calls via iptables logging:
 
 {% highlight text %}
 iptables -I OUTPUT 1 -m string --string "BADZONE" -d 127.0.0.1 -p udp --destination-port 53 --algo bm -j LOG --log-uid --log-prefix "BADZONE: "
 {% endhighlight %}
 
-But this user's PHP scripts were getting launched and dying again quickly. How to find out what was going on inside them? This hacky little trick actually worked really well. You can download it from <a href="http://axis.serialized.net/gitweb/?p=utilities.git;a=blob_plain;f=auto_stracer;hb=HEAD">my git utilities directory.</a>
+But this user's PHP scripts were getting launched and dying again quickly. How to find out what was going on inside them? This hacky little trick actually worked really well. You can download it from [my git utilities directory.](http://axis.serialized.net/gitweb/?p=utilities.git;a=blob_plain;f=auto_stracer;hb=HEAD)
 
 Basically, we check the process list as fast as we can for any owned by that user; If you find one, stick an strace on it. The script will 'hang around' until all the strace processes have finished. You end up with a directory full of trace files which you can then post-grep through to get what you need.
 
