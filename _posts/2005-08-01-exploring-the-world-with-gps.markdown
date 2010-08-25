@@ -9,7 +9,7 @@ wordpress_url: http://wp.serialized.net/?p=75
 ---
 On our recent England Trip, we, as I mentioned, really appreciated having a GPS navigation system.
 
-The one place we didn't take it was while travelling by foot around London. The most overwhelming thing for me about England, coming from such a "young" country, is how much history there is <i>everywhere.</i> Even the most non-historic looking buildings often have fascinating stories attached to them. We took a river trip down from the Tate Modern to Greenwich, and the guide on the boat tossed off various observations as we went -- probably one note per 500 buildings we passed along the way. What about the rest of them?
+The one place we didn't take it was while travelling by foot around London. The most overwhelming thing for me about England, coming from such a "young" country, is how much history there is _everywhere._ Even the most non-historic looking buildings often have fascinating stories attached to them. We took a river trip down from the Tate Modern to Greenwich, and the guide on the boat tossed off various observations as we went -- probably one note per 500 buildings we passed along the way. What about the rest of them?
 
 <p>I think technology is going to give us a whole new way to explore history of cities and buildings.
 A combination of this: The <a href="http://www.engadget.com/entry/1234000013052686/">"Node Eplorer"</a>, which uses GPS to give you tourist-style information about places your are, and this: <a href="http://www.msmobiles.com/o/news/00162.html">"FotoNav"</a> which uses the parameters of an image alone to determine where you are.</p>

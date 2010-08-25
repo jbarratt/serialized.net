@@ -39,4 +39,4 @@ And then ran the newly-installed 'usbcopy' tool:
 
 And, about 20 minutes later, it was done!
 
-I have now tested it by booting from it on an eeePC 1000HA and it worked great. I've ripped the image in linux with dd, and we'll be testing it to see if it's portable that way. (Surely would be a lot less work than <i>my</i> way.)
+I have now tested it by booting from it on an eeePC 1000HA and it worked great. I've ripped the image in linux with dd, and we'll be testing it to see if it's portable that way. (Surely would be a lot less work than _my_ way.)

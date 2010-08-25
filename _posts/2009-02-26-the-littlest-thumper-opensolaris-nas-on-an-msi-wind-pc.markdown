@@ -4,7 +4,7 @@ layout: post
 title: "The littlest Thumper: OpenSolaris NAS on an MSI Wind PC"
 wordpress_url: http://serialized.net/?p=233
 ---
-I recently started to really need more disk around the house. More specifically, <i>reliable</i> disk.
+I recently started to really need more disk around the house. More specifically, _reliable_ disk.
 Now that we're starting to take photos of our son, and to shoot video, and do to all of this at
 relatively high resolution (I love our 30D in RAW, but those files aren't small) I wanted storage and I wanted it RAID'ed.
 
