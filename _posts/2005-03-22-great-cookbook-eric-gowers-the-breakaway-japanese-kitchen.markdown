@@ -1,0 +1,26 @@
+--- 
+wordpress_id: 51
+layout: post
+title: "Great Cookbook: Eric Gower's \"The Breakaway Japanese Kitchen\""
+excerpt: |
+  
+
+wordpress_url: http://wp.serialized.net/?p=51
+---
+<p>I originally found out about the book <a href="http://www.amazon.com/exec/obidos/tg/detail/-/4770029497">The Breakaway Japanese Kitchen</a> when I read the recipe for <a href="http://www.shiokadelicious.com/shiokadelicious/2004/09/imbb_8_part_ii_.html">Boozy Potatoes</a> at the food blog <a href="http://www.shiokadelicious.com">shiokadelicious</a>. I made the recipe and loved it. I already loved the idea of bringing asian flavors into more traditionally western meals, and this was a delicious step on the same road. (Soy, Lemongrass, Ginger, Lime Zest or Kaffir Lime Leaves, chilies, Sake... what would my life be like without those flavors?) The book itself looked interesting so I put it on my Amazon wish list.</p>
+
+<p>My birthday&#39;s coming up this weekend, so my parents-in-law went happily nuts on my wish list, gifting me some long awaited and long anticipated titles. "Breakaway" is my current favorite by far.</p>
+
+<p>Last night I made a few of the dishes from the cookbook -- Rice Vinegar Chicken Breasts and Japanese Cole Slaw. Both were easy to prepare, and tasted sublime. They didn&#39;t just taste good -- they were full of perfectly balanced flavors which in most cases presented themselves to you a layer at a time.</p>
+
+<p>The Rice Vinegar breasts were briefly marinated in soy and maple syrup (!) before broiling, then topped with a sauce made by caramelizing shallots and thyme, then reducing 1/2 cup of rice vinegar. Each bite was packed with flavor, which unwrapped itself as you chewed. The sweet sharpness of the vinegar, the maillardley round shallot, the bitterness of the thyme, then last of all the amazing flavor of slightly charred maple.</p>
+
+<p>The &#39;cole slaw&#39; was a perfect match. It also was layered and balanced -- a blend of cabbage and carrot, with some grated ginger tossed in (as well as a variety of vinegars and oils, chinese black vinegar, rice vinegar, sesame oil, walnut oil, and (wait for it) some more maple) and a sprinkle of toasted/crushed peanuts on top. So simple to put together! Again, the freshness of the carrot and cabbage, the toned-down sharpness of the vinegar, the smoky and unique hit of sesame, and buried under every mouthful, the unmistakable &#39;ping&#39; of ginger.</p>
+
+All of the recipes have some common traits:<ol><li>Healthy! Lots of fresh ingredients, fats used sparingly, but not in a "oh look we&#39;re avoiding fat" kind of way.</li><li>That deep layering of flavor</li><li>Some uncommon ingredients, but at least consistently uncommon. He introduces some relatively unknown ingredients -- but there are only about 5 or 6, and he draws heavily on those throughout the book. You don&#39;t have to buy out the asian market just to start cooking.</li></ol>
+
+<p>One of my favorite finds in all of this is that Eric has a <a href="http://www.ericskitchen.com/">website</a> as well, which is full of great content.<br />
+Be sure and check out the essays, including <a href="http://www.ericskitchen.com/selected_essays03.html">Why I Like Chopsticks,<br />
+Even for Ice Cream</a> and the <a href="http://www.ericskitchen.com/recent_dinners01.html">Recent Dinners</a> section -- a killer value add, hinting at some new recipes while giving suggestions on how to group recipes from the book into a meal.</p>
+
+<p>The only thing I&#39;m really curious about now is figuring out a decent source of <a href="http://www-ang.kfunigraz.ac.at/~katzer/engl/generic_frame.html?Peri_fru.html">shiso</a>. (It&#39;s in almost every recipe!) Hopefully I&#39;ll be able to track something down closer than making a trip to <a href="http://www.99ranch.com/">99 Ranch</a> in Van Nuys.</p>

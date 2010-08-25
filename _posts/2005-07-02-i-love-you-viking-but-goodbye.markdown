@@ -1,0 +1,12 @@
+--- 
+wordpress_id: 71
+layout: post
+title: I love you Viking, but goodbye.
+excerpt: |
+  
+
+wordpress_url: http://wp.serialized.net/?p=71
+---
+<p>You know what&#39;s absurd? <a href="https://www.surfasonline.com/products/25382.cfm">This</a> is less than 1/2 what my mom paid for a 4 burner, 1 oven Viking range. Am I missing something? Does this range offer less in some aspect or another? Based on all the stats I see, the answer is no -- for example, the viking had one 18k <span class="caps">BTU </span>burner -- whereas this has 6 22k <span class="caps">BTU </span>burners! And having a broiler/griddle like that... since the broiler&#39;s become my go-to kitchen tool, I&#39;d be in heaven. No more crawling around on the floor and wondering if the things in the back are catching on fire. I wonder 2 things: Are there any codes which prevent using a full-on commercial range in the home? And where can I find these used? I bet they age really well, and I could probably knock another $1000 off the price.</p>
+
+<p>Now, to convince Amber that our kitchen will look <span class="caps">AWESOME </span>with one of those in it.</p>

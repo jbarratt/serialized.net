@@ -1,0 +1,34 @@
+--- 
+wordpress_id: 284
+layout: post
+title: Help me suffer for charity!
+wordpress_url: http://serialized.net/?p=284
+---
+I'm raising money for the <a href="http://woundedwarriorproject.org/">Wounded Warrior Project</a> and <a href="http://afacblog.org/">Athletes For A Cure</a> (Prostate Cancer Research) by participating in something called <a href="http://www.fgb4.org/">Fight Gone Bad</a>.
+
+The short version is this:
+<ol>
+  <li>You donate</li>
+  <li>I go and REALLY REALLY bust my butt</li>
+  <li>I vomit (optional)</li>
+  <li>We help out some deserving people and (for those of us with prostates) maybe even ourselves.</li>
+</ol>
+
+"But Josh, how do I do this?" You ask.
+Good question! Just go to my easy-to-remember donation page:
+<a href="http://j.mp/WatchJoshSweat">http://j.mp/WatchJoshSweat</a>
+In 30 seconds you can enter the amount you'd like to donate and a credit card number. Very easy!
+
+<b>Update:</b><b> Some people were curious about what the workout itself is.
+Straight from the Crossfit FAQ:
+<blockquote>
+In this workout you move from each of five stations after a minute. This is a five-minute round from which a one-minute break is allowed before repeating. The workout is a total of 3 rounds.
+
+The stations are:
+ 1. Wall-ball: 20 pound ball, 10 ft target. (Reps)
+ 2. Sumo deadlift high-pull: 75 pounds (Reps)
+ 3. Box Jump: 20" box (Reps)
+ 4. Push-press: 75 pounds (Reps)
+ 5. Row: calories (Calories)
+The clock does not reset or stop between exercises. On call of "rotate," the athlete/s must move to next station immediately for good score. One point is given for each rep, except on the rower where each calorie is one point.
+</blockquote></b>

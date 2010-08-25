@@ -1,0 +1,19 @@
+--- 
+wordpress_id: 226
+layout: post
+title: "Useful Firefox Addon: Tree Style Tab"
+wordpress_url: http://serialized.net/?p=226
+---
+I found this today and I already love it.
+
+It does 2 amazing things:
+<ol>
+<li>Moves the tabs to the left. On a widescreen computer this makes more sense than stealing Y-axis resolution. Also, I have to create a LOT of tabs before I start scrolling, which used to be a frequent annoyance. (If you prefer things to be on top/bottom/right, you can choose that in the preferences.)</li>
+<li>Shows which page the tab 'came from' in a nice tree view. This is so nice for dealing with a tab overload efficiently -- I often find that I am researching several aspects of something at the same time. Even the fact that my tabs can be gathered up under their respective google searches is useful.</li>
+</ol>
+
+You can install it at <a href="https://addons.mozilla.org/en-US/firefox/addon/5890">Mozilla Addons</a>. Check there for more screenshots and a full list of the features. 
+
+Here is a simple example of it in action:
+
+<img src="http://serialized.net/wp-content/uploads/2009/02/tree-style-tab-sample.jpg" alt="Tree Style Tab Screenshot" border="0" width="234" height="213" />
