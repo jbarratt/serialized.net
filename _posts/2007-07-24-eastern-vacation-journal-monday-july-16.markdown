@@ -4,7 +4,7 @@ layout: post
 title: Eastern Vacation Journal, Monday, July 16
 wordpress_url: http://wp.serialized.net/?p=100
 ---
-<p><strong>Note: The following entries are by Amber, who lent her voice and perspective to the next few days of the trip.</strong></p>
+<p>Note: The following entries are by Amber, who lent her voice and perspective to the next few days of the trip.</p>
 
 <p>	When I think of a destination I would like to relax in, I'm not sure Virginia has ever been on that list. As we entered the (not sure what they are known for) state, I felt as if we were coming into a town that hadn't seen visitors for quite some time. First impressions are most often incorrect. The sleepy town of Luray, Virginia was very welcoming and held a secret under it's pine swept streets.  The night we arrived we enjoyed a low priced fare of half chicken, beans and potato salad. A little runny yet very similar to the type my grandmother has made. Our fine dinning experience was thanks to Uncle Bucks Kitchen, a small hole in the wall joint that was the only thing open in town after 9:00 p.m. A comfortable stay in the old reliable Best Western, led us into another day.<br />
 <img src="http://serialized.net/images/14.jpg" alt="" />

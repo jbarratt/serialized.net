@@ -32,7 +32,7 @@ The workflow to produce this data is a little bumpy, so I'm documenting it so I 
 <li>Save the track on the <span class="caps">GPS</span></li>
 <li>Connect to your computer and use <a href="http://www8.garmin.com/support/download_details.jsp?id=3886">Garmin Bobcat</a> to import it.</li>
 <li>Load it in Google Maps. Drill down into your data set and turn off everything but the "path"</li>
-<li>Right-click your <strong>path</strong> (very important) and say 'email'. (Sounds nuts, but it's the only export function I can find?) Drag and drop the file out of the email that got created and throw the email itself away.</li>
+<li>Right-click your path (very important) and say 'email'. (Sounds nuts, but it's the only export function I can find?) Drag and drop the file out of the email that got created and throw the email itself away.</li>
 <li>Upload the kmz file to some hosting somewhere.</li>
 <li>Go into Google Maps and search for the <span class="caps">URL </span>of that <span class="caps">KMZ </span>file.</li>
 <li>Choose 'Link to this Page' ... 'Customize and Preview embedded map'.</li>

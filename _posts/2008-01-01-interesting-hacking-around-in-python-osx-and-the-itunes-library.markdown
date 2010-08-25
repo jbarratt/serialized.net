@@ -9,8 +9,7 @@ wordpress_url: http://wp.serialized.net/?p=113
 <p>Thankfully, though it's a bit out of date, we've been good(ish) about keeping backups. I thought "I bet I can get the playlist info out of the iTunes library file in the backup!" Sure enough, I mounted the drive, took a look, and there the data was. It wasn't that useful though.</p>
 
 
-
-<pre>
+{% highlight xml %}
  <key>Name</key><string>The Special Playlist</string>
                         <key>Playlist ID</key><integer>14915</integer>
                         <key>Playlist Persistent ID</key><string>F668E7C09FF9F9AC</string>
@@ -26,9 +25,8 @@ wordpress_url: http://wp.serialized.net/?p=113
                                 <dict>
                                         <key>Track ID</key><integer>3527</integer>
                                 </dict>
-</pre>
 
-
+{% endhighlight %}
 
 <p>So normally I break out the perl here, and it looked like there was some <span class="caps">CPAN </span>modules to get it done, but the iTunes <span class="caps">XML </span>parser library looks like it wasn't packaged right and I couldn't install it via <span class="caps">CPAN, </span>blah blah blah. I've been trying to break out the python more often, so searched for 'python itunes xml library parse' and found this gem from 2005:</p>
 
@@ -37,28 +35,26 @@ wordpress_url: http://wp.serialized.net/?p=113
 <p>In which the author uses a neat trick (the Python/Objective C bindings) to parse the iTunes library. After a bit of a bumpy start, I ended up with the following code:</p>
 
 
+{% highlight python %}
+    #!/usr/bin/python
+    from Foundation import *
+    dbFile = "itunes_from_backup.xml"
+    db = NSDictionary.dictionaryWithContentsOfFile_(dbFile)
+    printtrack = {}
 
-<pre>
-#!/usr/bin/python
-from Foundation import *
-dbFile = "itunes_from_backup.xml"
-db = NSDictionary.dictionaryWithContentsOfFile_(dbFile)
-printtrack = {}
+    for playlist in db[u'Playlists'].itervalues():
+            if playlist[u'Name'] == u"The Special Playlist":
+                    for track in playlist[u'Playlist Items'].itervalues():
+                            printtrack[track[u'Track ID']] = 1
+                    
+    for track in db[u'Tracks'].itervalues():
+            try:
+                    if printtrack[track[u'Track ID']]:
+                            print "%s: %s, %s" % (track[u'Artist'], track[u'Album'], track[u'Name'])
+            except:
+                    pass
 
-for playlist in db[u'Playlists'].itervalues():
-        if playlist[u'Name'] == u"The Special Playlist":
-                for track in playlist[u'Playlist Items'].itervalues():
-                        printtrack[track[u'Track ID']] = 1
-                
-for track in db[u'Tracks'].itervalues():
-        try:
-                if printtrack[track[u'Track ID']]:
-                        print "%s: %s, %s" % (track[u'Artist'], track[u'Album'], track[u'Name'])
-        except:
-                pass
-
-</pre>
-
+{% endhighlight %}
 
 
 <p>Which yeilds a nice list like:<br />

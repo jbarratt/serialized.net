@@ -21,4 +21,4 @@ Don't forget to set up a cron job to update the feeds.<br/><br />
 Don't forget to htpasswd protect the directory -- every link you click will have your FoF install as the Referrer <span class="caps">URL.</span><br />
 </p>
 
-<p>I think the thing I like best about having an aggregator is that I can happily subscribe to infrequently updating sites <i><strong>cough</strong> <strong>cough</strong> like this one</i> and I just get to see all the updates when they hit my browser. Subscribing to a weblog no longer means having to troll it (in)frequently for updates that might not be coming.</p>
+<p>I think the thing I like best about having an aggregator is that I can happily subscribe to infrequently updating sites <i>cough cough like this one</i> and I just get to see all the updates when they hit my browser. Subscribing to a weblog no longer means having to troll it (in)frequently for updates that might not be coming.</p>

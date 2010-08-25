@@ -6,73 +6,66 @@ wordpress_url: http://serialized.net/?p=273
 ---
 I've been playing a lot with Puppet recently, and have been really focusing on getting a core set of modules in place. I found myself using a few module patterns over and over, so I thought I'd write them down and keep an updated list.
 
-<h2><tt>/base</tt> and <tt>/site</tt></h2>
+## `/base` and `/site`
 
-Our puppet modules are stored in 2 directories: <tt>/base</tt> and <tt>/site</tt>. Here are the purposes:
+Our puppet modules are stored in 2 directories: `/base` and `/site`. Here are the purposes:
 
-<h4><tt>/base</tt></h4>
+#### `/base`
 
-The best way to think of what goes in <tt>/base</tt> is:
+The best way to think of what goes in `/base` is:
 
-<blockquote>
-I should be able to (and should!) post my <tt>/base</tt> tree to github or my blog, and it would be useful to other people.
-</blockquote>
+> I should be able to (and should!) post my `/base` tree to github or my blog, and it would be useful to other people.
 
 Examples of things that might go into base are:
 
-<ul>
-<li>virtuozzo</li>
-<li>nginx</li>
-<li>lighttpd</li>
-<li>perlbal</li>
-<li>debrepo</li>
-<li>rpmrepo</li>
-<li>openvpn</li>
-<li>mysql</li>
-<li>memcached</li>
-</ul>
+* virtuozzo
+* nginx
+* lighttpd
+* perlbal
+* debrepo
+* rpmrepo
+* openvpn
+* mysql
+* memcached
 
 Essentially, the environments that make daemons or applications useable.
 
-<h4><tt>/site</tt></h4>
+#### `/site`
 
 Site should be 
 
-<blockquote>This should not be in any way useful (or safe to share) outside my company</blockquote>
+> This should not be in any way useful (or safe to share) outside my company
 
 Good examples might be:
 
-<ul>
-<li>mywebapp</li>
-<li>mystatshud</li>
-<li>mymonitoringsystem</li>
-</ul>
+* `mywebapp`
+* `mystatshud`
+* `mymonitoringsystem`
 
-<h2> Module Design </h2>
+## Module Design 
 
 Any functionality we want to do on a server can more or less be defined as:
 
-<blockquote>I want to set up some applications and an environment in a certain way, so that it does what I want</blockquote>
+> I want to set up some applications and an environment in a certain way, so that it does what I want
 
-<h3> Sample application: <tt>mywebapp</tt></h3>
+### Sample application: `mywebapp`
 
-So, for example, if we wanted to build an <tt>mywebapp</tt> module, we'd need certain things to make that work.
+So, for example, if we wanted to build an `mywebapp` module, we'd need certain things to make that work.
 Let's assume that we need
-<ul>
-<li>lighttpd installed and configured in a certain way</li>
-<li>apache installed and configured in a certain way</li>
-<li>some perl libraries installed</li>
-<li>some cron jobs set up</li>
-</ul>
+
+* lighttpd installed and configured in a certain way
+* apache installed and configured in a certain way
+* some perl libraries installed
+* some cron jobs set up
 
 and so on.
 
-<h3>The obvious way</h3>
+### The obvious way
 
 The way I started out solving these sorts of problems turns out to not scale all that well.
 As I started a module (to solve a specific problem) I would just start listing out the puppet resources it would need.
 
-<b><tt>mywebapp/manifests/init.pp</tt></b>
+**`mywebapp/manifests/init.pp`**
 {% highlight text %}
 package { "lighttpd": ensure => installed }
 service { "lighttpd": ensure => running, enabled => true }
@@ -85,12 +78,12 @@ and so on.
 
 This breaks down in several ways. 
 
-<h4>Things can only be defined once in puppet</h4>
+#### Things can only be defined once in puppet
 
-First, puppet only lets us define a resource once. So if we decide we want a new tool that needs the package <tt>lib-catalyst-rest-perl</tt> installed, or needs to use apache to host some stats HUD,
+First, puppet only lets us define a resource once. So if we decide we want a new tool that needs the package `lib-catalyst-rest-perl` installed, or needs to use apache to host some stats HUD,
 we'd have a problem.
 
-<b><tt>statshud/manifests/init.pp</tt></b>
+<b>`statshud/manifests/init.pp`</b>
 {% highlight text %}
 ...
 package { "apache2": ensure => installed }
@@ -105,7 +98,7 @@ Package[apache2] is already defined in file statshub/manifests/init.pp at line 1
 cannot redefine at statshub/manifests/init.pp:2 on node mondrian
 </p>
 
-<h4>Things would get repeated a lot</h4>
+#### Things would get repeated a lot
 
 As a practical example, I refer you to the our lighttpd config.
 
@@ -118,7 +111,7 @@ ssl.cipher-list = "DHE-RSA-AES256-SHA DHE-RSA-AES128-SHA EDH-RSA-DES-CBC3-SHA
 
 Neat! This implements the current best practices for what ciphers we should accept.
 
-So having this in a <tt>base/</tt> module, which is used by everything that needs to spin up a lighttpd, means that all my stuff will be running in the safest way I know how to run it.
+So having this in a `base/` module, which is used by everything that needs to spin up a lighttpd, means that all my stuff will be running in the safest way I know how to run it.
 
 The alternative is not very pleasant: I'd need to copy and paste this block in every one of my modules that used lighttpd. I'd need to keep it updated in each one of those files if and when a cipher turns out to be insecure.
 
@@ -136,17 +129,17 @@ and, should we learn something New And Improved about any of these things, viola
 As an added benefit, this style of consolidation maps onto the way Puppet itself is going.
 Much like Perl has the CPAN, Puppet Modules will be getting some new features that allow them to be centralized. Soon we will be able to get "the puppet mysql module" rather than "some guy's cloned module from a cloned module on github".
 
-<h2>Module Patterns</h2>
+## Module Patterns
 
 Because of the above threats and virtues, we want to push as much functionality as we can into base modules.
 
-<h3>Basic Design</h3>
+### Basic Design
 
 <img src="http://serialized.net/wp-content/uploads/2009/07/base_site_modules.png" alt="Puppet Module Designs" title="Puppet Module Designs" width="284" height="194" class="alignnone size-full wp-image-279" />
 
 So how this looks in practice in puppet-speak:
 
-<b><tt>mywebapp/manifests/init.pp</tt></b>
+<b>`mywebapp/manifests/init.pp`</b>
 {% highlight text %}
 
 // configure lighttpd module
@@ -166,7 +159,7 @@ cron {
 {% endhighlight %}
 
 
-<h3>Configuring other Classes</h3>
+### Configuring other Classes
 
 Ok, great, I've shipped all that intelligence to another module. But how do I make it work the way I want it to?
 
@@ -178,7 +171,7 @@ Well, we want to configure other classes. There are 3 basic methods to configure
 <li>Set variables before you include it</li>
 </ul>
 
-<h4>Technique #1: Create subclasses and only include one or some of them</h4>
+#### Technique #1: Create subclasses and only include one or some of them
 
 I'll keep this one simple:
 
@@ -194,7 +187,7 @@ and
 include mysql::server
 {% endhighlight %}
 
-<h4>Technique #2: Create 'defines' that we use from inside classes</h4>
+#### Technique #2: Create 'defines' that we use from inside classes
 
 This technique is the most commonly used one. Many of the application and daemon classes we want to configure have lots of "parts" that can be enabled. Some examples:
 <ul>
@@ -265,9 +258,9 @@ include monit::common
 monit::common::simple_service { "apache2": pidname => "apache2" }
 {% endhighlight %}
 
-<h4>Technique #3: Set variables before you include the class</h4>
+#### Technique #3: Set variables before you include the class
 
-A good example might be for the mywebapp, I only want apache2 to be listening to the <tt>lo</tt> loopback interface. This would be a dumb default behavior if someone just did
+A good example might be for the mywebapp, I only want apache2 to be listening to the `lo` loopback interface. This would be a dumb default behavior if someone just did
 {% highlight text %}
 include apache2
 {% endhighlight %}
@@ -278,7 +271,7 @@ So I can specify configuration variables:
 
 In 
 
-<b><tt>site/mywebapp/manifests/init.pp</tt></b>
+<b>`site/mywebapp/manifests/init.pp`</b>
 {% highlight text %}
 
 // we only want to have apache2 listening on the loopback
@@ -289,7 +282,7 @@ include apache2
 
 Then, in 
 
-<b><tt>base/apache2/manifests/init.pp</tt></b>
+<b>`base/apache2/manifests/init.pp`</b>
 {% highlight text %}
 // if someone set this variable before they included our class, use it
 if($apache2_interface) {
@@ -308,18 +301,16 @@ Let's say we're configuring our local syslog -- the server we syslog to. Without
 
 We get this pretty much for free, actually. If you specify in your documentation:
 
-<blockquote>
-You must specify a value for <tt>$syslog_server</tt> before including this module
-</blockquote>
+> You must specify a value for `$syslog_server` before including this module
 
-<b><tt>base/syslog-client/manifests/init.pp</tt></b>
+<b>`base/syslog-client/manifests/init.pp`</b>
 {% highlight text %}
     file { "/etc/syslog.conf":
         content => template(syslog-client/syslog.conf.erb),
     }
 {% endhighlight %}
 
-<b><tt>base/syslog-client/templates/syslog.conf.erb</tt></b>
+<b>`base/syslog-client/templates/syslog.conf.erb`</b>
 {% highlight text %}
 #
 # Remote Logging
@@ -340,12 +331,12 @@ without defining that variable, puppet will error for you.
 Failed to parse template syslog.conf.erb: Could not find value for 'syslog_server'
 </p>
 
-<h2>Conclusions</h2>
+## Conclusions
 
 I'll keep this page updated as more useful patterns emerge.
 
-Thinking about decomposing modules by <tt>/base</tt> and <tt>/site</tt> is a powerful model already, as it helps develop new variants on ideas in a really rapid way with little to no copy and paste.
+Thinking about decomposing modules by `/base` and `/site` is a powerful model already, as it helps develop new variants on ideas in a really rapid way with little to no copy and paste.
 
-I've found that my <tt>site</tt> modules are often in the 4-7 lines long range, and I automatically get a lot of my hard-earned "best ways to do things" along for the ride.
+I've found that my `site` modules are often in the 4-7 lines long range, and I automatically get a lot of my hard-earned "best ways to do things" along for the ride.
 
 And since I'm not the only one making things around here, everyone else saves time (and avoids some n00b mistakes) by being able to develop things more quickly as well.

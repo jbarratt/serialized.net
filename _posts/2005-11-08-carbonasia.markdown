@@ -7,7 +7,7 @@ excerpt: |
 
 wordpress_url: http://wp.serialized.net/?p=81
 ---
-<p>I'm not really into the oh-so-dated sounding 'fusion', I just like good food. To that end, I share one of the first dishes I've actually <strong>designed</strong> instead of just thinking about what it needed and adding it in.</p>
+<p>I'm not really into the oh-so-dated sounding 'fusion', I just like good food. To that end, I share one of the first dishes I've actually designed instead of just thinking about what it needed and adding it in.</p>
 
 <p>The two players:<br />
 1) My favorite pasta dish is Carbonara, no matter which shaped noodle it's applied to. (Preferably something with lots of nooks and crannies like Penne or Rotini or anything else not long and straight.) It's a very basic recipe, as are any you can describe in one sentence. Cook the pasta, then dress with cooked pancetta or bacon, cream, parmesan, and egg yolks while the noodles are still hot. See! One sentence. I haven't included quantities, but they tend to vary a bit for me anyway. This dish is sublime, a little bit of the bacony-goodness flavor goes a long way through the dish and the texture of the just-cooked egg yolks is creamier and richer than cream itself.</p>

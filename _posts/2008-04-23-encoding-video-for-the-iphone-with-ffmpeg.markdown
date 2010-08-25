@@ -12,9 +12,9 @@ wordpress_url: http://wp.serialized.net/?p=121
 
 <p>So I found a neat little package, <a href="http://code.google.com/p/vs4p/">vs4p</a>. It works only on linux out of the box, and uses a style of packaging I wasn't really interested in, so I tweaked it a bit. The good guts (with some shell expansion variables) are:</p>
 
-<p><strong>Pass 1</strong><br />
+<p>Pass 1<br />
 <code>ffmpeg -threads $THREADS -y -i "$1" -s 480x272 -vcodec libx264 -b $BITRATE -flags +loop -cmp +chroma -me_range 16 -g 300 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -rc_eq "blurCplx^(1-qComp)" -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -coder 0 -refs 1 -bt $BITRATE -maxrate 4M -bufsize 4M -level 21  -r 30000/1001 -partitions +parti4x4+partp8x8+partb8x8 -me hex -subq 5 -f mp4 -aspect 480:272 -title "$TITLE" -acodec libfaac -ac 2 -ar 48000 -ab 128 -pass 1 "$TITLE.mp4"</code><br />
-<strong>Pass 2</strong><br />
+Pass 2<br />
 <code>ffmpeg -threads $THREADS -y -i "$1" -s 480x272 -vcodec libx264 -b $BITRATE -flags +loop -cmp +chroma -me_range 16 -g 300 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -rc_eq "blurCplx^(1-qComp)" -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -coder 0 -refs 1 -bt $BITRATE -maxrate 4M -bufsize 4M -level 21  -r 30000/1001 -partitions +parti4x4+partp8x8+partb8x8 -me hex -subq 5 -f mp4 -aspect 480:272 -title "$TITLE" -pass 2 -acodec libfaac -ac 2 -ar 48000 -ab 128 -vol 320 "$TITLE.mp4"</code></p>
 
 <p>Since I wanted to run this on a mac, I also needed ffmpeg, which should be easy, as it's part of <a href="http://www.macports.org/">MacPorts</a></p>

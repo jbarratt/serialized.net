@@ -28,6 +28,6 @@ I then read this sensor from an <a href="http://www.sparkfun.com/commerce/produc
 <li>If the box has been off the 'home' position for more than 40 minutes.</li>
 </ul>
 
-It then sends us an SMS (just an email to [10 digit number]@txt.att.net) to alert us. This is a nice form of alert because if I'm home, it might wake me, but not anyone else. If I'm at work, I'm close enough to make a quick lunch break trip home and resolve it before anything stinky happens. If I'm on a trip, I can give a friend with house keys a quick call and ask for a favor.
+It then sends us an SMS (just an email to `10 digit number`@txt.att.net) to alert us. This is a nice form of alert because if I'm home, it might wake me, but not anyone else. If I'm at work, I'm close enough to make a quick lunch break trip home and resolve it before anything stinky happens. If I'm on a trip, I can give a friend with house keys a quick call and ask for a favor.
 
 I have ordered all the parts for this project and should be ready to go soon. Other than the Arduino, the whole thing can be built for about $2 in parts. I'll hopefully be posting an entry soon with the Arduino and Perl code that makes it all work and photos. (That is, unless I fail in an epic fashion.)

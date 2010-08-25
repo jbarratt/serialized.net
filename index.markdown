@@ -1,6 +1,6 @@
 ---
 layout: default
-title: serialized.net, a journal of fascination burnout
+title: ''
 ---
 
 {% assign post = site.posts.first %}

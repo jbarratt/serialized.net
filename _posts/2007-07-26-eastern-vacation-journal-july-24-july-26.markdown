@@ -35,4 +35,4 @@ A monster cheesesteak.</p>
 
 <p>Updates will probably slow down or stop from here on out -- we're staying with friends and family, much less "vacationing" in the tourism sense. We've both concluded that we got full value of the "vacation" already, and everything from here on out is just a bonus.</p>
 
-<p><strong>Note: thanks to the awesome verizon 3G card for allowing this post to be published doing 60MPH on the <span class="caps">I95 </span>south of Philly.</strong></p>
+<p>Note: thanks to the awesome verizon 3G card for allowing this post to be published doing 60MPH on the <span class="caps">I95 </span>south of Philly.</p>

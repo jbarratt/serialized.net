@@ -10,44 +10,47 @@ The problem: You have a puppet function you find useful. At this point custom fu
 
 A real-world example of this is sharing authentication information. (For example, crypted password hashes. Plain text, as always, would be evil no matter where it was living.)
 You really have 3 choices:
-<ul>
-<li>Coding it right into your puppet code and checking that into your version control system</li>
-<li>Not distributing that information with puppet</li>
-<li>Using puppet to distribute the information, but store it outside of your puppet modules somehow.</li>
-</ul>
+
+- Coding it right into your puppet code and checking that into your version control system
+- Not distributing that information with puppet
+- Using puppet to distribute the information, but store it outside of your puppet modules somehow.
 
 We chose the third way, and store this kind of information in YAML files outside the puppet modules tree.
 Anyway. So we want to access this info inside a template.
 
 Assume you have a function called 'get_extdata'.
 You normally call from your '.pp' manifests with something like
+
 {% highlight ruby %}
-$data = get_extdata('mymodule', 'path:to:data')
+    $data = get_extdata('mymodule', 'path:to:data')
 {% endhighlight %}
 
 You can make a call like that from your template by doing this wonderful fragment of magic-wand-waving to get this function accessible:
 
-In <b>mytemplate.erb</b>:
-{% highlight text %}
-<% Puppet::Parser::Functions.autoloader.loadall %>
-Now you can use the 'scope' variable to get at your function.
-This is the equivalent of the call get_extdata('mymodule',  'path:to:data'):
-<%= scope.function_get_extdata('mymodule',  'path:to:data') %>
+In `mytemplate.erb`:
+
+{% highlight erb %}
+    <% Puppet::Parser::Functions.autoloader.loadall %>
+    Now you can use the 'scope' variable to get at your function.
+    This is the equivalent of the call get_extdata('mymodule',  'path:to:data'):
+    <%= scope.function_get_extdata('mymodule',  'path:to:data') %>
 {% endhighlight %}
 
 This works like a charm, and means you don't have to create a bunch of variables that you don't really need before you load the template.
 
 So if you were creating an .htpasswd style file with puppet, you could do
 
-In your <b>init.pp</b>
+In your `init.pp`:
+
 {% highlight ruby %}
-$users = ['steve', 'paul', 'stu']
+    $users = ['steve', 'paul', 'stu']
 {% endhighlight %}
 
-<b>htpasswd.erb</b>:
-{% highlight text %}
-<% Puppet::Parser::Functions.autoloader.loadall %>
-<% users.each do |user| -%> 
-<%= user %>:<%= scope.function_get_extdata('authmodule',  user) %>
-<% end -%>
+`htpasswd.erb`:
+
+{% highlight erb %}
+    <% Puppet::Parser::Functions.autoloader.loadall %>
+    <% users.each do |user| -%> 
+    <%= user %>:<%= scope.function_get_extdata('authmodule',  user) %>
+    <% end -%>
 {% endhighlight %}

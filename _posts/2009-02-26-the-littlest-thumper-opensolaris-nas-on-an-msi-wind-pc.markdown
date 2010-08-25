@@ -63,28 +63,31 @@ The install was CAKE, the hardest part was finding a monitor and keyboard as I a
 Also, to install the CF card into the Wind, I had to remove the motherboard -- that's the only way you can slide it in. Minor annoyance but worth noting.
 
 After that it was a simple matter of setting up the zpool with my new drives, and exporting the filesystem to my other devices.
-<pre>
-# Use the format tool to find the disk ID's in the system
-jbarratt@rothko:/$ pfexec format
-Searching for disks...done
-AVAILABLE DISK SELECTIONS:
-       0. c5d0 <default cyl 3820 alt 2 hd 128 sec 32>
-          /pci@0,0/pci-ide@1f,1/ide@0/cmdk@0,0
-       1. c6d0 <st315003 -         9VS0MPD-0001-1.36TB>
-          /pci@0,0/pci-ide@1f,2/ide@0/cmdk@0,0
-       2. c7d0 </st315003><st315003 -         9VS0BXT-0001-1.36TB>
-          /pci@0,0/pci-ide@1f,2/ide@1/cmdk@0,0
-Specify disk (enter its number): ^C
 
-# Create the pool as a mirror between my 2 1.5TB drives
-$ zpool create apool mirror c6d0 c7d0
+{% highlight text %}
 
-# Create a filesystem
-zfs create apool/archive
+    # Use the format tool to find the disk ID's in the system
+    jbarratt@rothko:/$ pfexec format
+    Searching for disks...done
+    AVAILABLE DISK SELECTIONS:
+        0. c5d0 <default cyl 3820 alt 2 hd 128 sec 32>
+            /pci@0,0/pci-ide@1f,1/ide@0/cmdk@0,0
+        1. c6d0 <st315003 -         9VS0MPD-0001-1.36TB>
+            /pci@0,0/pci-ide@1f,2/ide@0/cmdk@0,0
+        2. c7d0 </st315003><st315003 -         9VS0BXT-0001-1.36TB>
+            /pci@0,0/pci-ide@1f,2/ide@1/cmdk@0,0
+    Specify disk (enter its number): ^C
 
-# Share that over NFS
-zfs set sharenfs=rw apool/archive
-</st315003></default></pre>
+    # Create the pool as a mirror between my 2 1.5TB drives
+    $ zpool create apool mirror c6d0 c7d0
+
+    # Create a filesystem
+    zfs create apool/archive
+
+    # Share that over NFS
+    zfs set sharenfs=rw apool/archive
+    </st315003></default>
+{% endhighlight %}
 
 And now the contents are flying over my network and filling it up. I'm excited to do a few more things soonish:
 <ul>

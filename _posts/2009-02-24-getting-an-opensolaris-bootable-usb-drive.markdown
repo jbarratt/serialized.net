@@ -13,14 +13,15 @@ First problem, I needed a Solaris system to create the USB image from.
 For this I figured I could use Virtualbox, which I upgraded before starting.
 
 I'm not sure if I needed to upgrade 2008.05 to 2008.11, but I figured I'd do it while I was at it. I found good instructions on the <a href="http://www.opensolaris.org/os/project/indiana/resources/relnotes/200805/image-update/">OpenSolaris site</a>: Basically,
-<pre>
+
+{% highlight text %}
 $ BUILD=`uname -v | sed -e "s/snv_//" -e "s/[a-z]//"`
 $ pfexec pkg refresh
 $ pfexec pkg install entire@0.5.11-0.${BUILD}
 $ pfexec pkg install SUNWipkg@0.5.11-0.${BUILD}
 $ pfexec pkg install SUNWinstall-libs 
 $ pfexec pkg image-update
-</pre>
+{% endhighlight %}
 
 This took a LONG TIME in VirtualBox (running on a pretty new MacBook Pro even) and my whole machine wasn't all that usable during the process, but hey.
 
@@ -29,14 +30,12 @@ Then I rebooted into the new OS (and it looks shiny!) which this time detected t
 I then shortcutted one of the steps in this <a href="http://blogs.sun.com/clayb/entry/creating_opensolaris_usb_sticks_is">article about building distros on USB sticks</a> by downloading a canned image from <a href="http://genunix.org">genunix.org</a>: Specifically <a href="http://www.genunix.org/distributions/indiana/osol-0811.usb">http://www.genunix.org/distributions/indiana/osol-0811.usb</a>
 
 I unmounted the USB device, and then installed the new-ish Sun "dist build" tools:
-<pre>
-pkg install SUNWdistro-const
-</pre>
+
+    `pkg install SUNWdistro-const`
 
 And then ran the newly-installed 'usbcopy' tool:
-<pre>
-/usr/bin/usbcopy osol-0811.usb
-</pre>
+
+    `/usr/bin/usbcopy osol-0811.usb`
 
 And, about 20 minutes later, it was done!
 

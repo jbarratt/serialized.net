@@ -13,47 +13,49 @@ Wordpress was able to connect to my textile database and inhale all my posts. (T
 What to do? 
 
 I made a quick YAML config to store database options in, config.yml:
-<pre>
----
-dbserver: mydbserver.com
-dbuser: mydbuser
-dbpass: doilookthatdumb
-db: my_wp_db
-dbtable: wp_posts
-dbcolumn: post_content
-dbkeycolumn: ID 
-</pre>
+{% highlight text %}
+    ---
+    dbserver: mydbserver.com
+    dbuser: mydbuser
+    dbpass: doilookthatdumb
+    db: my_wp_db
+    dbtable: wp_posts
+    dbcolumn: post_content
+    dbkeycolumn: ID 
+{% endhighlight %}
 
 I didn't hard code it in the doc so I could generically do this kind of thing later if I wanted.
 
 And then, the cowboy perl to inhale the markup and go from Textile to HTML, using the handy <a href="http://search.cpan.org/~kjetilk/Formatter-HTML-Textile-0.7/lib/Formatter/HTML/Textile.pm">Formatter::HTML::Textile</a>:
 
-<pre>
-#!/usr/bin/perl
+{% highlight perl %}
+    #!/usr/bin/perl
 
-use strict;
-use warnings;
+    use strict;
+    use warnings;
 
-use YAML qw(LoadFile);
-use DBI;
-use Formatter::HTML::Textile;
+    use YAML qw(LoadFile);
+    use DBI;
+    use Formatter::HTML::Textile;
 
-my $c = LoadFile("config.yml");
+    my $c = LoadFile("config.yml");
 
-my $dbh = DBI->connect("dbi:mysql:$c->{db}:$c->{dbserver}",$c->{dbuser},$c->{dbpass}) || die "Can't connect to database: $!\n";
+    my $dbh = DBI->connect("dbi:mysql:$c->{db}:$c->{dbserver}",$c->{dbuser},$c->{dbpass}) || die "Can't connect to database: $!\n";
 
-my $q = "select $c->{dbkeycolumn},$c->{dbcolumn} from $c->{dbtable}";
-my $uq = "update $c->{dbtable} set $c->{dbcolumn} = ? where $c->{dbkeycolumn} = ?";
+    my $q = "select $c->{dbkeycolumn},$c->{dbcolumn} from $c->{dbtable}";
+    my $uq = "update $c->{dbtable} set $c->{dbcolumn} = ? where $c->{dbkeycolumn} = ?";
 
-my $sth = $dbh->prepare($q);
-my $usth = $dbh->prepare($uq);
+    my $sth = $dbh->prepare($q);
+    my $usth = $dbh->prepare($uq);
 
-$sth->execute;
-while (my ($key,$text) = $sth->fetchrow_array) {
-    my $formatter = Formatter::HTML::Textile->format( $text );
-    my $newtext = $formatter->fragment();
-    $usth->execute($newtext, $key);
-}
-</pre>
+    $sth->execute;
+    while (my ($key,$text) = $sth->fetchrow_array) {
+        my $formatter = Formatter::HTML::Textile->format( $text );
+        my $newtext = $formatter->fragment();
+        $usth->execute($newtext, $key);
+    }
+{% endhighlight %}
 
 And in a fraction of a second, all my old blog posts were converted, in all their (arguable) glory. From now on I'm only blogging in XHTML, suckers.
+
+Update: 08/2010, moment of silence as I am back-converting from HTML to Markdown. Sigh.

@@ -4,7 +4,7 @@ layout: post
 title: Eastern Vacation Journal, Tuesday, July 17
 wordpress_url: http://wp.serialized.net/?p=101
 ---
-<p><strong>This entry also penned by my lovely wife Amber. -Ed</strong></p>
+<p>This entry also penned by my lovely wife Amber. -Ed</p>
 
 
 <p>	The lushness that is the east coast it quite breathtaking. With that being said, we would like to take some of it away. Due to the density of trees along the highways, you can't see the landscape of most of the towns that we have been driving though. SInce we have our handy <span class="caps">GPS </span>we are going routes that are direct, not necessarily meant to be scenic. We have lucked out in a few spots, and like I said, the lush trees and sweeping hills are breathtaking. When we pulled off our next exit to Mystic, Connecticut we were surprised to see a scene picked straight out of Pleasantville -- the part of the movie when the pastel colors turn up. Streets lined with perfectly potted plants and coastal waters flowing in and around the town. <br />

@@ -4,7 +4,7 @@ layout: post
 title: Eastern Vacation Journal, Wednesday, July 18
 wordpress_url: http://wp.serialized.net/?p=102
 ---
-<p><strong>This entry also by my wonderful spouse Amber. --Ed</strong></p>
+<p>This entry also by my wonderful spouse Amber. --Ed</p>
 
 <p>	Driving to Camden Maine was cold and rainy. Since we were about to board a sail boat for four days, this matter weighed  on us quite heavily. <span class="caps">GPS </span>to save the day, we typed in <span class="caps">REI </span>with no luck whatsoever. Josh got clever and tried <span class="caps">L.L.B</span>ean, who would have thought that it would lead us to the preppiest outlet centers in the world -- Freeport, Maine. We're talking <span class="caps">L.L.</span> Bean, Abercrombie and Fitch, American Eagle Outfitters, North Face, Bath and Body works, Yankee Candle and not to forget, The Gap. I hadn't seen a such a large collection of white suburban middle class men bored out of their minds in a long time. Dragging their polo clad children behind them, we rushed by the find some rain worthy wear. All we really needed was two rain proof jackets, and even though we were in the outlets, it was becoming increasingly obvious that we weren't going to get out of this hell without paying up to $300. It was a sad day for me, I knew what that $300 could have bought at say....Target! But it was going to make for a more enjoyable boat trip so I grit my teeth and now I'm a happy owner of a bright red, insulated and oh so snuggly Cloudveil jacket. Straight from Jackson Hole, Wyoming. Not that the fact that is came from Jackson Hole makes me love it anymore or any less. However, it should be handy if we ever get back into that backpacking stuff Josh talks about every once in a while.</p>
 

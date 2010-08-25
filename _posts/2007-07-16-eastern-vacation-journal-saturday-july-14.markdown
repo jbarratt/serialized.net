@@ -10,7 +10,7 @@ wordpress_url: http://wp.serialized.net/?p=98
 
 <p>Ah yes, as you can see, our first meal was at the Waffle House, apparently an institution around here -- you see the signs at pretty much every off ramp. I'd seen them when I was in Georgia for my brother's wedding, and we didn't get a chance to sample. We're all about absorbing the local culture on this trip, so we gave it a shot. It was tasty food, no doubt! They do make a very good hash brown.</p>
 
-<p><strong>First stop:</strong> <a href="http://maps.google.com/maps?f=q&hl=en&geocode=&q=maggie+valley%2C+nc&ie=UTF8&ll=35.659528%2C-83.373871&spn=0.614796%2C1.218109&z=10&iwloc=addr&om=1">Maggie Valley, NC</a></p>
+<p>First stop: <a href="http://maps.google.com/maps?f=q&hl=en&geocode=&q=maggie+valley%2C+nc&ie=UTF8&ll=35.659528%2C-83.373871&spn=0.614796%2C1.218109&z=10&iwloc=addr&om=1">Maggie Valley, NC</a></p>
 
 <p>Our first real destination was the <a href="http://www.nps.gov/grsm/">Great Smoky Mountains National Part</a> , so Maggie Valley was a good nearby spot to get a hotel. It seemed to be a kind of family vacation kind of place -- the smokies seem to be entirely filled with hotels, mini golf, and more hotels. <img src="http://serialized.net/images/4.jpg" alt="Chillin on the porch with the rockers" class="left" style="float:left" /> Notably, Best Westerns appear to have really top quality wireless internet for free. I found this amusing since the 2 of the last 3 hotels I've stayed in (a) cost 3 times as much as this and (b) charged $10 for mediocre wifi. </p>
 

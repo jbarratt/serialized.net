@@ -8,16 +8,16 @@ wordpress_url: http://wp.serialized.net/?p=124
 
 <p>Cool, so how to slow it down? On a Mac, it's pretty easy. I'm assuming you've got the song in iTunes. (This works if you bought the track from the iTunes store or from any other source that iTunes will play.)</p>
 
-<strong>Step one</strong>, find the song, right-click (or control-click) it, and click "Show in Finder".<br />
+**Step one**, find the song, right-click (or control-click) it, and click "Show in Finder".<br />
 <img src="http://serialized.net/img/playback_rate/show_in_finder.jpg"/>
 
-<strong>Step two</strong>, right-click (or control-click) the file and open in Quicktime Player.<br />
+**Step two**, right-click (or control-click) the file and open in Quicktime Player.<br />
 <img src="http://serialized.net/img/playback_rate/open_with_quicktime.jpg"/>
 
-<strong>Step 3</strong>, open up the AV Controls Menu:<br />
+**Step 3**, open up the AV Controls Menu:<br />
 <img src="http://serialized.net/img/playback_rate/show_av_properties.jpg"/>
 
-<strong>Step 4</strong>, tweak away and learn the song!
+**Step 4**, tweak away and learn the song!
 
 <p>I find the playback rate especially useful -- start out at 1/2 speed, and work your way up to 3/4, 7/8, then full speed, and if you really want to practice, 1.5 speed or double-speed! Also, the mixer's not the most incredible thing, but if you're trying to learn bass (as I have been) you can kill off the treble and throw the balance to one side, so you can listen to yourself play with the other ear and mute as much of the "rest of the song" as possible.<br />
 http://serialized.net/img/playback_rate/av_properties.jpg</p>

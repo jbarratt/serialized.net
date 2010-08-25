@@ -9,7 +9,7 @@ wordpress_url: http://wp.serialized.net/?p=30
 ---
 <p>I needed a copy of fedora core 3 for a machine I'm building, so I broke out the handy bittorrent link and zinged it to my colocated server. That was nice -- I got about 800k/sec sustained during the download. What was also nice is that the <span class="caps">MD5 </span>sums matched -- good files to start with.</p>
 
-<p>Then I downloaded them to our local fileserver (in case we need them again, plus I've managed to stuff my laptop full to the brim with data... again.) Problem: <span class="caps">MD5</span>sums no longer match. D'oh. (I'm not sure what causes them to barf, but interestingly, this happened <strong>last</strong> time I did basically the exact same scenario with fedora core 1!)</p>
+<p>Then I downloaded them to our local fileserver (in case we need them again, plus I've managed to stuff my laptop full to the brim with data... again.) Problem: <span class="caps">MD5</span>sums no longer match. D'oh. (I'm not sure what causes them to barf, but interestingly, this happened last time I did basically the exact same scenario with fedora core 1!)</p>
 
 <p>So, instead of downloading them again:</p>
 

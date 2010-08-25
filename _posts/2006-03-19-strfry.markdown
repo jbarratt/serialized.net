@@ -2,32 +2,28 @@
 wordpress_id: 93
 layout: post
 title: strfry()
-excerpt: |
-  
-
 wordpress_url: http://wp.serialized.net/?p=93
 ---
-<p>I am not making this up.<br/></p>
+I am not making this up.
 
+{% highlight text %}
+    NAME
+        strfry - randomize a string
 
-<pre>
-NAME
-       strfry - randomize a string
+    SYNOPSIS
+        #include <string.h>
 
-SYNOPSIS
-       #include <string.h>
+        char *strfry(char *string);
 
-       char *strfry(char *string);
+    DESCRIPTION
+        The  strfry()  function  randomizes  the  contents  of  string by using
+        rand(3) to randomly swap characters in the string.  The  result  is  an
+        anagram of string.
 
-DESCRIPTION
-       The  strfry()  function  randomizes  the  contents  of  string by using
-       rand(3) to randomly swap characters in the string.  The  result  is  an
-       anagram of string.
+    RETURN VALUE
+        The strfry() functions returns a pointer to the randomized string.
 
-RETURN VALUE
-       The strfry() functions returns a pointer to the randomized string.
-
-CONFORMING TO
-       The  strfry()  function  is  unique  to  the  Linux C Library and GNU C
-       Library.
-</pre>
+    CONFORMING TO
+        The  strfry()  function  is  unique  to  the  Linux C Library and GNU C
+        Library.
+{% endhighlight %}
