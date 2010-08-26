@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ''
+title: 'Home'
 ---
 
 {% assign post = site.posts.first %}

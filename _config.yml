@@ -2,3 +2,5 @@ markdown: maruku
 pygments: true
 permalink: /:year/:month/:title
 lsi: false
+exclude:
+    - Rakefile

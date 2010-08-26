@@ -90,4 +90,6 @@ void printFloat(float var) {
 
 Hopefully this helps someone else out. It was fun to write and I'm sure I'll have a use for it someday!
 
-Photo Credit (no that's not me!) <div xmlns:cc="http://creativecommons.org/ns#" about="http://www.flickr.com/photos/jeanbaptisteparis/119421176/"><a rel="cc:attributionURL" href="http://www.flickr.com/photos/jeanbaptisteparis/">http://www.flickr.com/photos/jeanbaptisteparis/</a> / <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></div>
+Photo Credit (no that's not me!) 
+
+<div xmlns:cc="http://creativecommons.org/ns#" about="http://www.flickr.com/photos/jeanbaptisteparis/119421176/"><a rel="cc:attributionURL" href="http://www.flickr.com/photos/jeanbaptisteparis/">http://www.flickr.com/photos/jeanbaptisteparis/</a> / <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></div>

@@ -70,4 +70,14 @@ cite{display:block; text-align:right; padding-top: 10px;}
 .media .imgExt{float:right; margin-left: 10px;}
 /* ====== special formatting classes ====== */
 .detail{color: #777; font-size:11px;display:block;}
-.highlight {margin-left: 1em; background-color: #eee; padding-bottom: 2px; padding-top: 2px;}
+.highlight {margin-left: 1em; background-color: #f9f9f9; padding-bottom: 2px; padding-top: 2px; font-size: 80%; border: 1px solid #bebab0;}
+.socialIcon {display: inline;}
+pre { white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; }
+.tweet_even { background-color: #DEE6ED; margin-bottom: 4px; padding: 2px}
+.tweet_odd { background-color: #F0F0F0; margin-bottom: 4px; padding: 2px}
+blockquote { margin: 1em 3em; border-left: 2px solid #999; padding-left: 1em; }
+ul.main { list-style-type: disc !important; }
+ol.main { list-style-type: decimal !important; }
+#logo {font-style:normal; font-family: "Courier New", Courier, monospace; letter-spacing: -3px;}
+#slug {font-style:italic; color:#aaa; font-family: "Courier New", Courier, monospace; letter-spacing: -1px; font-size: 70%; padding-top: 1em;}
+div#headcontainer.head { border-bottom: 1px solid #999; }
