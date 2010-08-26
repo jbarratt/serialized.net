@@ -70,3 +70,4 @@ cite{display:block; text-align:right; padding-top: 10px;}
 .media .imgExt{float:right; margin-left: 10px;}
 /* ====== special formatting classes ====== */
 .detail{color: #777; font-size:11px;display:block;}
+.highlight {margin-left: 1em; background-color: #eee; padding-bottom: 2px; padding-top: 2px;}
