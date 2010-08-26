@@ -78,6 +78,6 @@ pre { white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wra
 blockquote { margin: 1em 3em; border-left: 2px solid #999; padding-left: 1em; }
 ul.main { list-style-type: disc !important; }
 ol.main { list-style-type: decimal !important; }
-#logo {font-style:normal; font-family: "Courier New", Courier, monospace; letter-spacing: -3px;}
-#slug {font-style:italic; color:#aaa; font-family: "Courier New", Courier, monospace; letter-spacing: -1px; font-size: 70%; padding-top: 1em;}
+#logo {font-style:normal; font-family: "Courier New", Courier, monospace; letter-spacing: -6px; font-size: 160%;}
+#slug {font-style:italic; color:#aaa; font-family: "Courier New", Courier, monospace; letter-spacing: -1px; font-size: 70%; padding-top: 2.5em;}
 div#headcontainer.head { border-bottom: 1px solid #999; }

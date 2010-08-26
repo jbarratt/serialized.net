@@ -13,7 +13,7 @@ There are 3 ways to Time Machine over the network (that I know of)
 
 I'm not sure I'd want to use the iSCSI option with a laptop, so I use a hybrid of the second and third options.
 
-I'm running Snow Leopard Server on a Mac Mini with limited disk space. I've got a large server running OpenSolaris about which I [blogged previously.](http://serialized.net/2009/02/the-littlest-thumper-opensolaris-nas-on-an-msi-wind-pc/)
+I'm running Snow Leopard Server on a Mac Mini with limited disk space. I've got a large server running OpenSolaris about which I [blogged previously.](/2009/02/the-littlest-thumper-opensolaris-nas-on-an-msi-wind-pc/)
 
 Here are the brief steps you need to take to get it working.
 

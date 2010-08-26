@@ -4,6 +4,13 @@ layout: post
 title: "FlickrPress now available: Turns Flickr RSS to Wordpress Posts"
 wordpress_url: http://serialized.net/?p=304
 ---
+
+**Update**: This software is no longer maintained (and is a lot less important now that there is oEmbed support, to be honest.)
+
+I'm leaving the legacy content here for a record... the code is still available on [github](http://github.com/jbarratt/FlickrPress).
+
+---------------------
+
 My wife and I like to post a lot of photos of our son to [his blog](http://carterbarratt.com).
 
 ![Carter's Site](/images/carterbarratt_dontlikethiseither.jpg)
@@ -23,4 +30,3 @@ So, FlickrPress was born. It's a fairly simple perl script, intended to be run a
 
 ![FlickrPress Workflow](/images/FlickrPress-flow.png)
 
-Check out the [FlickrPress page](http://serialized.net/FlickrPress) for downloads and installation instructions.

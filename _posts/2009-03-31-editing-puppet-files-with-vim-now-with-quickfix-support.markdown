@@ -9,4 +9,4 @@ One thing I didn't see anything that provided a 'compiler', so I could edit a '.
 
 This little tar contains all the files you need to make this work. Careful with it, as I have provided a minimalist .vimrc so don't unpack this in your home directory.
 
- [puppet_vim.tar.gz](http://serialized.net/wp-content/uploads/2009/03/puppet-vimtar.gz")
+ [puppet_vim.tar.gz](/images/puppet-vimtar.gz)

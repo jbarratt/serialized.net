@@ -13,13 +13,14 @@ However, the install takes a LOOOONG time. So long, I was wondering if something
 
 This trivial example (from Brendan Gregg's [DTrace Oneliners](http://www.brendangregg.com/DTrace/dtrace_oneliners.txt)) shows the files getting opened by matching the 'open' system call, when it's entered, and printing out the name of the app that called it (execname) and the first argument to that function -- in other words, the file.
 
-<code>sudo dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }'</code>
+{% highlight text %}
+  $ sudo dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }'
 
-<code>
   1  17657                       open:entry tclsh8.4 /opt/local/var/macports/software/ghc/6.10.1_9+darwin_9_i386/opt/local/share/ghc-6.10.1/doc/ghc/libraries/directory/LICENSE
   1  17657                       open:entry mdworker /opt/local/var/macports/software/ghc/6.10.1_9+darwin_9_i386/opt/local/share/ghc-6.10.1/doc/ghc/libraries/containers/minus.gif
   1  17657                       open:entry mdworker /opt/local/var/macports/software/ghc/6.10.1_9+darwin_9_i386/opt/local/share/ghc-6.10.1/doc/ghc/libraries/containers/minus.gif
-</code>
+
+{% endhighlight %}
 
 And there we go. You can see the installer monkeying around in the documentation directories. 
 

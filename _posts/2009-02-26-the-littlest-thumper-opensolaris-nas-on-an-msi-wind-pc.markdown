@@ -58,7 +58,7 @@ unless you plug it into something.
 
 So how do I expand if I need to? Simple! Start adding in USB drives as needed! There is a great [guide to doing just this](http://blogs.sun.com/constantin/entry/opensolaris_home_server_zfs_and) on one of the Sun blogs, which includes some nice pointers about how to set this up.
 
-The install was CAKE, the hardest part was finding a monitor and keyboard as I am only laptopped at home. Well, the hardest part was making an install USB device, but [you already known how to do that.](http://serialized.net/2009/02/getting-an-opensolaris-bootable-usb-drive/)
+The install was CAKE, the hardest part was finding a monitor and keyboard as I am only laptopped at home. Well, the hardest part was making an install USB device, but [you already known how to do that.](/2009/02/getting-an-opensolaris-bootable-usb-drive/)
 
 Also, to install the CF card into the Wind, I had to remove the motherboard -- that's the only way you can slide it in. Minor annoyance but worth noting.
 
