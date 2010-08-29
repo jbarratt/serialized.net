@@ -1,0 +1,9 @@
+# Set up pretty error document pages
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+
+# Protect this file
+<Files .htaccess>
+order deny,allow
+deny from all
+</Files>
