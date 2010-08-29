@@ -13,24 +13,39 @@ task :sitemap do
 end
 
 desc 'Run Jekyll in development mode'
-task :dev do
+task :dev => ["style/merged.css"] do
   puts '* Running Jekyll with auto-generation and server'
   puts jekyll('--auto --server')
 end
 
 desc 'Run Jekyll to generate the site'
-task :build do
+task :build => ["style/merged.css"] do
   puts '* Removing old site'
   puts `rm -r ./_site/*`
   puts '* Generating static site with Jekyll'
   puts jekyll
 end
 
+file "style/merged.css" => ["style/syntax.css", "style/template.css", "style/libraries.css", "style/grids.css", "style/content.css", "style/mod.css"] do |t|
+    #sh "cat #{t.prerequisites.join(' ')} > #{t.name}"
+    sh "cat #{t.prerequisites.join(' ')} > #{t.name}.devel"
+    sh "java -jar ~/.java/yuicompressor-2.4.2.jar --type css -o style/merged.css #{t.name}.devel"
+end
+
+
 desc 'rsync the contents of ./_site to the server'
 task :sync do
   puts '* Publishing files to live server'
   puts `rsync -avz --delete "_site/" serialized.net@serialized.net:domains/serialized.net/html/`
 end
+
+desc 'rsync the contents of ./_site to the staging path on the server'
+task :stage do
+  puts '* Publishing files to live server'
+  puts `rsync -avz --delete "_site/" serialized.net@serialized.net:domains/stage.serialized.net/html/`
+end
+
+
 
 desc 'Push source code to Github'
 task :push do
@@ -72,7 +87,11 @@ task :drafts do
 end
 
 def jekyll(args = nil)
-  `~/bin/jekyll/bin/jekyll #{args}`
+  `~/.ruby/lib/ruby/gems/1.8/bin/jekyll #{args}`
+end
+
+desc 'Merge and optimize CSS'
+task :cssmerge do
 end
 
 # Helper method for :draft and :post, that required a TITLE environment

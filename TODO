@@ -1,8 +1,5 @@
-- merge image trees and make that work
-- fix software to be a sane index (tarballs?)
 - crawl for 404's
 - build google sitemap
-- come up with sane layout of some kind
 - check XML generated against old-style feed, make sure id's match if possible
-- add in some recent flickr photos
-- add in my FOAF/XFN links to my other profiles (make sure to include github!!)
+- minify the css for this site
+- fix software to be a sane index (tarballs?)
