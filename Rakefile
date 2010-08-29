@@ -90,16 +90,13 @@ def jekyll(args = nil)
   `~/.ruby/lib/ruby/gems/1.8/bin/jekyll #{args}`
 end
 
-desc 'Merge and optimize CSS'
-task :cssmerge do
-end
-
 # Helper method for :draft and :post, that required a TITLE environment
 # variable to be set. If there is none, the task will exit.
 #
 # If there is a title given, then this method will return it and a escaped
 # version suitable for filenames.
 def get_title(title)
+  require 'date'
   if title.nil?
     puts "USAGE: rake post TITLE='the post title'"
     exit(1)
