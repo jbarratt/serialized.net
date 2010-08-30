@@ -2,6 +2,9 @@
 ErrorDocument 404 /404.html
 ErrorDocument 403 /403.html
 
+RewriteEngine On
+RewriteRule ^feed/ http://serialized.net/feed [R=301]
+
 # Protect this file
 <Files .htaccess>
 order deny,allow
