@@ -62,3 +62,5 @@ end
 {% endhighlight %}
 
 I've had to elaborate files by name so they end up in the correct order (one of the least fun things about CSS, aside from 'everything else', is that order matters). So you do have to update the list by hand when adding files, but most of the time I'm sure you'll tend to tweak them instead. I'm using Yahoo's [YUI Compressor](http://developer.yahoo.com/yui/compressor/) which is nice, since if my Javascript gets more complex I can use it for that as well.
+
+For now it shrinks the payload from 14k to 8k, not worth doing super backflips over -- the majority of the gain is in the simple concatenation, turning 6+ HTTP GET's into a single one.
