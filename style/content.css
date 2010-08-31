@@ -76,8 +76,8 @@ pre { white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wra
 .tweet_even { background-color: #DEE6ED; margin-bottom: 4px; padding: 2px}
 .tweet_odd { background-color: #F0F0F0; margin-bottom: 4px; padding: 2px}
 blockquote { margin: 1em 3em; border-left: 2px solid #999; padding-left: 1em; }
-ul.main { list-style-type: disc !important; }
-ol.main { list-style-type: decimal !important; }
+.main ul li { list-style: circle inside; margin-left: 1em; }
+.main ol li { list-style: decimal inside; margin-left: 1em; }
 #logo {font-style:normal; font-family: "Courier New", Courier, monospace; letter-spacing: -6px; font-size: 160%;}
 #slug {font-style:italic; color:#aaa; font-family: "Courier New", Courier, monospace; letter-spacing: -1px; font-size: 70%; padding-top: 3em;}
 div#headcontainer.head { border-bottom: 1px solid #999; }

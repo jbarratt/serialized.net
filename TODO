@@ -1,3 +1,3 @@
 - fix software to be a sane index (tarballs?)
-- fix indent problem
-- fix the front page to track at least <characters> worth of content
+- fix indent problem of lists in CSS
+- make 'rake post' idempotent, no more losing half a post :(

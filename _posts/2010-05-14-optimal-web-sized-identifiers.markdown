@@ -7,30 +7,27 @@ wordpress_url: http://serialized.net/?p=375
 As part of a project I'm working on for fun (shhhh) I've been trying to solve an interesting problem -- what is the most compact way I can uniquely refer to something in a URI?
 
 This one's going to get complicated, so here's the tl;dr version. To get the shortest possible, web-safe identifiers:
-<ul>
-<li>encode identifiers with base62 or a customized version of base64 that uses valid characters.</li>
-<li>Use a big enough hash space to get an acceptable level of collisions.</li>
-</ul>
+
+* encode identifiers with base62 or a customized version of base64 that uses valid characters.
+* Use a big enough hash space to get an acceptable level of collisions.
 
 Ok. Here's the long-winded version.
 
 It's a little like the "URL Shortener" use case, where you want to take a big fat link and describe it in a tiny link. In this case, I'm converting individual sentences into a tiny, linkable representation.
 
 So, I need a very short identifier that obeys certain (conflicting) properties:
-<ul>
-<li>As much as possible, the identifier should be the same regardless of the order that I create the sentences in</li>
-<li>It should be as short as possible, because I may need to refer to a lot of these in a single URI</li>
-</ul>
+
+* As much as possible, the identifier should be the same regardless of the order that I create the sentences in
+* It should be as short as possible, because I may need to refer to a lot of these in a single URI
 
 In the URL shortener mode, they tend to solve this by just keeping a global "ID" counter and incrementing it every time someone creates a new link. I need to use something a lot more like a hash. (MD5 or SHA1 are typical choices here.)
 
 So what are the constraints?
-<ul>
-<li>How long can a URI be?</li>
-<li>What characters are we allowed to use?</li>
-<li>How much unique data is going to be represented?</li>
-<li>How tolerant can we be of collisions? (When 2 "objects" might map to the same shortened identifier?)</li>
-</ul>
+
+* How long can a URI be?
+* What characters are we allowed to use?
+* How much unique data is going to be represented?
+* How tolerant can we be of collisions? (When 2 "objects" might map to the same shortened identifier?)
 
 ### URI constraints
 The first 2 are simple and global. There's no real standard on URI length, but [smart people have done the legwork for us](http://www.boutell.com/newfaq/misc/urllength.html ) so we'll steal their conclusions, and say "keep URI's shorter than 2,000 characters."
@@ -214,8 +211,7 @@ sub from_base {
 {% endhighlight %}
 
 So there you have it. Provably optimal URI-compatible identifiers with 3 easy steps:
-<ol>
-<li>Figure out what the constraints for your problem space are</li>
-<li>Grab enough bits from md5</li>
-<li>Convert to (and from) base62</li>
-</ol>
+
+1. Figure out what the constraints for your problem space are
+1. Grab enough bits from md5
+1. Convert to (and from) base62
