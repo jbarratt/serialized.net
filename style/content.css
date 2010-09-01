@@ -80,4 +80,5 @@ blockquote { margin: 1em 3em; border-left: 2px solid #999; padding-left: 1em; }
 .main ol li { list-style: decimal inside; margin-left: 1em; }
 #logo {font-style:normal; font-family: "Courier New", Courier, monospace; letter-spacing: -6px; font-size: 160%;}
 #slug {font-style:italic; color:#aaa; font-family: "Courier New", Courier, monospace; letter-spacing: -1px; font-size: 70%; padding-top: 3em;}
+div#logo a:link, a:visited, a:active { text-decoration: none; font-weight:normal; font-style: normal; color:#AE0345; }
 div#headcontainer.head { border-bottom: 1px solid #999; }

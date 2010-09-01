@@ -70,13 +70,13 @@ sites:
     <div class="page">
         <div class="head" id="headcontainer">
             <div class="line">
-                <div id="logo" class="unit size2of3"><h1>serialized.net</h1></div>
+                <div id="logo" class="unit size2of3"><h1><a href="http://serialized.net/">serialized.net</a></h1></div>
                 <div id="slug" class="unit size1of3 lastUnit"><h4>An ongoing expression of fascination burnout</h4></div>
             </div>
         </div>
         <div class="body">
             <div class="rightCol">
-                <h3><img src="/images/icons/twitter_16.png" class="socialIcon" height='16' width='16' /> Recently on <a href="http://twitter.com/jbarratt">twitter...</a></h3>
+                <h3><img alt="Twitter icon" src="/images/icons/twitter_16.png" class="socialIcon" height='16' width='16' /> Recently on <a href="http://twitter.com/jbarratt">twitter...</a></h3>
                 <div class="tweet">
                 </div>
             </div>
@@ -99,7 +99,7 @@ sites:
                     <ul>
                     {% for service in page.services %}
                         <li>
-                            <img class="socialIcon" src="/images/icons/{{ service.icon }}" height='16' width='16'/> <a href="{{ service.url }}" title="{{ service.title }}" rel="external me">{{ service.name }}</a>
+                            <img alt="{{ service.name }} icon" class="socialIcon" src="/images/icons/{{ service.icon }}" height='16' width='16'/> <a href="{{ service.url }}" title="{{ service.title }}" rel="external me">{{ service.name }}</a>
                         </li>
                     {% endfor %}
                     </ul>
