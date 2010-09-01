@@ -13,7 +13,7 @@ My workflow now is to process my inbox down to zero, pulling the information I n
 However, when I've processed a message, I don't want to trash it. I needed a way to archive them for later searching. So, I applescripted it.
 
 I created this script in the script editor:
-{% highlight text %}
+{% highlight applescript %}
     tell application "Mail"
         set theSelectedMessages to selection
         set myAccount to "zimbra"

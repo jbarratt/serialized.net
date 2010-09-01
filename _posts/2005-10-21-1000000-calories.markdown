@@ -2,9 +2,6 @@
 wordpress_id: 79
 layout: post
 title: 1,000,000 calories
-excerpt: |
-  
-
 wordpress_url: http://wp.serialized.net/?p=79
 ---
 So the other day a friend of mine tossed an interesting statistic at me.

@@ -10,7 +10,7 @@ The thing is, I used to always launch my todo list from a terminal, then keep th
 
 So sticking this in my `.vimrc`:
 
-{% highlight text %}
+{% highlight vim %}
 map <F8> :!cvs commit -m ""<CR><CR>
 {% endhighlight %}
 

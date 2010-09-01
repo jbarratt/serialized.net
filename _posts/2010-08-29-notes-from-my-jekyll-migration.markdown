@@ -9,7 +9,7 @@ I had a few snags moving to Jekyll that I thought worth sharing.
 
 If you're using Debian Lenny, you won't complain about having these packages installed:
 
-{% highlight text %}
+{% highlight console %}
 $  sudo apt-get install ruby-dev  libyaml-ruby libzlib-ruby python-pygments libgsl-ruby1.8 sun-java6-jre
 {% endhighlight %}
 
@@ -18,18 +18,18 @@ $  sudo apt-get install ruby-dev  libyaml-ruby libzlib-ruby python-pygments libg
 I didn't want to mess with my system gems, and wanted to have the gems installed in my local directory like I'm used to with Perl's [local::lib](search.cpan.org/perldoc?local::lib). 
 This turned out to be harder than you may think. Here's the environment incantation that did the trick:
 
-{% highlight text %}
-    export RUBY_PREFIX="$HOME/.ruby"
-    export PATH="$RUBY_PREFIX/bin/:$RUBY_PREFIX/lib/ruby/gems/1.8/bin/:$PATH"
-    export GEM_HOME="$RUBY_PREFIX/lib/ruby/gems/1.8"
-    export GEM_PATH="$GEM_HOME"
-    export RUBYLIB="$RUBY_PREFIX/lib/ruby:$RUBY_PREFIX/lib:$RUBY_PREFIX/lib/site_ruby/1.8"
+{% highlight bash %}
+export RUBY_PREFIX="$HOME/.ruby"
+export PATH="$RUBY_PREFIX/bin/:$RUBY_PREFIX/lib/ruby/gems/1.8/bin/:$PATH"
+export GEM_HOME="$RUBY_PREFIX/lib/ruby/gems/1.8"
+export GEM_PATH="$GEM_HOME"
+export RUBYLIB="$RUBY_PREFIX/lib/ruby:$RUBY_PREFIX/lib:$RUBY_PREFIX/lib/site_ruby/1.8"
 {% endhighlight %}
 
 And then I grabbed [RubyGems](http://rubyforge.org/frs/?group_id=126) and just
 
-{% highlight text %}
-ruby setup.rb all --prefix=$RUBY_PREFIX
+{% highlight console %}
+$ ruby setup.rb all --prefix=$RUBY_PREFIX
 {% endhighlight %}
 
 ### Importing Wordpress
@@ -37,8 +37,8 @@ ruby setup.rb all --prefix=$RUBY_PREFIX
 I also wanted to use a remote database that I didn't have direct network access to. 
 Step 1, use `ssh` to create a nice tunnel (to the arbitrary local port 11122):
 
-{% highlight text %}
-ssh -L 11122:host.of.database.com:3306 user@domain.com
+{% highlight console %}
+$ ssh -L 11122:host.of.database.com:3306 user@domain.com
 {% endhighlight %}
 
 I needed to tweak the importer tool that ships with Jekyll to support using a host and port:

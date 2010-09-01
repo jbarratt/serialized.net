@@ -107,8 +107,8 @@ Here's the formula I ended up using:
 Here's a few sample runs of the script:
 
 First, using my personal constraints for this project:
-{% highlight text %}
-./hashspace_model -i 20000 -p 0.99
+{% highlight console %}
+$ ./hashspace_model -i 20000 -p 0.99
 Trying to store 20000 items with a 0.99000 chance of collision
 To do that, we'd need to be working in the range 1:43427276.7179157
 probability 0.9900000006 should match your requested probability of 0.9900000000, or something went wrong.
@@ -121,8 +121,8 @@ Cool! So I said I'm ok with a 99% chance of a collision, and the algorithm figur
 
 Let's say I wanted to be more strict, and go "one in a million".
 
-{% highlight text %}
-./hashspace_model -i 20000 -p 0.000001
+{% highlight console %}
+$ ./hashspace_model -i 20000 -p 0.000001
 Trying to store 20000 items with a 0.000001 chance of collision
 To do that, we'd need to be working in the range 1:199989899999232
 probability 0.0000009992 should match your requested probability of 0.0000010000, or something went wrong.

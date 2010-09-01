@@ -13,7 +13,7 @@ Wordpress was able to connect to my textile database and inhale all my posts. (T
 What to do? 
 
 I made a quick YAML config to store database options in, config.yml:
-{% highlight text %}
+{% highlight yaml %}
     ---
     dbserver: mydbserver.com
     dbuser: mydbuser

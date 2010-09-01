@@ -10,21 +10,21 @@ Turns out to be possible, but you need some sed fu, and why not use perl.
 
 So now I can type
 
-{% highlight text %}
+{% highlight console %}
 $ ls | randline
 {% endhighlight %}
 
 
 and get a random selection from the list. If I want to go all crazy and not even screen it, I can go with 
 
-{% highlight text %}
-    $ xmms -e `ls | randline`.
+{% highlight console %}
+$ xmms -e `ls | randline`.
 {% endhighlight %}
 
 
 Here's the `.bashrc` entry I used:
 
-{% highlight text %}
+{% highlight bash %}
     alias randline="perl -we 'srand ; rand(\$.) < 1 && (\$line = \$_) while <STDIN>; chomp(\$line); print \"\$line\\n\";'"
 {% endhighlight %}
 

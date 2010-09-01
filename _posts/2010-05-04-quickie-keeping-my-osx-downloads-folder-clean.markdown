@@ -7,7 +7,7 @@ wordpress_url: http://serialized.net/?p=371
 My Downloads folder consistently gets large and cluttered. I considered an app like [Hazel](http://www.noodlesoft.com/hazel) but it seemed like overkill.
 
 I added the following alias to my .bashrc file:
-{% highlight text %}
+{% highlight bash %}
 alias clean_downloads="find ~/Downloads -mtime +30 -maxdepth 1 -print -exec rmtrash '{}' ';'"
 {% endhighlight %}
 which depends on the free tool '[rmtrash](http://www.nightproductions.net/cli.htm)' being installed -- a command line way to elegantly move files to the OSX-standard trash can.

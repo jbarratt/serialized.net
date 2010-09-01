@@ -23,7 +23,7 @@ Fill in your applescript, replacing only the center "comment" block -- leave the
 
 The core code again, (tweak to fit your accounts and archive mailbox names)
 
-{% highlight text %}
+{% highlight applescript %}
     tell application "Mail"
         set theSelectedMessages to selection
         set myAccount to "zimbra"

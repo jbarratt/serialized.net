@@ -20,20 +20,20 @@ Here are the brief steps you need to take to get it working.
 On the Snow Leopard Server, install the [ISCSI initiator from GlobalSan.](http://www.studionetworksolutions.com/products/product_detail.php?t=more&pi=11)
 
 On your OpenSolaris server, make sure you've installed the support packages needed.
-{% highlight text %}
-pkg install SUNWiscsi SUNWiscsitgt
+{% highlight console %}
+# pkg install SUNWiscsi SUNWiscsitgt
 {% endhighlight %}
 
 Now, from one of your available disk pools, create the virtual hard drives for your servers to mount, (making sure you make them about 1.5x larger than the disks you're trying to back up, so you can get historical information from them.
 
-{% highlight text %}
-zfs create -o shareiscsi=on -s -V 160GB mypool/laptop_tm
-zfs create -o shareiscsi=on -s -V 140GB mypool/server_tm
+{% highlight console %}
+# zfs create -o shareiscsi=on -s -V 160GB mypool/laptop_tm
+# zfs create -o shareiscsi=on -s -V 140GB mypool/server_tm
 {% endhighlight %}
 
 To find out what the "target ID's" are, run this:
-{% highlight text %}
-iscsitadm list target
+{% highlight console %}
+# iscsitadm list target
 {% endhighlight %}
 shows the target names to paste into the initiator.
 

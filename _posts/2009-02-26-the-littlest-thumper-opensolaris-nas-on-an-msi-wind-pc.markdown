@@ -64,7 +64,7 @@ Also, to install the CF card into the Wind, I had to remove the motherboard -- t
 
 After that it was a simple matter of setting up the zpool with my new drives, and exporting the filesystem to my other devices.
 
-{% highlight text %}
+{% highlight console %}
 
     # Use the format tool to find the disk ID's in the system
     jbarratt@rothko:/$ pfexec format
@@ -79,13 +79,13 @@ After that it was a simple matter of setting up the zpool with my new drives, an
     Specify disk (enter its number): ^C
 
     # Create the pool as a mirror between my 2 1.5TB drives
-    $ zpool create apool mirror c6d0 c7d0
+    # zpool create apool mirror c6d0 c7d0
 
     # Create a filesystem
-    zfs create apool/archive
+    # zfs create apool/archive
 
     # Share that over NFS
-    zfs set sharenfs=rw apool/archive
+    # zfs set sharenfs=rw apool/archive
     </st315003></default>
 {% endhighlight %}
 
