@@ -10,7 +10,7 @@ title: 'Home'
 </div>
 
 
-<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://serialized.net{{post.url}}" data-count="horizontal" data-via="jbarratt">Tweet</a>
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="{{post.title}}" data-url="http://serialized.net{{post.url}}" data-count="horizontal" data-via="jbarratt">Tweet</a>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js">
 </script>
 

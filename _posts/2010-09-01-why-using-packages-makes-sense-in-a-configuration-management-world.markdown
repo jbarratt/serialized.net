@@ -39,7 +39,9 @@ One way to get packages for upstream stuff that's not very painful is with a too
 
 No matter what, it's an extra step. 
 
-There is no question that it's 'easier' to do a `make install` than to build a package and get that installed.
+[@AshBerlin](http://twitter.com/AshBerlin/status/22743329014) points out that, in the case that you're managing some upstream software, that this is a cost you have to take on for every version they release, not just a 1 time cost.
+
+There is no question that it's 'easier' to do a `make install` than to build a package (every time the software is updated) and get that installed.
 
 So here's why that's worth putting up with.
 
@@ -72,6 +74,7 @@ Apt and Yum both keep checksums of all the files on the system installed by pack
 
 * [debsums](http://packages.debian.org/lenny/debsums)
 * `rpm -V -a`
+* `pkgchk` on Solaris (/via [@builddoctor](http://twitter.com/builddoctor/status/22738104589))
 
 This is a useful thing to know for security reasons, of course. However, it's even more important for helping people adapt their behaviors.
 
