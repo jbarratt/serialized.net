@@ -4,6 +4,10 @@ layout: post
 title: Updated "Inbox Zero with Mail.app" technique
 wordpress_url: http://serialized.net/?p=344
 ---
+
+**Update**: I have updated to a new method since writing this -- I now use a [free native Archiving plugin](http://stl.techinno.nl/archive/). More information in my [most recent article](/2010/09/up-up-updated-inbox-zero-with-mail-app-technique/).
+
+
 Back in March, I wrote about my [technique for implementing Inbox Zero with Mail.app](/2009/03/my-approach-to-inbox-zero-with-mailapp/).
 
 Since then, the world has changed. I've upgraded to Snow Leopard, and Quicksilver has essentially stopped working out for me. (I've been trying to keep it up to date, and sometimes it kind of works, but my confidence levels are really low.) On the other hand, I'm loving me some [Google Quick Search Box](http://code.google.com/p/qsb-mac/) (a new project from the [original creator of Quicksilver](http://www.cultofmac.com/quicksilver-is-sort-of-dead-long-live-google-quick-search-box/6986)). The only feature that I still wanted Quicksilver for was triggers. And until today, I was still running it for trigger support to implement my Inbox Zero trick.

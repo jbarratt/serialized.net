@@ -4,6 +4,10 @@ layout: post
 title: My approach to Inbox Zero with Mail.app
 wordpress_url: http://serialized.net/?p=238
 ---
+
+**Update**: I have updated this method twice since writing this article, but am leaving it around as it's a good example of Quicksilver triggers and simple Mail.app Applescript. The current best way to do this is described in my [most recent article](/2010/09/up-up-updated-inbox-zero-with-mail-app-technique/).
+
+
 My setup is pretty straightforward, Mail.app speaking IMAP to our company Zimbra server.
 
 I wanted to do [Inbox Zero](http://www.43folders.com/izero) because I was sick of losing track of things in the backlog, trying to be clever with flags and "mark as unread", etc.
