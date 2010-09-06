@@ -9,7 +9,7 @@ Since publishing those articles I'd been fed up with the performance of all the 
 
 The only thing I wasn't happy with was that I was still only using the single feature -- the ability to, with a hotkey, move mail into an archive folder. And for this, I'd happily paid.
 
-However, I was recently contacted by the developer of the perfect plugin for me -- Archiving, and nothing else. It's native so you don't have to jump through any of the hoops of Applescripting and Service menus and Quicksilver.
+However, I was recently contacted by the developer of the perfect plugin for me -- [Archive, a button for Apple Mail.](http://stl.techinno.nl/archive/). It does Archive and nothing else. It's a native plugin so it's fast, fast, fast. You don't have to jump through any of the hoops of Applescripting and Service menus and Quicksilver.
 
 I've been using it for a few weeks now and it's been perfect -- clean, simple, and exactly what I wanted all along.
 
