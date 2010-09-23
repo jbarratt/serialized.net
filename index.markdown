@@ -22,5 +22,5 @@ title: 'Home'
 {% for post in site.posts limit:8 %}
 <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
-<li><a href="/archives">Complete archive</a></li>
+<li><a href="/archives.html">Complete archive</a></li>
 </ul>

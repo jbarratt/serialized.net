@@ -4,6 +4,9 @@ layout: post
 title: Testing perl system interactions
 wordpress_url: http://serialized.net/?p=289
 ---
+
+**Update**: I have refined this technique and uploaded a more full-stack example to GitHub. [Testing Perl code that runs commands](/2010/09/testing-perl-code-that-runs-commands/).
+
 A lot of the code I end up needing to work on makes calls to various executables to read and process system state. It might be DTrace, or one of the tools that comes with the Virtuozzo/OpenVZ management suite, or one of the HP hardware monitoring tools -- they all want to be called from the command line.
 
 In the old days, I probably would have just used perl backticks to run the command and capture the output. I'd "test" on a machine that had those tools installed, and call it a day.
