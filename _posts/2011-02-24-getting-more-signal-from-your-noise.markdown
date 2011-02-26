@@ -48,7 +48,7 @@ It's now possible to get real-er time information from a Hadoop system, but hist
 
 The state of the art with log management used to be syslog + logrotate = done. There are a lot more options today.
 
-* Many people are using [HDFS](http://hadoop.apache.org/hdfs/) (before or after processing) for both it's scalability, resilience, and ability to integrate with the larger Hadoop family.
+* Many people are using [HDFS](http://hadoop.apache.org/hdfs/) (before or after processing) for both it's scalability, resilience, and ability to integrate with the larger Hadoop family. Orbitz (awesome at sharing, first graphite, now this) have a great [presentation about 'Hadoop for Logs'](http://files.meetup.com/1634302/CHUG_HadoopLogsAtOrbitz.pdf) which is a good overview of what you'd be getting into.
 * [Logstash](http://code.google.com/p/logstash/) and [graylog2](http://www.graylog2.org/) can bring some of the utility of Splunk without the (ahem) cost structures. They (both?) can use [ElasticSearch](http://www.elasticsearch.org/), which is a nicely packaged "throw text in and RESTfully search" engine.
 * A new entrant, [Luwak](https://github.com/basho/luwak) runs on top of Riak, so you get the availability + scalability and a Map/Reduce interface to boot.
 * [Flume](https://github.com/cloudera/flume) and [Scribe](https://github.com/facebook/scribe) (as well as messaging systems like [RabbitMQ](http://www.rabbitmq.com/)) can replace syslog as the way to shovel raw logs around.
