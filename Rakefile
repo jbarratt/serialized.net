@@ -23,8 +23,8 @@ task :build => ["style/merged.css"] do
   puts '* Removing old site'
   puts `rm -r ./_site/*`
   puts '* Generating static site with Jekyll'
-  puts jekyll("--lsi")
-  #puts jekyll
+  #puts jekyll("--lsi")
+  puts jekyll
 end
 
 file "style/merged.css" => ["style/syntax.css", "style/template.css", "style/libraries.css", "style/grids.css", "style/content.css", "style/mod.css"] do |t|
