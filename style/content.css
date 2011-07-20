@@ -82,3 +82,5 @@ blockquote { margin: 1em 3em; border-left: 2px solid #999; padding-left: 1em; }
 #slug {font-style:italic; color:#aaa; font-family: "Courier New", Courier, monospace; letter-spacing: -1px; font-size: 70%; padding-top: 3em;}
 div#logo a:link, a:visited, a:active { text-decoration: none; font-weight:normal; font-style: normal; color:#AE0345; }
 div#headcontainer.head { border-bottom: 1px solid #999; }
+.share { display: block; border: 0px; margin: 0px; outline: 0px; vertical-align: baseline; position: relative; height: 40px; width: 450px; }
+.share_button { padding-left: -1.437px; padding-right: -1.437px; padding: 5px; clear: none; float: left; display: inline; width: 70px;}

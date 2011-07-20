@@ -30,7 +30,7 @@ end
 file "style/merged.css" => ["style/syntax.css", "style/template.css", "style/libraries.css", "style/grids.css", "style/content.css", "style/mod.css"] do |t|
     #sh "cat #{t.prerequisites.join(' ')} > #{t.name}"
     sh "cat #{t.prerequisites.join(' ')} > #{t.name}.devel"
-    sh "java -jar ~/.java/yuicompressor-2.4.2.jar --type css -o style/merged.css #{t.name}.devel"
+    sh "java -jar ~/.java/yuicompressor-2.4.6.jar --type css -o style/merged.css #{t.name}.devel"
 end
 
 
@@ -88,7 +88,7 @@ task :drafts do
 end
 
 def jekyll(args = nil)
-  `~/.ruby/lib/ruby/gems/1.8/bin/jekyll #{args}`
+  `/usr/bin/jekyll #{args}`
 end
 
 # Helper method for :draft and :post, that required a TITLE environment
